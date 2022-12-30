@@ -6,7 +6,7 @@ import About from "../section/about";
 import Blockquote from "../section/blockquote";
 import Whatido from "../section/whatido";
 import Gallery from "../section/gallery";
-import Resume from "../section/resume";
+// import Resume from "../section/resume";
 import Counter from "../section/counter";
 import Blog from "../section/blog";
 import Contact from "../section/contact";

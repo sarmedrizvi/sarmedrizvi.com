@@ -14,11 +14,11 @@ const GlobalStyles = createGlobalStyle`
 const Gallery = function () {
   /* lightbox1 */
   const [lighbx, setlighbx] = React.useState(false);
-  const handleBtnClick = () => {
-    setlighbx(!lighbx);
-    var x = document.getElementsByTagName("BODY")[0];
-    x.style.overflow = "hidden";
-  };
+  //   const handleBtnClick = () => {
+  //     setlighbx(!lighbx);
+  //     var x = document.getElementsByTagName("BODY")[0];
+  //     x.style.overflow = "hidden";
+  //   };
   const handleBtnClickclose = () => {
     setlighbx(!lighbx);
     var x = document.getElementsByTagName("BODY")[0];
@@ -27,11 +27,11 @@ const Gallery = function () {
 
   /* lightbox2 */
   const [lighbx1, setlighbx1] = React.useState(false);
-  const handleBtnClick1 = () => {
-    setlighbx1(!lighbx1);
-    var x = document.getElementsByTagName("BODY")[0];
-    x.style.overflow = "hidden";
-  };
+  //   const handleBtnClick1 = () => {
+  //     setlighbx1(!lighbx1);
+  //     var x = document.getElementsByTagName("BODY")[0];
+  //     x.style.overflow = "hidden";
+  //   };
   const handleBtnClickclose1 = () => {
     setlighbx1(!lighbx1);
     var x = document.getElementsByTagName("BODY")[0];
@@ -40,11 +40,11 @@ const Gallery = function () {
 
   /* lightbox2 */
   const [lighbx2, setlighbx2] = React.useState(false);
-  const handleBtnClick2 = () => {
-    setlighbx2(!lighbx2);
-    var x = document.getElementsByTagName("BODY")[0];
-    x.style.overflow = "hidden";
-  };
+  //   const handleBtnClick2 = () => {
+  //     setlighbx2(!lighbx2);
+  //     var x = document.getElementsByTagName("BODY")[0];
+  //     x.style.overflow = "hidden";
+  //   };
   const handleBtnClickclose2 = () => {
     setlighbx2(!lighbx2);
     var x = document.getElementsByTagName("BODY")[0];
