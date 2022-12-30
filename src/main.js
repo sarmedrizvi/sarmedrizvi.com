@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "../src/pages/home";
+// import Home from "../src/pages/home";
 import Homelight from "../src/pages/homeLight";
 import Homevideo from "../src/pages/homeVideo";
 import Homeparticle from "../src/pages/homeParticle";
