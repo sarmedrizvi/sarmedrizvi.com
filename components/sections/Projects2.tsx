@@ -235,7 +235,7 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3" >
 													<div className="row">
 														<div className="col-lg-5">
-															<img className="w-100" src="assets/imgs/home-page-2/projects/pixel-deck.webp" alt="Gig Finance" className="project-images w-100"/>
+															<img src="assets/imgs/home-page-2/projects/pixel-deck.webp" alt="Gig Finance" className="project-images w-100"/>
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
