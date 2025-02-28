@@ -48,7 +48,7 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3">
 													<div className="row">
 														<div className="col-lg-5">
-															<img className="w-100" src="assets/imgs/home-page-2/projects/good-goblin.webp" alt="GoodGoblin.ai" className="project-images"/>
+															<img  src="assets/imgs/home-page-2/projects/good-goblin.webp" alt="GoodGoblin.ai" className="project-images w-100"/>
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
@@ -88,7 +88,7 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3">
 													<div className="row">
 														<div className="col-lg-5">
-															<img className="w-100" src="assets/imgs/home-page-2/projects/event-moon.webp" alt="Event Moon" className="project-images" />
+															<img  src="assets/imgs/home-page-2/projects/event-moon.webp" alt="Event Moon" className="project-images w-100" />
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
@@ -128,7 +128,7 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3">
 													<div className="row">
 														<div className="col-lg-5">
-															<img className="w-100" src="assets/imgs/home-page-2/projects/awards-box.webp" alt="AwardsBox" className="project-images" />
+															<img  src="assets/imgs/home-page-2/projects/awards-box.webp" alt="AwardsBox" className="project-images w-100" />
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
@@ -167,7 +167,7 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3" >
 													<div className="row">
 														<div className="col-lg-5 project-image">
-															<img className="w-100" src="assets/imgs/home-page-2/projects/gig-finance.webp" alt="Gig Finance" className="project-images"/>
+															<img  src="assets/imgs/home-page-2/projects/gig-finance.webp" alt="Gig Finance" className="project-images w-100"/>
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
@@ -201,7 +201,7 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3" >
 													<div className="row">
 														<div className="col-lg-5">
-															<img className="w-100" src="assets/imgs/home-page-2/projects/joobers.webp" alt="Gig Finance" className="project-imges"/>
+															<img  src="assets/imgs/home-page-2/projects/joobers.webp" alt="Gig Finance" className="project-imges w-100"/>
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
@@ -235,7 +235,7 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3" >
 													<div className="row">
 														<div className="col-lg-5">
-															<img className="w-100" src="assets/imgs/home-page-2/projects/pixel-deck.webp" alt="Gig Finance" className="project-images"/>
+															<img className="w-100" src="assets/imgs/home-page-2/projects/pixel-deck.webp" alt="Gig Finance" className="project-images w-100"/>
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
