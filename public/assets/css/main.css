@@ -468,7 +468,7 @@ img {
 .box-linear-animation {
 	border-radius: 8px;
 	border: 1px solid rgba(0, 0, 0, 0);
-	background: linear-gradient(var(--tc-bg-3), var(--tc-bg-3)) padding-box, linear-gradient(var(--angle), var(--tc-bg-3) 90%, var(--tc-theme-primary-2) 100%) border-box;
+	background: linear-gradient(var(--tc-bg-3), var(--tc-bg-3)) padding-box, linear-gradient(var(--angle), var(--tc-bg-3) 90%, #6becdf 100%) border-box;
 	animation: 8s rotate linear infinite;
   padding: 0px !important;
 }
@@ -1522,6 +1522,9 @@ s .fs-1 {
   font-size: 18px;
 }
 
+
+
+
 .fs-120 {
   font-size: 120px;
 }
@@ -1955,7 +1958,8 @@ textarea {
 }
 
 .text-primary-2 {
-  color: var(--tc-theme-primary-2) !important;
+  /* color: var(--tc-theme-primary-2) !important; */
+  color: #45eede;
 }
 
 .text-primary-3 {
@@ -1983,7 +1987,8 @@ textarea {
 }
 
 .text-secondary-2 {
-  color: var(--tc-theme-secondary-2) !important;
+  /* color: var(--tc-theme-secondary-2) !important; */
+  color: #38a3d4;
 }
 
 .text-secondary-3 {
@@ -2877,7 +2882,7 @@ textarea {
   max-height: 34px;
 }
 .offCanvas__side-info {
-  border-top: 1px solid #6e4ef2;
+  border-top: 1px solid #6becdf;
   padding-top: 25px;
 }
 .offCanvas__side-info .contact-list h4 {
@@ -3098,7 +3103,7 @@ textarea {
   color: #ffd45d !important;
 }
 .navbar.navbar-home-2 .navbar-social a:hover {
-  color: #62a92b;
+  color: #6becdf !important;
 }
 .navbar.navbar-home-3 {
   position: relative !important;
@@ -14345,9 +14350,11 @@ strong {
 /*# sourceMappingURL=main.css.map */
 
 .gradient-heading {
-  background: linear-gradient(to right, #A8FF53 , #1ac0af);
+  /* background: linear-gradient(to right, #A8FF53 , #1ac0af); */
+  /* background: linear-gradient(to right, #3cdfcf, #1f7bc6 );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: #3cdfcf;
   
 }
 
@@ -14371,3 +14378,24 @@ strong {
   width: 400px !important;
   height: 480px !important;
 }
+
+.btn-scroll-top {
+  background-color: #22ad9f !important;
+}
+
+/* .swiper-button-next, .swiper-button-prev{
+  padding:  11px 22px 11px 22px !important
+} */
+
+::selection {
+  background: #6becdf;
+}
+
+.offCanvas__close-icon button{
+  color: #6becdf;
+}
+
+.offCanvas__side-info {
+  border-top: 1px solid #6becdf !important;
+}
+

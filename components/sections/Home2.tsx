@@ -15,7 +15,7 @@ export default function Home2() {
 									<div className="position-relative mb-lg-0 mb-5">
 										<img src="assets/imgs/home-page-2/hero-1/profile-pic-removebg.png" alt="zelio" />
 										<div className="position-absolute end-0 top-100 translate-middle-y icon-decorate">
-											<img src="assets/imgs/home-page-2/hero-1/icon.svg" alt="zelio" />
+										<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="zelio" style={{ width: "80px", height: "80px" }} />
 										</div>
 									</div>
 								</div>

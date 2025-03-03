@@ -18,7 +18,7 @@ export default function Service2() {
                       viewBox="0 0 5 6"
                       fill="none"
                     >
-                      <circle cx="2.5" cy={3} r="2.5" fill="#A8FF53" />
+                      <circle cx="2.5" cy={3} r="2.5" fill="#6becdf" />
                     </svg>
                     <span className="gradient-heading d-flex align-items-center">
                       {" "}
@@ -46,7 +46,7 @@ export default function Service2() {
                         >
                           <path
                             d="M21 3C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21ZM20 11H4V19H20V11ZM20 5H4V9H20V5ZM11 6V8H9V6H11ZM7 6V8H5V6H7Z"
-                            fill="#1F1F24"
+                            fill="#6becdf"
                           />
                         </svg>
                         <h6 className="my-3 fw-medium">AI-Powered Chatbots</h6>

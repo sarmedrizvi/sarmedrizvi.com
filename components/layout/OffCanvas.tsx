@@ -3,7 +3,6 @@ import Link from 'next/link'
 export default function OffCanvas({ isOffCanvas, handleOffCanvas }: any) {
 	return (
 		<>
-			{/* offCanvas-menu */}
 			<div className={`offCanvas__info ${isOffCanvas ? 'active' : ''}`}>
 					<div className="offCanvas__close-icon menu-close" onClick={handleOffCanvas}>
 						<button><i className="ri-close-line" /></button>
@@ -34,16 +33,10 @@ export default function OffCanvas({ isOffCanvas, handleOffCanvas }: any) {
 						<div className="contact-list">
 							<p className="text-400 fs-5 mb-2">Social</p>
 							<div className="d-md-flex d-none gap-3">
-								<Link href="/http://facebook.com">
-									<i className="ri-facebook-circle-fill fs-18" />
-								</Link>
-								<Link href="/http://twitter.com">
-									<i className="ri-twitter-x-fill fs-18" />
-								</Link>
-								<Link href="/http://linkedin.com">
+								<Link href="https://www.linkedin.com/in/sarmedrizvi/">
 									<i className="ri-linkedin-fill fs-18" />
 								</Link>
-								<Link href="/http://github.com">
+								<Link href="https://github.com/sarmedrizvi">
 									<i className="ri-github-fill fs-18" />
 								</Link>
 							</div>

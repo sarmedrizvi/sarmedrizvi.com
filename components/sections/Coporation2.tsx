@@ -13,7 +13,7 @@ export default function Coporation2() {
 									<div className="p-lg-8 p-md-6 p-3">
 										<div className="d-flex align-items-center">
 											<svg className="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width={5} height={6} viewBox="0 0 5 6" fill="none">
-												<circle cx="2.5" cy={3} r="2.5" fill="#A8FF53" />
+												<circle cx="2.5" cy={3} r="2.5" fill="#6becdf" />
 											</svg>
 											<span className="gradient-heading d-flex align-items-center"> Cooperation </span>
 										</div>
@@ -73,7 +73,7 @@ export default function Coporation2() {
 							<div className="bg-3 rounded-3 border border-1 p-md-6 p-3 position-relative h-100 overflow-hidden">
 								<div className="d-flex align-items-center">
 									<svg className="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width={5} height={6} viewBox="0 0 5 6" fill="none">
-										<circle cx="2.5" cy={3} r="2.5" fill="#A8FF53" />
+										<circle cx="2.5" cy={3} r="2.5" fill="#6becdf" />
 									</svg>
 									<span className="gradient-heading d-flex align-items-center"> Git Journaling </span>
 								</div>

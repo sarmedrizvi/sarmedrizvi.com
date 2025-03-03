@@ -15,8 +15,8 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 							</a>
 							<div className="container py-3 px-4">
 								<Link className="navbar-brand d-flex main-logo align-items-center" href="/index-2">
-									<img src="assets/imgs/home-page-2/template/favicon.svg" alt="zelio" />
-									<span className="fs-4 ms-2">Sarmed.dev</span>
+									<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="zelio" style={{ width: "40px", height: "40px" }} />
+									<span className="fs-4 ms-2 w-">Sarmed.dev</span>
 								</Link>
 								<div className="d-none d-lg-flex">
 									<div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,17 +41,11 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 								</div>
 								<div className="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
 									<div className="d-md-flex d-none gap-3">
-										<Link href="/http://facebook.com">
-											<i className="ri-facebook-circle-fill fs-18" />
+									<Link href="https://www.linkedin.com/in/sarmedrizvi/">
+									<i className="ri-linkedin-fill navbar-social fs-18" />
 										</Link>
-										<Link href="/http://twitter.com">
-											<i className="ri-twitter-x-fill fs-18" />
-										</Link>
-										<Link href="/http://linkedin.com">
-											<i className="ri-linkedin-fill fs-18" />
-										</Link>
-										<Link href="/http://github.com">
-											<i className="ri-github-fill fs-18" />
+										<Link href="https://github.com/sarmedrizvi">
+										<i className="ri-github-fill fs-18" />
 										</Link>
 									</div>
 									<div className="burger-icon burger-icon-white border rounded-3" onClick={handleMobileMenu}>
