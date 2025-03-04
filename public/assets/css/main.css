@@ -14415,10 +14415,17 @@ strong {
       right: 0 !important;
       left: 0 !important;
       background-color: #69eabb !important;
-      color: #69eabb !important;
+      color: white !important;
 }
 
 ._swiper-button:hover {
   background-color: #c0dcbc !important;
-  color: #69eabb !important;
+  /* color: white !important; */
+}
+
+.swiper-button-next, .swiper-button-prev {
+  --swiper-navigation-size: 24px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-color: transparent !important;
 }
