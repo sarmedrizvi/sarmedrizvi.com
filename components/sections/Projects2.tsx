@@ -241,7 +241,7 @@ export default function Projects2() {
 															<h4 className="gradient-heading">
 															Pixels Deck<br />
 															</h4>
-															<p>A vibrant social network designed for photographers and graphic artists to exhibit their work and connect directly with clients. </p>
+															<p>A vibrant social network designed for photographers and graphic artists to exhibit their work and connect directly with clients.</p>
 															<ul className="mt-4 list-unstyled">
 																<li className="text-secondary-2 mb-3 border-bottom pb-3">Project Info</li>
 																<li className="text-dark mb-3 border-bottom pb-3">
