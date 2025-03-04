@@ -14398,7 +14398,7 @@ strong {
 }
 
 .reach-out:hover {
-  color: #69eabb;
+  color: #69eabb !important;
 }
 
 .cursor-pointer {
