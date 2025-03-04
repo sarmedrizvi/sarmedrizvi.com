@@ -3603,7 +3603,7 @@ Preloader
 .swiper-button-next :active svg path,
 .swiper-button-prev:hover svg path,
 .swiper-button-prev :active svg path {
-  fill: #277ed0;
+  fill: white;
 }
 
 .swiper-button-next::after,
@@ -14406,8 +14406,7 @@ strong {
 }
 
 ._swiper-button  {
-  display: flex !important
-  ;
+      display: flex !important;
       width: 50px !important;
       height: 50px !important;
       padding: 10px !important;
@@ -14415,9 +14414,11 @@ strong {
       border-radius: 30px !important;
       right: 0 !important;
       left: 0 !important;
-      background-color: #c0dcbc;
+      background-color: #69eabb !important;
+      color: #69eabb !important;
 }
 
 ._swiper-button:hover {
-  color: #69eabb;
+  background-color: #c0dcbc !important;
+  color: #69eabb !important;
 }
