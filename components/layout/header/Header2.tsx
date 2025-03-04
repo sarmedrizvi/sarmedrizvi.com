@@ -15,7 +15,7 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 							</a>
 							<div className="container py-3 px-4">
 								<Link className="navbar-brand d-flex main-logo align-items-center" href="/index-2">
-									<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="zelio" style={{ width: "40px", height: "40px" }} />
+									<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="SR logo" style={{ width: "40px", height: "40px" }} />
 									<span className="fs-4 ms-2 w-">Sarmed.dev</span>
 								</Link>
 								<div className="d-none d-lg-flex">
@@ -42,10 +42,10 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 								<div className="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
 									<div className="d-md-flex d-none gap-3">
 									<Link href="https://www.linkedin.com/in/sarmedrizvi/">
-									<i className="ri-linkedin-fill navbar-social fs-18" />
+									<i className="ri-linkedin-fill navbar-social fs-18 reach-out"  />
 										</Link>
 										<Link href="https://github.com/sarmedrizvi">
-										<i className="ri-github-fill fs-18" />
+										<i className="ri-github-fill fs-18 reach-out" />
 										</Link>
 									</div>
 									<div className="burger-icon burger-icon-white border rounded-3" onClick={handleMobileMenu}>

@@ -1071,19 +1071,19 @@ img {
 
 .btn-primary-2 {
   --bs-btn-color: #ffffff;
-  --bs-btn-bg: #62a92b;
+  --bs-btn-bg: #69eabb;
   --bs-btn-border-color: none;
   --bs-btn-hover-color: #ffffff;
-  --bs-btn-hover-bg: #62a92b;
+  --bs-btn-hover-bg: #69eabb;
   --bs-btn-hover-border-color: none;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #1f1f24;
-  --bs-btn-active-bg: #62a92b;
-  --bs-btn-active-border-color: #62a92b;
+  --bs-btn-active-bg: #69eabb;
+  --bs-btn-active-border-color: #69eabb;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #1f1f24;
-  --bs-btn-disabled-bg: #62a92b;
-  --bs-btn-disabled-border-color: #62a92b;
+  --bs-btn-disabled-bg: #69eabb;
+  --bs-btn-disabled-border-color: #69eabb;
 }
 
 .btn-secondary-3 {
@@ -1520,6 +1520,7 @@ s .fs-1 {
 
 .fs-18 {
   font-size: 18px;
+  color: white;
 }
 
 
@@ -1911,6 +1912,7 @@ textarea {
 
 .text-300 {
   color: var(--tc-neutral-300) !important;
+ 
 }
 
 .text-400 {
@@ -1959,7 +1961,7 @@ textarea {
 
 .text-primary-2 {
   /* color: var(--tc-theme-primary-2) !important; */
-  color: #45eede;
+  color: #69eabb;
 }
 
 .text-primary-3 {
@@ -2693,7 +2695,7 @@ textarea {
   padding-bottom: 0;
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li:hover > a {
-  color: #6e4ef2;
+  color: #69eabb;
   padding-left: 3px;
   transition-duration: 0.2s;
 }
@@ -2873,7 +2875,7 @@ textarea {
 .offCanvas__close-icon button {
   background: transparent;
   border: 0 none;
-  color: #6e4ef2;
+  color: #6becdf;
   cursor: pointer;
   font-size: 20px;
   padding: 0;
@@ -3103,7 +3105,7 @@ textarea {
   color: #ffd45d !important;
 }
 .navbar.navbar-home-2 .navbar-social a:hover {
-  color: #6becdf !important;
+  color: #69eabb !important;
 }
 .navbar.navbar-home-3 {
   position: relative !important;
@@ -3601,7 +3603,7 @@ Preloader
 .swiper-button-next :active svg path,
 .swiper-button-prev:hover svg path,
 .swiper-button-prev :active svg path {
-  fill: #62a92b;
+  fill: #277ed0;
 }
 
 .swiper-button-next::after,
@@ -14031,7 +14033,7 @@ strong {
 }
 
 .fill-primary-2 {
-  fill: #62a92b;
+  fill: #69eabb;
 }
 
 .section-coporation .circle-1 {
@@ -14147,12 +14149,12 @@ strong {
   transition: all 0.3s ease;
 }
 .section-service-2 .card-servies-2:hover svg path {
-  fill: #62a92b;
+  fill: #69eabb;
   transition: all 0.3s ease;
 }
 
 .section-experience .technology:hover {
-  background-color: #c0dcbc !important;
+  background-color: #aeffef !important;
 }
 
 .section-projects-2 .link-hover {
@@ -14163,13 +14165,13 @@ strong {
   fill: #5e5e65 !important;
 }
 .section-projects-2 .link-hover:hover {
-  color: #62a92b !important;
+  color: #69eabb !important;
   transition: all 0.2s ease;
-  border-color: #62a92b !important;
+  border-color: #69eabb !important;
 }
 .section-projects-2 .link-hover:hover svg path {
   transition: all 0.2s ease;
-  fill: #62a92b !important;
+  fill: #69eabb !important;
 }
 
 .section-blog-2 .blog-card {
@@ -14350,11 +14352,7 @@ strong {
 /*# sourceMappingURL=main.css.map */
 
 .gradient-heading {
-  /* background: linear-gradient(to right, #A8FF53 , #1ac0af); */
-  /* background: linear-gradient(to right, #3cdfcf, #1f7bc6 );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  color: #3cdfcf;
+  color: #69eabb;
   
 }
 
@@ -14380,7 +14378,7 @@ strong {
 }
 
 .btn-scroll-top {
-  background-color: #22ad9f !important;
+  background-color: #69eabb !important;
 }
 
 /* .swiper-button-next, .swiper-button-prev{
@@ -14388,14 +14386,38 @@ strong {
 } */
 
 ::selection {
-  background: #6becdf;
+  background: #69eabb;
 }
 
 .offCanvas__close-icon button{
-  color: #6becdf;
+  color: #69eabb;
 }
 
 .offCanvas__side-info {
-  border-top: 1px solid #6becdf !important;
+  border-top: 1px solid #69eabb !important;
 }
 
+.reach-out:hover {
+  color: #69eabb;
+}
+
+.cursor-pointer {
+  cursor: default;
+}
+
+._swiper-button  {
+  display: flex !important
+  ;
+      width: 50px !important;
+      height: 50px !important;
+      padding: 10px !important;
+      font-size: 24px !important;
+      border-radius: 30px !important;
+      right: 0 !important;
+      left: 0 !important;
+      background-color: #c0dcbc;
+}
+
+._swiper-button:hover {
+  color: #69eabb;
+}

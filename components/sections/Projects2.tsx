@@ -35,7 +35,7 @@ export default function Projects2() {
 							<div className="p-lg-8 p-md-6 p-3 position-relative z-1">
 								<div className="d-flex align-items-center">
 									<svg className="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width={5} height={6} viewBox="0 0 5 6" fill="none">
-										<circle cx="2.5" cy={3} r="2.5" fill="#A8FF53" />
+										<circle cx="2.5" cy={3} r="2.5" fill="#69eabb" />
 									</svg>
 									<span className="gradient-heading d-flex align-items-center"> Projects </span>
 								</div>
@@ -71,11 +71,11 @@ export default function Projects2() {
 																</li>
 															</ul>
 															<div className="d-flex flex-wrap align-items-center gap-3 mt-7">
-																<Link href="https://www.goodgoblin.ai/" className="text-300 border-bottom border-1 px-2 pb-2 link-hover"  target="_blank">
+																<Link href="https://www.goodgoblin.ai/" className="text-300 border-bottom border-1 px-2 pb-2 pr-2 link-hover"  target="_blank">
 																	<svg xmlns="http://www.w3.org/2000/svg" width={13} height={13} viewBox="0 0 13 13" fill="none">
 																		<path d="M11.0037 3.91421L2.39712 12.5208L0.98291 11.1066L9.5895 2.5H2.00373V0.5H13.0037V11.5H11.0037V3.91421Z" fill="#8F8F92" />
-																	</svg>
-																	Live Demo
+																	</svg> {" "}
+																	 Live Demo
 																</Link>
 
 															</div>
@@ -100,7 +100,7 @@ export default function Projects2() {
 																<li className="text-dark mb-3 border-bottom pb-3">
 																	<div className="d-flex justify-content-between">
 																		<p className="text-dark mb-0 text-end">Completion Time</p>
-																		<p className="text-300 mb-0 text-end">6 months</p>
+																		<p className="text-300 mb-0 text-end">2 months</p>
 																	</div>
 																</li>
 																<li className="text-dark mb-3 border-bottom pb-3">
@@ -114,7 +114,7 @@ export default function Projects2() {
 																<Link href="https://www.eventmoon.com" className="text-300 border-bottom border-1 px-2 pb-2 link-hover" target="_blank">
 																	<svg xmlns="http://www.w3.org/2000/svg" width={13} height={13} viewBox="0 0 13 13" fill="none">
 																		<path d="M11.0037 3.91421L2.39712 12.5208L0.98291 11.1066L9.5895 2.5H2.00373V0.5H13.0037V11.5H11.0037V3.91421Z" fill="#8F8F92" />
-																	</svg>
+																	</svg>  {" "}
 																	Live Demo
 																</Link>
 
@@ -140,7 +140,7 @@ export default function Projects2() {
 																<li className="text-dark mb-3 border-bottom pb-3">
 																	<div className="d-flex justify-content-between">
 																		<p className="text-dark mb-0 text-end">Completion Time</p>
-																		<p className="text-300 mb-0 text-end">6 months</p>
+																		<p className="text-300 mb-0 text-end">1 year</p>
 																	</div>
 																</li>
 																<li className="text-dark mb-3 border-bottom pb-3">
@@ -154,7 +154,7 @@ export default function Projects2() {
 																<Link href="https://www.awardsbox.com" className="text-300 border-bottom border-1 px-2 pb-2 link-hover" target="_blank">
 																	<svg xmlns="http://www.w3.org/2000/svg" width={13} height={13} viewBox="0 0 13 13" fill="none">
 																		<path d="M11.0037 3.91421L2.39712 12.5208L0.98291 11.1066L9.5895 2.5H2.00373V0.5H13.0037V11.5H11.0037V3.91421Z" fill="#8F8F92" />
-																	</svg>
+																	</svg>  {" "}
 																	Live Demo
 																</Link>
 															</div>
@@ -180,7 +180,7 @@ export default function Projects2() {
 																<li className="text-dark mb-3 border-bottom pb-3">
 																	<div className="d-flex justify-content-between">
 																		<p className="text-dark mb-0 text-end">Completion Time</p>
-																		<p className="text-300 mb-0 text-end">6 months</p>
+																		<p className="text-300 mb-0 text-end">5 months</p>
 																	</div>
 																</li>
 																<li className="text-dark mb-3 border-bottom pb-3">
@@ -201,7 +201,7 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3" >
 													<div className="row">
 														<div className="col-lg-5">
-															<img  src="assets/imgs/home-page-2/projects/joobers.webp" alt="Gig Finance" className="project-imges w-100"/>
+															<img  src="assets/imgs/home-page-2/projects/joobers.webp" alt="Gig Finance" className="project-images w-100"/>
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
@@ -214,7 +214,7 @@ export default function Projects2() {
 																<li className="text-dark mb-3 border-bottom pb-3">
 																	<div className="d-flex justify-content-between">
 																		<p className="text-dark mb-0 text-end">Completion Time</p>
-																		<p className="text-300 mb-0 text-end">6 months</p>
+																		<p className="text-300 mb-0 text-end">3 months</p>
 																	</div>
 																</li>
 																<li className="text-dark mb-3 border-bottom pb-3">
@@ -272,12 +272,12 @@ export default function Projects2() {
 										</div>
 									</Swiper>
 									<div className="position-absolute bottom-0 end-0 gap-2 pb-7 pe-5 d-none d-md-flex">
-										<div className="swiper-button-prev end-0 shadow position-relative">
+										<div className=" swiper-button-prev end-0 position-relative _swiper-button">
 											<svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none">
 												<path d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z" fill="white" />
 											</svg>
 										</div>
-										<div className="swiper-button-next end-0 shadow position-relative">
+										<div className=" swiper-button-next end-0 shadow position-relative _swiper-button">
 											<svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none">
 												<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" fill="#A8FF53" />
 											</svg>

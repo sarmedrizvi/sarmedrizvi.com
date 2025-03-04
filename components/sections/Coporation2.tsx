@@ -29,22 +29,22 @@ export default function Coporation2() {
 														<div className="position-absolute top-50 start-50 translate-middle z-2">
 															<img className="w-100 h-100 rounded-circle" src="assets/imgs/home-page-2/hero-1/profile-pic-removebg.png" alt="zelio" />
 															<svg className="text-primary-2 position-absolute bottom-0 end-0" xmlns="http://www.w3.org/2000/svg" width={9} height={9} viewBox="0 0 5 6" fill="none">
-																<circle cx="2.5" cy={3} r="2.5" fill="#A8FF53" />
+																<circle cx="2.5" cy={3} r="2.5" fill="#6becdf" />
 															</svg>
 														</div>
 													</div>
 												</div>
 											</div>
 											<div className="d-flex flex-column gap-2 py-3">
-												<Link href="#">
+												<Link href="skype:saiyidsarmed_1?chat">
 													<i className="ri-skype-fill" />
 													<span className="text-300">[skype] <span className="text-secondary-2">saiyidsarmed_1</span></span>
 												</Link>
-												<Link href="#">
+												<Link href="tel:+19042436176">
 													<i className="ri-phone-fill" />
 													<span className="text-300">[phone] <span className="text-secondary-2">+1-904-243-6176</span></span>
 												</Link>
-												<Link href="#">
+												<Link href="mailto:sarmed@impleko.com">
 													<i className="ri-mail-fill" />
 													<span className="text-300">[email] <span className="text-secondary-2">sarmed@impleko.com</span></span>
 												</Link>

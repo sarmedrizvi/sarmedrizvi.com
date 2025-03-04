@@ -17,7 +17,7 @@ export default function Experience2() {
                     viewBox="0 0 5 6"
                     fill="none"
                   >
-                    <circle cx="2.5" cy={3} r="2.5" fill="#A8FF53" />
+                    <circle cx="2.5" cy={3} r="2.5" fill="#69eabb" />
                   </svg>
                   <span className="gradient-heading d-flex align-items-center">
                     {" "}
@@ -103,14 +103,14 @@ export default function Experience2() {
                   <div className="col-lg-8 ps-lg-5 mt-5 mt-lg-0">
                     <ul className="mt-4">
                       <h4 className="gradient-heading text-sm">Impleko</h4>
-                      <h6 className="">Co-Founder (2024 - Present)</h6>
+                      <h6 >Co-Founder (2024 - Present)</h6>
                       <li className="text-dark mb-3">
                         Co-founding and driving innovation as a leader in
                         digital transformation and AI-driven solutions.
                       </li>
 
-                      <h4 className="gradient-heading text-dark">INK</h4>
-                      <h6 className="">
+                      <h4 className="gradient-heading text-sm">INK</h4>
+                      <h6 >
                         Development Team Lead (Feb 2023 - Oct 2023)
                       </h6>
                       <li className="text-dark mb-3">
@@ -128,7 +128,7 @@ export default function Experience2() {
                           Team Management
                         </span>
                       </li>
-                      <h6 className="">
+                      <h6 >
                         React Developer (Oct 2022 - Feb 2023)
                       </h6>
                       <li className="text-dark mb-3">
@@ -147,7 +147,7 @@ export default function Experience2() {
                       <h4 className="gradient-heading experience-heading">
                         ServerPoint
                       </h4>
-                      <h6 className="">
+                      <h6 >
                         Project Manager (May 2021 - Dec 2023)
                       </h6>
                       <li className="text-dark mb-3">
@@ -175,7 +175,7 @@ export default function Experience2() {
                       </li>
 
                       <h4 className="gradient-heading">Innovation Insight</h4>
-                      <h6 className="">MERN Stack Lead</h6>
+                      <h6 >MERN Stack Lead</h6>
                       <li className="text-dark mb-3">
                         Led a team of developers to design and build web
                         applications using React, Node.js, MongoDB and
@@ -198,90 +198,91 @@ export default function Experience2() {
                       </li>
                     </ul>
                     <div className="d-flex flex-wrap align-items-center gap-3 mt-7">
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer" 
+                        
                       >
                         React.js
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Angular.js
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Node.js
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Express.js
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         TailwindCSS
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         MySQL
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         PostgreSQL
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         MongoDB
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Pinecone{" "}
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Claude AI
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Chat GPT
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Twillo
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         VAPI
-                      </Link>
-                      <Link
-                        href="#"
-                        className="text-300 border border-1 px-3 py-1"
+                      </span>
+                      <span
+                        
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Retell AI
-                      </Link>
+                      </span>
                     </div>
                   </div>
                 </div>
