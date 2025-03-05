@@ -1,5 +1,4 @@
 import Layout from "@/components/layout/Layout"
-import Blog2 from "@/components/sections/Blog2"
 import Contact2 from '@/components/sections/Contact2'
 import Coporation2 from "@/components/sections/Coporation2"
 import Education2 from "@/components/sections/Education2"

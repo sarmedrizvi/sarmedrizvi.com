@@ -49,24 +49,18 @@ export default function RootLayout({
           name="description"
           content="Discover Sarmed Rizvi's expertise in AI-driven solutions, including intelligent chatbots, custom automation, and real-time API integrations. With 8+ years of experience, 162+ completed projects, and 440+ satisfied clients, Sarmed specializes in revolutionizing businesses through cutting-edge AI technologies like OpenAI, LangChain, and TensorFlow."
         />
-        
-        {/* Chatbot Configuration Script */}
-        {/* <Script id="chatbot-config" strategy="afterInteractive">
-          {`
-            window.embeddedChatbotConfig = {
-                chatbotId: "d2dd9220-4ae9-4ce0-99e7-28d0b8cc7cf2",
-            };
-          `}
-        </Script> */}
-
-        {/* Chatbot External Script */}
-        <Script async src="https://js.stripe.com/v3/pricing-table.js"></Script>
+      
+        {/* <Script async src="https://js.stripe.com/v3/pricing-table.js"></Script> */}
+       
       </head>
+
       <body
         className={`${urbanist.variable} ${playfair_display.variable} ${dmMono.variable}`}
       >
         {children}
       </body>
+     
+
     </html>
   );
 }
