@@ -22,7 +22,7 @@ export default function Service2() {
                     </svg>
                     <span className="gradient-heading d-flex align-items-center">
                       {" "}
-                      Cooperation{" "}
+                      Service{" "}
                     </span>
                   </div>
                   <h3>
