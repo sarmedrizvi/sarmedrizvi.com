@@ -77,7 +77,7 @@ export default function RootLayout({
           className="reach-out"
         >
           <img
-            src="/assets/imgs/index-2/whatsapp.svg"
+            src="assets/imgs/index-2/whatsapp.svg"
             alt="whatsapp logo"
             className="whatsapp-logo"
           />
