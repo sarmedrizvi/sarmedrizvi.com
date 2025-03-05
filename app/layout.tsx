@@ -76,17 +76,15 @@ export default function RootLayout({
           rel="noopener noreferrer"
           className="reach-out"
         >
-          {/* <img
-            src="assets/imgs/index-2/whatsapp.svg"
-            alt="whatsapp logo"
-            className="whatsapp-logo"
-          /> */}
+          
+          <div className="whatsapp-logo">
           <svg
-            width="800px"
-            height="800px"
+            width= "50px"
+            height= "50px"
             viewBox="0 0 32 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            
           >
             <path
               fill-rule="evenodd"
@@ -122,6 +120,7 @@ export default function RootLayout({
               </linearGradient>
             </defs>
           </svg>
+          </div>
         </Link>
       </body>
     </html>
