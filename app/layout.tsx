@@ -49,6 +49,18 @@ export default function RootLayout({
           name="description"
           content="Discover Sarmed Rizvi's expertise in AI-driven solutions, including intelligent chatbots, custom automation, and real-time API integrations. With 8+ years of experience, 162+ completed projects, and 440+ satisfied clients, Sarmed specializes in revolutionizing businesses through cutting-edge AI technologies like OpenAI, LangChain, and TensorFlow."
         />
+
+          <Script
+          id="clarity-script"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(c,l,a,r,i,t,y){ 
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; 
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; 
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); 
+            })(window, document, "clarity", "script", "qhwmr38vuf");`,
+          }}
+        />
       
         {/* <Script async src="https://js.stripe.com/v3/pricing-table.js"></Script> */}
        
@@ -57,7 +69,12 @@ export default function RootLayout({
       <body
         className={`${urbanist.variable} ${playfair_display.variable} ${dmMono.variable}`}
       >
+
+
         {children}
+
+
+
       </body>
      
 
