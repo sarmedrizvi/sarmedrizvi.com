@@ -4,6 +4,7 @@ import "/public/assets/css/vendors/carouselTicker.css";
 import "/public/assets/css/vendors/magnific-popup.css";
 import "/public/assets/fonts/remixicon/remixicon.css";
 import "/public/assets/css/main.css";
+import Link from "next/link";
 import Script from "next/script";
 
 import type { Metadata } from "next";
@@ -50,7 +51,7 @@ export default function RootLayout({
           content="Discover Sarmed Rizvi's expertise in AI-driven solutions, including intelligent chatbots, custom automation, and real-time API integrations. With 8+ years of experience, 162+ completed projects, and 440+ satisfied clients, Sarmed specializes in revolutionizing businesses through cutting-edge AI technologies like OpenAI, LangChain, and TensorFlow."
         />
 
-          <Script
+        <Script
           id="clarity-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -61,23 +62,27 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "qhwmr38vuf");`,
           }}
         />
-      
+
         {/* <Script async src="https://js.stripe.com/v3/pricing-table.js"></Script> */}
-       
       </head>
 
       <body
         className={`${urbanist.variable} ${playfair_display.variable} ${dmMono.variable}`}
       >
-
-
         {children}
-
-
-
+        <Link
+          href="https://wa.me/923152964742"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="reach-out"
+        >
+          <img
+            src="/assets/imgs/index-2/whatsapp.svg"
+            alt="whatsapp logo"
+            className="whatsapp-logo"
+          />
+        </Link>
       </body>
-     
-
     </html>
   );
 }
