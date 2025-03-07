@@ -5,7 +5,7 @@ import Masonry from "react-masonry-css";
 
 export default function MasonryPage() {
   const breakpointColumnsObj = {
-    default: 2,
+    default: 3,
     1100: 2,
     700: 1,
   };
@@ -72,11 +72,6 @@ export default function MasonryPage() {
                   ))}
                 </Masonry>
               </div>
-              {/* <img
-                className="position-absolute top-0 start-0 z-0"
-                src="assets/imgs/home-page-2/projects/bg.png"
-                alt="zelio"
-              /> */}
             </div>
           </div>
         </div>
