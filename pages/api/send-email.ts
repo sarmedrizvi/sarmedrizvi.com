@@ -42,7 +42,7 @@ export default async function handler(
       // Email to you (e.g., tayyabaaly1997@gmail.com)
       const mailOptionsToYou = {
         from: process.env.SMTP_USER, // Sender address
-        to: 'tayyabaaly1997@gmail.com', // Your email address
+        to: 'sarmed@impleko.com', // Your email address
         subject: `New Message from ${name}: ${subject}`, // Email subject
         text: `Name: ${name}\nEmail: ${email}\nContact: ${contact}\nSubject: ${subject}\nMessage: ${message}`, // Plain text body
         html: `
