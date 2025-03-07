@@ -1,10 +1,18 @@
 "use client";
 
-import testimonials from "@/data/data";
+import { testimonialVideos, testimonialImages } from "@/data/data";
 import Masonry from "react-masonry-css";
 
 export default function MasonryPage() {
-  const breakpointColumnsObj = {
+  // Breakpoints for testimonialVideos (default: 2 columns)
+  const videoBreakpointColumnsObj = {
+    default: 2,
+    1100: 2,
+    700: 1,
+  };
+
+  // Breakpoints for testimonialImages (default: 3 columns)
+  const imageBreakpointColumnsObj = {
     default: 3,
     1100: 2,
     700: 1,
@@ -35,32 +43,52 @@ export default function MasonryPage() {
                 </div>
                 <h3>What people are saying</h3>
 
-                {/* Masonry Grid Container */}
+                {/* Masonry Grid for Videos */}
                 <Masonry
-                  breakpointCols={breakpointColumnsObj}
+                  breakpointCols={videoBreakpointColumnsObj}
                   className="my-masonry-grid"
                   columnClassName="my-masonry-grid_column"
                 >
-                  {testimonials.map((testimonial) => (
+                  {testimonialVideos.map((testimonial) => (
                     <div
                       key={testimonial.id}
                       className="masonry-item testimonial-card"
                     >
                       <div className="media-container">
-                        {testimonial.type === "video" ? (
-                          <iframe
-                            src={testimonial.videoUrl}
-                            title={testimonial.name}
-                            allowFullScreen
-                            style={{ height: "300px", width: "100%" }}
-                          ></iframe>
-                        ) : (
-                          <img
-                            src={testimonial.clientImage}
-                            alt={testimonial.name}
-                            style={{ width: "100%", height: "300px", objectFit: "cover" }}
-                          />
-                        )}
+                        <iframe
+                          src={testimonial.videoUrl}
+                          title={testimonial.name}
+                          allowFullScreen
+                          style={{ height: "300px", width: "100%" }}
+                        ></iframe>
+                        <div className="name-overlay-video">
+                          <h5>{testimonial.name}</h5>
+                        </div>
+                      </div>
+                      <div className="testimonial-content">
+                        <p>{testimonial.message}</p>
+                      </div>
+                    </div>
+                  ))}
+                </Masonry>
+
+                {/* Masonry Grid for Images */}
+                <Masonry
+                  breakpointCols={imageBreakpointColumnsObj}
+                  className="my-masonry-grid"
+                  columnClassName="my-masonry-grid_column"
+                >
+                  {testimonialImages.map((testimonial) => (
+                    <div
+                      key={testimonial.id}
+                      className="masonry-item testimonial-card"
+                    >
+                      <div className="media-container">
+                        <img
+                          src={testimonial.clientImage}
+                          alt={testimonial.name}
+                          style={{ width: "100%", height: "300px", objectFit: "cover" }}
+                        />
                         <div className="name-overlay">
                           <h5>{testimonial.name}</h5>
                         </div>
