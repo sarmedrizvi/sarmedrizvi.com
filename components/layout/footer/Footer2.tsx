@@ -13,10 +13,10 @@ export default function Footer2() {
 							<div className="d-flex justify-content-center gap-3">
 
 								<a href="https://www.linkedin.com/in/sarmedrizvi/">
-									<i className="ri-linkedin-fill fs-18 reach-out" />
+									<i className="ri-linkedin-fill fs-18 reach-out social-media-icons" />
 								</a>
 								<a href="https://github.com/sarmedrizvi">
-									<i className="ri-github-fill fs-18 reach-out" />
+									<i className="ri-github-fill fs-18 reach-out social-media-icons" />
 								</a>
 							</div>
 							<div className="navigation d-flex align-items-center justify-content-center flex-wrap gap-4 my-4">

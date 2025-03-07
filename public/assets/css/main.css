@@ -14397,6 +14397,10 @@ strong {
   border-top: 1px solid #69eabb !important;
 }
 
+.reach-out {
+  color: white;
+}
+
 .reach-out:hover {
   color: #69eabb !important;
 }
@@ -14409,7 +14413,7 @@ strong {
       display: flex !important;
       width: 50px !important;
       height: 50px !important;
-      padding: 10px !important;
+      padding: 12px !important;
       font-size: 24px !important;
       border-radius: 30px !important;
       right: 0 !important;
@@ -14420,27 +14424,85 @@ strong {
 
 ._swiper-button:hover {
   background-color: #c0dcbc !important;
-  /* color: white !important; */
+  color: #69eabb !important;
 }
-
-/* .swiper-button-next, .swiper-button-prev {
-  --swiper-navigation-size: 24px;
-    --swiper-navigation-top-offset: 50%;
-    --swiper-navigation-sides-offset: 10px;
-    --swiper-navigation-color: transparent !important;
-} */
-
 
 .whatsapp-logo {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-  
+
+.social-media-icons {
+  color: gray
+}
+
+/* Masonry Grid Container */
+.my-masonry-grid {
+  display: flex;
+  margin-left: -30px; /* Adjust this value to control the gap between items */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px; /* Adjust this value to control the gap between items */
+  background-clip: padding-box;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  border: 1px solid var(--tc-border-1); /* Add a border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  margin-bottom: 30px; /* Space between cards */
+  background: transparent; /* No background color */
+  transition: box-shadow 0.3s ease; /* Add hover effect */
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Media Container (for image/video) */
+.media-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Name Overlay */
+.name-overlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.224); 
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 22px;
+}
+
+.name-overlay h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+  padding: 16px; /* Add padding inside the card */
+}
+
+.testimonial-content p {
+  margin: 0; /* Remove default margin */
+  font-size: 14px;
+  color: #a3a3a3; /* Lighten the text color */
+}
+

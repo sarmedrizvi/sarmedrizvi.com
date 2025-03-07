@@ -42,10 +42,10 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 								<div className="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
 									<div className="d-md-flex d-none gap-3">
 									<Link href="https://www.linkedin.com/in/sarmedrizvi/">
-									<i className="ri-linkedin-fill navbar-social fs-18 reach-out"  />
+									<i className="ri-linkedin-fill navbar-social fs-18 reach-out social-media-icons"  />
 										</Link>
 										<Link href="https://github.com/sarmedrizvi">
-										<i className="ri-github-fill fs-18 reach-out" />
+										<i className="ri-github-fill fs-18 reach-out social-media-icons" />
 										</Link>
 									</div>
 									<div className="burger-icon burger-icon-white border rounded-3" onClick={handleMobileMenu}>

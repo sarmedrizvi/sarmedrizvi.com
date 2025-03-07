@@ -30,7 +30,7 @@ export default function Home2() {
 											</div>
 											&lt;/span&gt;
 										</div>
-										<h1 className=" my-3">Senior <span className="gradient-heading ">{'{'}AI Agent{'}'}</span> Developer <span className="flicker">_</span></h1>
+										<h1 className=" my-3">Senior <span className="gradient-heading ">{'{'}AI Agent{'}'}</span> <br/> Developer <span className="flicker">_</span></h1>
 										<p className="mb-6 text-secondary-2">&lt;p&gt;<span className="text-dark">With expertise in creating intelligent systems powered by cutting-edge AI technologies like</span> <span className="text-secondary-2">OpenAI GPT</span>, <span className="text-secondary-2">LangChain</span>, <span className="text-secondary-2">Pinecone</span>, and <span className="text-secondary-2">TensorFlow</span><span className="text-dark">... I specialize in building AI-driven chatbots, virtual assistants, and autonomous agents that are reliable, efficient, and user-focused.</span>&lt;/p&gt;</p>
 										<div className="row">
 											<div className="col-7">

@@ -8,6 +8,7 @@ import Projects2 from "@/components/sections/Projects2"
 import Service2 from "@/components/sections/Service2"
 import Skills2 from "@/components/sections/Skills2"
 import Static2 from "@/components/sections/Static2"
+import MasonryPage from "@/components/sections/Testimonials-grid"
 
 export default function HomePage2() {
 
@@ -16,6 +17,7 @@ export default function HomePage2() {
 			<Layout headerStyle={2} footerStyle={2}>
 				<Home2 />
 				<Static2 />
+				<MasonryPage/>
 				<Coporation2 />
 				<Service2 />
 				<Experience2 />

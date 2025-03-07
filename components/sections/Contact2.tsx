@@ -1,4 +1,65 @@
-export default function Contact2() {
+"use client"
+
+import React, { useState } from "react";
+
+const Contact2 = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState("");
+
+  const [formData, setFormData] = useState({
+    name: "",
+    contact: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  // Handle form input changes
+  const handleInputChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e: any) => {
+    e.preventDefault(); // Prevent default form submission
+
+    setIsSubmitting(true);
+    setSubmitStatus("");
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("Email sent successfully!");
+        setFormData({
+          name: "",
+          contact: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        const errorData = await response.json();
+        setSubmitStatus(`Failed to send email: ${errorData.message}`);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setSubmitStatus("Failed to send email. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <section
@@ -11,7 +72,7 @@ export default function Contact2() {
               <div className="position-relative">
                 <div className="position-relative z-2">
                   <h3 className="gradient-heading mb-3 mt-3">Let’s connect</h3>
-                  <form action="mailto:sarmed@impleko.com" method="post" encType="text/plain">
+                  <form onSubmit={handleSubmit}>
                     <div className="row g-3">
                       <div className="col-md-6 ">
                         <input
@@ -21,16 +82,22 @@ export default function Contact2() {
                           name="name"
                           placeholder="Your name"
                           aria-label="username"
+                          value={formData.name}
+                          onChange={handleInputChange}
+                          required
                         />
                       </div>
                       <div className="col-md-6">
                         <input
                           type="text"
                           className="form-control bg-3 border border-1 rounded-3"
-                          id="phone"
-                          name="phone"
+                          id="contact"
+                          name="contact"
                           placeholder="Phone"
                           aria-label="phone"
+                          value={formData.contact}
+                          onChange={handleInputChange}
+                          required
                         />
                       </div>
                       <div className="col-md-6">
@@ -41,6 +108,9 @@ export default function Contact2() {
                           name="email"
                           placeholder="Emaill"
                           aria-label="email"
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          required
                         />
                       </div>
                       <div className="col-md-6">
@@ -51,6 +121,9 @@ export default function Contact2() {
                           name="subject"
                           placeholder="Subject"
                           aria-label="subject"
+                          value={formData.subject}
+                          onChange={handleInputChange}
+                          required
                         />
                       </div>
                       <div className="col-12">
@@ -60,18 +133,34 @@ export default function Contact2() {
                           name="message"
                           placeholder="Message"
                           aria-label="With textarea"
-                          defaultValue={""}
+                          value={formData.message}
+                          onChange={handleInputChange}
+                          required
                         />
                       </div>
                       <div className="col-12">
                         <button
                           type="submit"
                           className="btn btn-primary-2 rounded-2"
+                          disabled={isSubmitting}
                         >
-                          Send Message
+                          {isSubmitting ? "Sending..." : "Send Message"}
                           <i className="ri-arrow-right-up-line" />
                         </button>
                       </div>
+                      {submitStatus && (
+                        <div className="col-12">
+                          <p
+                            className={
+                              submitStatus.includes("successfully")
+                                ? "text-success"
+                                : "text-danger"
+                            }
+                          >
+                            {submitStatus}
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </form>
                 </div>
@@ -157,4 +246,6 @@ export default function Contact2() {
       </section>
     </>
   );
-}
+};
+
+export default Contact2;

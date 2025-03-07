@@ -42,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-bs-theme="dark" className="zelio">
       <head>
+    
         <title>
           Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator
         </title>
@@ -64,6 +65,7 @@ export default function RootLayout({
         />
 
         {/* <Script async src="https://js.stripe.com/v3/pricing-table.js"></Script> */}
+        <link rel="shortcut icon" href="../static/favicon.ico" />
       </head>
 
       <body

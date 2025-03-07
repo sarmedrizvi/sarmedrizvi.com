@@ -38,15 +38,15 @@ export default function Coporation2() {
 											<div className="d-flex flex-column gap-2 py-3">
 												<Link href="skype:saiyidsarmed_1?chat">
 													<i className="ri-skype-fill reach-out" />
-													<span className="text-300">[skype] <span className="text-secondary-2">saiyidsarmed_1</span></span>
+													<span className="text-300">{" "}<span className="text-secondary-2">saiyidsarmed_1</span></span>
 												</Link>
 												<Link href="tel:+19042436176">
 													<i className="ri-phone-fill reach-out" />
-													<span className="text-300">[phone] <span className="text-secondary-2">+1-904-243-6176</span></span>
+													<span className="text-300">{" "}<span className="text-secondary-2">+1-904-243-6176</span></span>
 												</Link>
 												<Link href="mailto:sarmed@impleko.com">
 													<i className="ri-mail-fill reach-out" />
-													<span className="text-300">[email] <span className="text-secondary-2">sarmed@impleko.com</span></span>
+													<span className="text-300"> {" "}<span className="text-secondary-2">sarmed@impleko.com</span></span>
 												</Link>
 											</div>
 										</div>
