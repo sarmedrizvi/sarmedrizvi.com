@@ -98,7 +98,8 @@ export default async function handler(
           <p>Sarmed Rizvi</p>
         `, // HTML body
       };
-
+      console.log(transporter);
+      
       // Send both emails
       await transporter.sendMail(mailOptionsToYou);
       await transporter.sendMail(mailOptionsToUser);
