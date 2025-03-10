@@ -7,7 +7,7 @@ export const testimonialVideos = [
       "Sarmed efficiently managed our development projects with great communication, flexibility, and structured planning. Highly recommended!",
     videoUrl:
       "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/videos/Josh-secondarydao-react-sql-nodejs.mp4",
-    thumbnailUrl: "/assets/imgs/index-2/thumbnail-1.png",
+    thumbnailUrl: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/thumbnail-1.png",
     type: "video",
   },
 
@@ -18,7 +18,7 @@ export const testimonialVideos = [
       "Sarmed and his team at Impleko quickly grasped our vision, took initiative, and delivered robust solutions with great communication. A pleasure to work with!",
     videoUrl:
       "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/videos/Kent-Vendorx-NextJS-Algolia-Mongodb.mp4",
-      thumbnailUrl: "/assets/imgs/index-2/thumbnail-2.png",
+      thumbnailUrl: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/thumbnail-2.png",
       type: "video",
   },
 ];
