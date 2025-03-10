@@ -22,7 +22,7 @@ export default function Service2() {
                     </svg>
                     <span className="gradient-heading d-flex align-items-center">
                       {" "}
-                      Service{" "}
+                      Services{" "}
                     </span>
                   </div>
                   <h3 
@@ -222,7 +222,7 @@ export default function Service2() {
                         href="https://wa.me/923152964742"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="reach-out"
+                        className="reach-out text-dark"
                       >
                         Reach out!
                       </Link>

@@ -2823,7 +2823,7 @@ textarea {
   .burger-icon {
     display: block;
     top: 20px;
-    right: 18px;
+    right: 34px;
   }
   .header-4 .burger-icon {
     display: block;
@@ -2835,7 +2835,7 @@ textarea {
   .burger-icon {
     display: block;
     top: 21px;
-    right: 24px;
+    right: 22px;
   }
 }
 .offCanvas__info {
@@ -14154,7 +14154,7 @@ strong {
 }
 
 .section-experience .technology:hover {
-  background-color: #094161 !important;
+  background-color: #69eabbe2 !important;
 }
 
 .section-projects-2 .link-hover {
@@ -14492,13 +14492,14 @@ strong {
 
 .name-overlay-video {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.224);
+  background: rgba(0, 0, 0, 0.25);
   color: white;
-  padding: 6px 8px;
+  padding: 10px 10px;
   font-size: 22px;
   text-align: right;
+  z-index: 2;
 }
 
 .name-overlay-video h5 {
@@ -14530,3 +14531,30 @@ strong {
   font-weight: 700;
 }
 
+/*thumbnail css*/
+.thumbnail-overlay {
+  position: absolute;
+  top: 2;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay */
+  cursor: pointer;
+  z-index: 1;
+}
+
+.thumbnail-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+.custom-padding {
+  padding: 1rem !important;
+
+}}
+
+.reach-out-text {
+  color: 69eabb !important;
+}

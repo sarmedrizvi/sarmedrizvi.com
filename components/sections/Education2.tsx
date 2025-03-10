@@ -7,7 +7,7 @@ export default function Education2() {
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-6 pt-3">
-							<div className="rounded-3 border border-1 position-relative h-100 overflow-hidden">
+							<div className="rounded-3 border border-1 position-relative custom-padding h-100 overflow-hidden">
 								<div className=" p-md-6">
 									<div className="d-flex align-items-center">
 										<svg xmlns="http://www.w3.org/2000/svg" width={24} height={28} viewBox="0 0 24 28" fill="none">
@@ -61,7 +61,7 @@ export default function Education2() {
 						</div>
 
 						<div className="col-lg-6 pt-3">
-							<div className="bg-3 rounded-3 border border-1 p-md-6 position-relative h-100 overflow-hidden">
+							<div className="bg-3 rounded-3 border border-1 p-md-6 position-relative custom-padding h-100 overflow-hidden">
 								<div className="d-flex align-items-center">
 									<svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 32 32" fill="none">
 										<path className="fill-primary-2" d="M20 4H28V10.6667H25.3333V6.66667H20V4ZM12 4V6.66667H6.66667V10.6667H4V4H12ZM20 28V25.3333H25.3333V21.3333H28V28H20ZM12 28H4V21.3333H6.66667V25.3333H12V28ZM4 14.6667H28V17.3333H4V14.6667Z" fill="#A8FF53" />
