@@ -10,10 +10,7 @@ export default function Coporation2() {
 						<div className="col-lg-8">
 							<div className="rounded-3 border border-1 position-relative overflow-hidden">
 								<div className="box-linear-animation">
-									<div className="p-lg-8 p-md-6"
-										style={{
-											padding: '5rem',
-										}}>
+									<div className=" p-md-6">
 										<div className="d-flex align-items-center">
 											<svg className="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width={5} height={6} viewBox="0 0 5 6" fill="none">
 												<circle cx="2.5" cy={3} r="2.5" fill="#6becdf" />
@@ -77,7 +74,10 @@ export default function Coporation2() {
 							</div>
 						</div>
 						<div className="col-lg-4 pt-lg-0 pt-5">
-							<div className="bg-3 rounded-3 border border-1 p-md-6 p-3 position-relative h-100 overflow-hidden">
+							<div className="bg-3 rounded-3 border border-1 p-md-6 position-relative h-100 overflow-hidden"
+								style={{
+									padding: '5rem'
+								}}>
 								<div className="d-flex align-items-center">
 									<svg className="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width={5} height={6} viewBox="0 0 5 6" fill="none">
 										<circle cx="2.5" cy={3} r="2.5" fill="#6becdf" />
