@@ -71,7 +71,12 @@ const Contact2 = () => {
             <div className="col-lg-7 pb-5 pb-lg-0">
               <div className="position-relative">
                 <div className="position-relative z-2">
-                  <h3 className="gradient-heading mb-3 mt-3">Let’s connect</h3>
+                  <h3 className="gradient-heading mb-3 mt-3"
+                    style={{
+                      padding: '20px 0 0 0',
+                      fontSize: '2.2rem',
+                      fontWeight: 700,
+                    }}>Let’s connect</h3>
                   <form onSubmit={handleSubmit}>
                     <div className="row g-3">
                       <div className="col-md-6 ">

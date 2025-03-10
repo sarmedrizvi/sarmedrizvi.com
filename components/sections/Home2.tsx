@@ -15,7 +15,7 @@ export default function Home2() {
 									<div className="position-relative mb-lg-0 mb-5">
 										<img src="assets/imgs/home-page-2/hero-1/profile-pic-removebg.png" alt="zelio" />
 										<div className="position-absolute end-0 top-100 translate-middle-y icon-decorate">
-										<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="zelio" style={{ width: "80px", height: "80px" }} />
+											<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="zelio" style={{ width: "80px", height: "80px" }} />
 										</div>
 									</div>
 								</div>
@@ -30,7 +30,13 @@ export default function Home2() {
 											</div>
 											&lt;/span&gt;
 										</div>
-										<h1 className=" my-3">Senior <span className="gradient-heading ">{'{'}AI Agent{'}'}</span> <br/> Developer <span className="flicker">_</span></h1>
+										<h1
+											className="my-3"
+											style={{
+												fontSize: '3rem',
+												fontWeight: 800
+											}}
+										>Senior <span className="gradient-heading ">{'{'}AI Agent{'}'}</span> <br /> Developer <span className="flicker">_</span></h1>
 										<p className="mb-6 text-secondary-2">&lt;p&gt;<span className="text-dark">With expertise in creating intelligent systems powered by cutting-edge AI technologies like</span> <span className="text-secondary-2">OpenAI GPT</span>, <span className="text-secondary-2">LangChain</span>, <span className="text-secondary-2">Pinecone</span>, and <span className="text-secondary-2">TensorFlow</span><span className="text-dark">... I specialize in building AI-driven chatbots, virtual assistants, and autonomous agents that are reliable, efficient, and user-focused.</span>&lt;/p&gt;</p>
 										<div className="row">
 											<div className="col-7">
@@ -42,7 +48,7 @@ export default function Home2() {
 																<img src="assets/imgs/index-2/python-logo.svg" alt="brand" />
 															</Link>
 														</li>
-														
+
 														<li className="carouselTicker__item">
 															<Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
 																<img src="assets/imgs/index-2/django-logo.png" alt="brand" />
@@ -55,7 +61,7 @@ export default function Home2() {
 														</li>
 														<li className="carouselTicker__item">
 															<Link href="#" className="brand-logo icon_60 icon-shape rounded-3 skills-icon">
-																<img src="assets/imgs/index-2/chatgpt-logo.png"  alt="brand" className="skills-icon" />
+																<img src="assets/imgs/index-2/chatgpt-logo.png" alt="brand" className="skills-icon" />
 															</Link>
 														</li>
 														<li className="carouselTicker__item">
@@ -65,7 +71,7 @@ export default function Home2() {
 														</li>
 														<li className="carouselTicker__item">
 															<Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
-																<img src="assets/imgs/index-2/retell-ai-logo.png"  alt="brand" />
+																<img src="assets/imgs/index-2/retell-ai-logo.png" alt="brand" />
 															</Link>
 														</li>
 														<li className="carouselTicker__item">
@@ -75,17 +81,17 @@ export default function Home2() {
 														</li>
 														<li className="carouselTicker__item">
 															<Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
-																<img src="assets/imgs/index-2/pinecone.png"  alt="brand" />
+																<img src="assets/imgs/index-2/pinecone.png" alt="brand" />
 															</Link>
 														</li>
 														<li className="carouselTicker__item">
 															<Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
-																<img src="assets/imgs/index-2/vapi-logo.webp"  alt="brand" />
+																<img src="assets/imgs/index-2/vapi-logo.webp" alt="brand" />
 															</Link>
 														</li>
 														<li className="carouselTicker__item">
 															<Link href="#" className="brand-logo icon_60 icon-shape rounded-3">
-																<img src="assets/imgs/index-2/langchain-logo.jpg"  alt="brand" />
+																<img src="assets/imgs/index-2/langchain-logo.jpg" alt="brand" />
 															</Link>
 														</li>
 													</ul>

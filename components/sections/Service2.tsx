@@ -25,7 +25,11 @@ export default function Service2() {
                       Service{" "}
                     </span>
                   </div>
-                  <h3>
+                  <h3 
+                  style={{
+												fontSize: '2.2rem',
+												fontWeight: 600
+											}}>
                     Revolutionizing Your Business
                     <span className="text-300">
                       <br />

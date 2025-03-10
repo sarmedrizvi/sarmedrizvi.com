@@ -1,9 +1,9 @@
+import "/public/assets/css/main.css";
 import "/public/assets/css/vendors/bootstrap.min.css";
 import "/public/assets/css/vendors/swiper-bundle.min.css";
 import "/public/assets/css/vendors/carouselTicker.css";
 import "/public/assets/css/vendors/magnific-popup.css";
 import "/public/assets/fonts/remixicon/remixicon.css";
-import "/public/assets/css/main.css";
 import Link from "next/link";
 import Script from "next/script";
 
@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-bs-theme="dark" className="zelio">
       <head>
-      <title>Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator </title>
+        <title>Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator </title>
         <meta
           title="Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator"
           name="description"

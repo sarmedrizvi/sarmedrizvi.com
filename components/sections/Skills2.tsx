@@ -17,7 +17,11 @@ export default function Skills2() {
 										</svg>
 										<span className="gradient-heading d-flex align-items-center"> Skills </span>
 									</div>
-									<h3>My Skills</h3>
+									<h3
+										style={{
+											fontSize: '2.2rem',
+											fontWeight: 700,
+										}}>My Skills</h3>
 								</div>
 								<div className="container mt-8">
 									<div className="row">
@@ -27,7 +31,7 @@ export default function Skills2() {
 													{/* Carausel Scroll */}
 													<Marquee className="carouselTicker carouselTicker-right position-relative z-1" direction="right">
 														<ul className="carouselTicker__list m-0">
-														<li className="carouselTicker__item mt-6">
+															<li className="carouselTicker__item mt-6">
 																<Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
 																	<img src="assets/imgs/home-page-2/hero-1/icon-7.svg" alt="brand" />
 																</Link>
@@ -125,7 +129,7 @@ export default function Skills2() {
 													{/* Carausel Scroll */}
 													<Marquee className="carouselTicker carouselTicker-right position-relative z-1" direction="right">
 														<ul className="carouselTicker__list m-0">
-														<li className="carouselTicker__item mt-6">
+															<li className="carouselTicker__item mt-6">
 																<Link href="#" className="brand-logo icon_80 icon-shape rounded-3">
 																	<img src="assets/imgs/index-2/tensorflow.png" alt="brand" />
 																</Link>

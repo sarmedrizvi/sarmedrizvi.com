@@ -10,14 +10,21 @@ export default function Coporation2() {
 						<div className="col-lg-8">
 							<div className="rounded-3 border border-1 position-relative overflow-hidden">
 								<div className="box-linear-animation">
-									<div className="p-lg-8 p-md-6 p-3">
+									<div className="p-lg-8 p-md-6"
+										style={{
+											padding: '5rem',
+										}}>
 										<div className="d-flex align-items-center">
 											<svg className="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width={5} height={6} viewBox="0 0 5 6" fill="none">
 												<circle cx="2.5" cy={3} r="2.5" fill="#6becdf" />
 											</svg>
 											<span className="gradient-heading d-flex align-items-center"> Cooperation </span>
 										</div>
-										<h3 className="fw-medium pb-120">
+										<h3 className="fw-medium pb-120"
+											style={{
+												fontSize: '2.1rem',
+												fontWeight: 900
+											}}>
 											{" "}
 											More than +168 <span className="text-300">companies <br /></span> trusted <span className="text-300">worldwide_</span>
 										</h3>

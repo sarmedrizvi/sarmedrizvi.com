@@ -7,7 +7,7 @@ export default function Experience2() {
         <div className="container">
           <div className="rounded-3 border border-1 position-relative overflow-hidden">
             <div className="box-linear-animation position-relative z-1">
-              <div className="p-lg-8 p-md-6 p-3 position-relative z-1">
+              <div className="p-lg-8 p-md-6 position-relative z-1">
                 <div className="d-flex align-items-center">
                   <svg
                     className="text-primary-2 me-2"
@@ -24,7 +24,12 @@ export default function Experience2() {
                     Expericence{" "}
                   </span>
                 </div>
-                <h3>
+                <h3
+                  style={{
+                    padding: '8px 0 8px 0',
+                    fontSize: '2.2rem',
+                    fontWeight: 600,
+                  }}>
                   +8 <span className="text-300"> years of </span>
                   passion{" "}
                   <span className="text-300">
@@ -45,7 +50,13 @@ export default function Experience2() {
                             alt="Impleko"
                           />
                           <div className="d-flex flex-column ms-2">
-                            <h5 className="mb-1">Impleko</h5>
+                            <h5 className="mb-1"
+                              style={{
+                                fontSize: '1.5rem',
+                                fontWeight: 900,
+                                color: 'white',
+                              }}>
+                              Impleko</h5>
                             <span className="text-300 text-nowrap">
                               2024 - Present
                             </span>
@@ -62,7 +73,12 @@ export default function Experience2() {
                             alt="INK"
                           />
                           <div className="d-flex flex-column ms-2 w-auto">
-                            <h5 className="mb-1">INK</h5>
+                            <h5 className="mb-1"
+                              style={{
+                                fontSize: '1.5rem',
+                                fontWeight: 900,
+                                color: 'white',
+                              }}>INK</h5>
                             <span className="text-300 text-nowrap">2022 - 2023</span>
                           </div>
                         </div>
@@ -77,7 +93,12 @@ export default function Experience2() {
                             alt="ServerPoint"
                           />
                           <div className="d-flex flex-column ms-2">
-                            <h5 className="mb-1">ServerPoint</h5>
+                            <h5 className="mb-1"
+                              style={{
+                                fontSize: '1.5rem',
+                                fontWeight: 900,
+                                color: 'white',
+                              }}>ServerPoint</h5>
                             <span className="text-300 text-nowrap">2021 - 2022</span>
                           </div>
                         </div>
@@ -92,7 +113,12 @@ export default function Experience2() {
                             alt="Innovation Insight"
                           />
                           <div className="d-flex flex-column ms-2">
-                            <h5 className="mb-1">Innovation Insight</h5>
+                            <h5 className="mb-1"
+                              style={{
+                                fontSize: '1.5rem',
+                                fontWeight: 900,
+                                color: 'white',
+                              }}>Innovation Insight</h5>
                             <span className="text-300 text-nowrap">2021 - 2022</span>
                           </div>
                         </div>
@@ -102,14 +128,23 @@ export default function Experience2() {
 
                   <div className="col-lg-8 ps-lg-5 mt-5 mt-lg-0">
                     <ul className="mt-4">
-                      <h4 className="gradient-heading text-sm">Impleko</h4>
+                      <h4 className="gradient-heading text-sm"
+                        style={{
+                          fontSize: '1.5rem',
+                          fontWeight: 900,
+                        }}>
+                        Impleko</h4>
                       <h6 >Co-Founder (2024 - Present)</h6>
                       <li className="text-dark mb-3">
                         Co-founding and driving innovation as a leader in
                         digital transformation and AI-driven solutions.
                       </li>
 
-                      <h4 className="gradient-heading text-sm">INK</h4>
+                      <h4 className="gradient-heading text-sm"
+                        style={{
+                          fontSize: '1.5rem',
+                          fontWeight: 900,
+                        }}>INK</h4>
                       <h6 >
                         Development Team Lead (Feb 2023 - Oct 2023)
                       </h6>
@@ -144,8 +179,12 @@ export default function Experience2() {
                         </span>
                       </li>
 
-                      <h4 className="gradient-heading experience-heading">
-                        ServerPoint
+                      <h4 className="gradient-heading experience-heading"
+                        style={{
+                          fontSize: '1.5rem',
+                          fontWeight: 900,
+                        }}
+                      >ServerPoint
                       </h4>
                       <h6 >
                         Project Manager (May 2021 - Dec 2023)
@@ -174,7 +213,11 @@ export default function Experience2() {
                         </span>
                       </li>
 
-                      <h4 className="gradient-heading">Innovation Insight</h4>
+                      <h4 className="gradient-heading"
+                        style={{
+                          fontSize: '1.5rem',
+                          fontWeight: 900,
+                        }}>Innovation Insight</h4>
                       <h6 >MERN Stack Lead</h6>
                       <li className="text-dark mb-3">
                         Led a team of developers to design and build web
@@ -199,86 +242,86 @@ export default function Experience2() {
                     </ul>
                     <div className="d-flex flex-wrap align-items-center gap-3 mt-7">
                       <span
-                        
-                        className="text-300 border border-1 px-3 py-1 cursor-pointer" 
-                        
+
+                        className="text-300 border border-1 px-3 py-1 cursor-pointer"
+
                       >
                         React.js
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Angular.js
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Node.js
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Express.js
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         TailwindCSS
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         MySQL
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         PostgreSQL
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         MongoDB
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Pinecone{" "}
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Claude AI
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Chat GPT
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Twillo
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         VAPI
                       </span>
                       <span
-                        
+
                         className="text-300 border border-1 px-3 py-1 cursor-pointer"
                       >
                         Retell AI

@@ -41,7 +41,11 @@ export default function MasonryPage() {
                     Testimonial{" "}
                   </span>
                 </div>
-                <h3>What people are saying</h3>
+                <h3 style={{
+                  fontSize: '2rem',
+                  fontWeight: 800,
+                }}
+                >What people are saying</h3>
 
                 {/* Masonry Grid for Videos */}
                 <Masonry
@@ -66,7 +70,7 @@ export default function MasonryPage() {
                         </div>
                       </div>
                       <div className="testimonial-content">
-                        <p>{testimonial.message}</p>
+                        <p className="text-300">{testimonial.message}</p>
                       </div>
                     </div>
                   ))}

@@ -14522,6 +14522,11 @@ strong {
 .testimonial-content p {
   margin: 0; /* Remove default margin */
   font-size: 14px;
-  color: #a3a3a3; /* Lighten the text color */
+  color: var(--tc-neutral-300) !important/* Lighten the text color */
+}
+
+.custom_heading {
+  font-size: 3rem;
+  font-weight: 700;
 }
 

@@ -29,22 +29,26 @@ export default function Projects2() {
 				<div className="container">
 					<div className="rounded-3 border border-1 position-relative overflow-hidden">
 						<div className="box-linear-animation position-relative z-1">
-							<div className="p-lg-8 p-md-6 p-3 position-relative z-1">
+							<div className="p-lg-8 p-md-6 position-relative z-1">
 								<div className="d-flex align-items-center">
 									<svg className="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width={5} height={6} viewBox="0 0 5 6" fill="none">
 										<circle cx="2.5" cy={3} r="2.5" fill="#69eabb" />
 									</svg>
 									<span className="gradient-heading d-flex align-items-center"> Projects </span>
 								</div>
-								<h3>My Recent Works</h3>
+								<h3
+									style={{
+										fontSize: '2.2rem',
+										fontWeight: 700,
+									}}>My Recent Works</h3>
 								<div className="position-relative">
 									<Swiper {...swiperOptions} className="swiper slider-two pb-3 position-relative">
 										<div className="swiper-wrapper">
-										<SwiperSlide>
+											<SwiperSlide>
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3">
 													<div className="row">
 														<div className="col-lg-5">
-															<img  src="assets/imgs/home-page-2/projects/good-goblin.webp" alt="GoodGoblin.ai" className="project-images w-100"/>
+															<img src="assets/imgs/home-page-2/projects/good-goblin.webp" alt="GoodGoblin.ai" className="project-images w-100" />
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
@@ -67,11 +71,11 @@ export default function Projects2() {
 																</li>
 															</ul>
 															<div className="d-flex flex-wrap align-items-center gap-3 mt-7">
-																<Link href="https://www.goodgoblin.ai/" className="text-300 border-bottom border-1 px-2 pb-2 pr-2 link-hover"  target="_blank">
+																<Link href="https://www.goodgoblin.ai/" className="text-300 border-bottom border-1 px-2 pb-2 pr-2 link-hover" target="_blank">
 																	<svg xmlns="http://www.w3.org/2000/svg" width={13} height={13} viewBox="0 0 13 13" fill="none">
 																		<path d="M11.0037 3.91421L2.39712 12.5208L0.98291 11.1066L9.5895 2.5H2.00373V0.5H13.0037V11.5H11.0037V3.91421Z" fill="#8F8F92" />
 																	</svg> {" "}
-																	 Live Demo
+																	Live Demo
 																</Link>
 
 															</div>
@@ -84,7 +88,7 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3">
 													<div className="row">
 														<div className="col-lg-5">
-															<img  src="assets/imgs/home-page-2/projects/event-moon.webp" alt="Event Moon" className="project-images w-100" />
+															<img src="assets/imgs/home-page-2/projects/event-moon.webp" alt="Event Moon" className="project-images w-100" />
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
@@ -124,11 +128,11 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3">
 													<div className="row">
 														<div className="col-lg-5">
-															<img  src="assets/imgs/home-page-2/projects/awards-box.webp" alt="AwardsBox" className="project-images w-100" />
+															<img src="assets/imgs/home-page-2/projects/awards-box.webp" alt="AwardsBox" className="project-images w-100" />
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
-															AwardsBox<br />
+																AwardsBox<br />
 															</h4>
 															<p>A platform born from a deep love for cinema, crafted to celebrate and transform the movie-going experience for film enthusiasts.</p>
 															<ul className="mt-4 list-unstyled">
@@ -163,12 +167,12 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3" >
 													<div className="row">
 														<div className="col-lg-5 project-image">
-															<img  src="assets/imgs/home-page-2/projects/gig-finance.webp" alt="Gig Finance" className="project-images w-100"/>
+															<img src="assets/imgs/home-page-2/projects/gig-finance.webp" alt="Gig Finance" className="project-images w-100" />
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
-															Gig Finance<br />
-																
+																Gig Finance<br />
+
 															</h4>
 															<p>Transforming the gig economy with a technical platform that improves financial security and assistance for freelancers.</p>
 															<ul className="mt-4 list-unstyled">
@@ -197,12 +201,12 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3" >
 													<div className="row">
 														<div className="col-lg-5">
-															<img  src="assets/imgs/home-page-2/projects/joobers.webp" alt="Gig Finance" className="project-images w-100"/>
+															<img src="assets/imgs/home-page-2/projects/joobers.webp" alt="Gig Finance" className="project-images w-100" />
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
-															Joobers<br />
-																
+																Joobers<br />
+
 															</h4>
 															<p>Streamlining job discovery and hiring in a dynamic, user-friendly platform.</p>
 															<ul className="mt-4 list-unstyled">
@@ -231,11 +235,11 @@ export default function Projects2() {
 												<div className="p-lg-5 p-md-4 p-3 border border-1 mt-5 bg-3" >
 													<div className="row">
 														<div className="col-lg-5">
-															<img src="assets/imgs/home-page-2/projects/pixel-deck.webp" alt="Gig Finance" className="project-images w-100"/>
+															<img src="assets/imgs/home-page-2/projects/pixel-deck.webp" alt="Gig Finance" className="project-images w-100" />
 														</div>
 														<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
 															<h4 className="gradient-heading">
-															Pixels Deck<br />
+																Pixels Deck<br />
 															</h4>
 															<p>A vibrant social network designed for photographers and graphic artists to exhibit their work and connect directly with clients.</p>
 															<ul className="mt-4 list-unstyled">
@@ -281,7 +285,6 @@ export default function Projects2() {
 									</div>
 								</div>
 							</div>
-							<img className="position-absolute top-0 start-0 z-0" src="assets/imgs/home-page-2/projects/bg.png" alt="zelio" />
 						</div>
 					</div>
 				</div>
