@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react"; // Import useState for handling thumbnail visibility
+import { useState, useRef } from "react";
 import { testimonialVideos, testimonialImages } from "@/data/data";
 import Masonry from "react-masonry-css";
 
@@ -55,7 +55,8 @@ export default function MasonryPage() {
                   columnClassName="my-masonry-grid_column"
                 >
                   {testimonialVideos.map((testimonial) => {
-                    const [showThumbnail, setShowThumbnail] = useState(true); // State to control thumbnail visibility
+                    const [isPlaying, setIsPlaying] = useState(false); 
+                    const videoRef = useRef<HTMLVideoElement | null>(null); 
 
                     return (
                       <div
@@ -63,9 +64,26 @@ export default function MasonryPage() {
                         className="masonry-item testimonial-card"
                       >
                         <div className="media-container position-relative">
-                          {showThumbnail && (
+                          <video
+                            ref={videoRef}
+                            poster={testimonial.thumbnailUrl} 
+                            controls={isPlaying} 
+                            style={{ width: "100%", height: "300px", objectFit: "cover" }}
+                            onClick={() => {
+                              if (!isPlaying && videoRef.current) { 
+                                setIsPlaying(true);
+                                videoRef.current.play(); 
+                              }
+                            }}
+                            onEnded={() => setIsPlaying(false)}
+                          >
+                            <source src={testimonial.videoUrl} type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+
+                          {!isPlaying && (
                             <div
-                              className="thumbnail-overlay"
+                              className="poster-overlay"
                               style={{
                                 position: "absolute",
                                 top: 0,
@@ -73,46 +91,50 @@ export default function MasonryPage() {
                                 width: "100%",
                                 height: "100%",
                                 cursor: "pointer",
-                                zIndex: 1,
                               }}
-                              onClick={() => setShowThumbnail(false)}
+                              onClick={() => {
+                                if (videoRef.current) { 
+                                  setIsPlaying(true);
+                                  videoRef.current.play(); 
+                                }
+                              }}
                             >
-                              <img
-                                src={testimonial.thumbnailUrl}
-                                alt={testimonial.name}
+                              <div
                                 style={{
-                                  width: "100%",
-                                  height: "100%",
-                                  objectFit: "cover",
+                                  position: "absolute",
+                                  bottom: '6px',
+                                  right: "0px",
+                                  fontSize: "1.2rem",
+                                  width: '100%',
+                                  background: 'rgba(0, 0, 0, 0.25)',
+                                  color: 'white',
+                                  padding: '6px 8px',
+                                  textAlign: 'right',
                                 }}
-                              />
-                              <div className="name-overlay-video">
-                                <h5>{testimonial.name}</h5>
+                              >
+                                {testimonial.name}
+                              </div>
+
+                              <div
+                                style={{
+                                  position: "absolute",
+                                  top: "50%",
+                                  left: "50%",
+                                  transform: "translate(-50%, -50%)",
+                                }}
+                              >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
-                                  width="24"
-                                  height="24"
+                                  width="48"
+                                  height="48"
                                   viewBox="0 0 24 24"
-                                  fill="#ffffff"
-                                  style={{
-                                    position: "absolute",
-                                    bottom: "10px",
-                                    left: "10px",
-                                  }}
+                                  fill="#fff"
                                 >
                                   <path d="M8 5v14l11-7z" />
                                 </svg>
                               </div>
                             </div>
                           )}
-
-                          {/* Embedded Video */}
-                          <iframe
-                            src={showThumbnail ? "" : testimonial.videoUrl} // Only load video when thumbnail is hidden
-                            title={testimonial.name}
-                            allowFullScreen
-                            style={{ height: "300px", width: "100%" }}
-                          ></iframe>
                         </div>
                         <div className="testimonial-content">
                           <p className="text-300">{testimonial.message}</p>
