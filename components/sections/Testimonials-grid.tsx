@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { testimonialVideos, testimonialImages } from "@/data/data";
+import { testimonialVideos, testimonialImages } from "@/data/testimonials-data";
 import Masonry from "react-masonry-css";
 
 export default function MasonryPage() {
