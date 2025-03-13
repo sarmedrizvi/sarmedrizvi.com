@@ -25,11 +25,11 @@ export default function Service2() {
                       Services{" "}
                     </span>
                   </div>
-                  <h3 
-                  style={{
-												fontSize: '2.2rem',
-												fontWeight: 600
-											}}>
+                  <h3
+                    style={{
+                      fontSize: '2.2rem',
+                      fontWeight: 500
+                    }}>
                     Revolutionizing Your Business
                     <span className="text-300">
                       <br />
@@ -222,7 +222,7 @@ export default function Service2() {
                         href="https://wa.me/923152964742"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="reach-out text-dark"
+                        className="gradient-heading"
                       >
                         Reach out!
                       </Link>

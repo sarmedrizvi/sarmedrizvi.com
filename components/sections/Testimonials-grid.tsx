@@ -5,14 +5,12 @@ import { testimonialVideos, testimonialImages } from "@/data/data";
 import Masonry from "react-masonry-css";
 
 export default function MasonryPage() {
-  // Breakpoints for testimonialVideos (default: 2 columns)
   const videoBreakpointColumnsObj = {
     default: 2,
     1100: 2,
     700: 1,
   };
 
-  // Breakpoints for testimonialImages (default: 3 columns)
   const imageBreakpointColumnsObj = {
     default: 3,
     1100: 2,
@@ -55,8 +53,8 @@ export default function MasonryPage() {
                   columnClassName="my-masonry-grid_column"
                 >
                   {testimonialVideos.map((testimonial) => {
-                    const [isPlaying, setIsPlaying] = useState(false); 
-                    const videoRef = useRef<HTMLVideoElement | null>(null); 
+                    const [isPlaying, setIsPlaying] = useState(false);
+                    const videoRef = useRef<HTMLVideoElement | null>(null);
 
                     return (
                       <div
@@ -66,13 +64,13 @@ export default function MasonryPage() {
                         <div className="media-container position-relative">
                           <video
                             ref={videoRef}
-                            poster={testimonial.thumbnailUrl} 
-                            controls={isPlaying} 
+                            poster={testimonial.thumbnailUrl}
+                            controls={isPlaying}
                             style={{ width: "100%", height: "300px", objectFit: "cover" }}
                             onClick={() => {
-                              if (!isPlaying && videoRef.current) { 
+                              if (!isPlaying && videoRef.current) {
                                 setIsPlaying(true);
-                                videoRef.current.play(); 
+                                videoRef.current.play();
                               }
                             }}
                             onEnded={() => setIsPlaying(false)}
@@ -93,36 +91,30 @@ export default function MasonryPage() {
                                 cursor: "pointer",
                               }}
                               onClick={() => {
-                                if (videoRef.current) { 
+                                if (videoRef.current) {
                                   setIsPlaying(true);
-                                  videoRef.current.play(); 
+                                  videoRef.current.play();
                                 }
                               }}
                             >
                               <div
                                 style={{
                                   position: "absolute",
-                                  bottom: '6px',
+                                  bottom: "6px",
                                   right: "0px",
                                   fontSize: "1.2rem",
-                                  width: '100%',
-                                  background: 'rgba(0, 0, 0, 0.25)',
-                                  color: 'white',
-                                  padding: '6px 8px',
-                                  textAlign: 'right',
+                                  width: "100%",
+                                  background: "rgba(0, 0, 0, 0.25)",
+                                  color: "white",
+                                  padding: "6px 8px",
+                                  textAlign: "right",
                                 }}
                               >
-                                {testimonial.name}
+                                <h5>{testimonial.name}</h5>
                               </div>
 
-                              <div
-                                style={{
-                                  position: "absolute",
-                                  top: "50%",
-                                  left: "50%",
-                                  transform: "translate(-50%, -50%)",
-                                }}
-                              >
+                              {/* Play Button with Opaque Circle */}
+                              <div className="play-button-container">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width="48"

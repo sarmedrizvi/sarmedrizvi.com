@@ -969,6 +969,7 @@ img {
   --bs-btn-padding-x: 24px;
   --bs-btn-padding-y: 17px;
   --bs-btn-font-family: var(--urbanist)
+  --bs-btn-font-family: var(--dmMono)
   --bs-btn-font-size: 14px;
   --bs-btn-font-weight: 700;
   --bs-btn-line-height: 14px;
@@ -1446,7 +1447,8 @@ img {
 	Typography css start
 ===============================*/
 body {
-  font-family: var(--urbanist);
+  /* font-family: var(--urbanist); */
+  font-family: var(--dmMono);
   font-size: var(--tc-body-font-size);
   font-weight: 400;
   color: #565662;
@@ -1772,7 +1774,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--urbanist);
+  font-family: var(--dmMono);
   color: var(--tc-neutral-0);
   margin-top: 0px;
   margin-bottom: 16px;
@@ -14350,16 +14352,22 @@ strong {
 }
 
 /*# sourceMappingURL=main.css.map */
-
 .gradient-heading {
-  color: #69eabb;
-  
+  background: linear-gradient(to right, #69eabb, #2f5277);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.gradient-heading:hover {
+  background: linear-gradient(to right, #69eabb, #2f5277);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .experience-logo {
   width: 80px;
   height: 80px;
-  /* line-height: 80px; */
 }
 .experience-logo > img {
   width: 80px;
@@ -14380,10 +14388,6 @@ strong {
 .btn-scroll-top {
   background-color: #69eabb !important;
 }
-
-/* .swiper-button-next, .swiper-button-prev{
-  padding:  11px 22px 11px 22px !important
-} */
 
 ::selection {
   background: #69eabb;
@@ -14445,45 +14449,40 @@ strong {
   color: gray
 }
 
-/* Masonry Grid Container */
 .my-masonry-grid {
   display: flex;
-  margin-left: -30px; /* Adjust this value to control the gap between items */
+  margin-left: -30px;
   width: auto;
 }
 
 .my-masonry-grid_column {
-  padding-left: 30px; /* Adjust this value to control the gap between items */
+  padding-left: 30px;
   background-clip: padding-box;
 }
 
-/* Testimonial Card */
 .testimonial-card {
-  border: 1px solid var(--tc-border-1); /* Add a border */
-  border-radius: 8px; /* Rounded corners */
-  overflow: hidden; /* Ensure content doesn't overflow */
-  margin-bottom: 30px; /* Space between cards */
-  background: transparent; /* No background color */
-  transition: box-shadow 0.3s ease; /* Add hover effect */
+  border: 1px solid var(--tc-border-1); 
+  border-radius: 8px; 
+  overflow: hidden; 
+  margin-bottom: 30px; 
+  background: transparent; 
+  transition: box-shadow 0.3s ease; 
 }
 
 .testimonial-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Media Container (for image/video) */
 .media-container {
   position: relative;
   width: 100%;
 }
 
-/* Name Overlay */
-
 .name-overlay {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.224);
+    background: rgba(0, 0, 0, 0.4);
     color: white;
     padding: 8px 8px;
     font-size: 22px;
@@ -14494,7 +14493,7 @@ strong {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   padding: 10px 10px;
   font-size: 22px;
@@ -14509,22 +14508,20 @@ strong {
   font-weight: 500;
 }
 
-
 .name-overlay h5 {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
 }
 
-/* Testimonial Content */
 .testimonial-content {
-  padding: 16px; /* Add padding inside the card */
+  padding: 16px;
 }
 
 .testimonial-content p {
-  margin: 0; /* Remove default margin */
+  margin: 0; 
   font-size: 14px;
-  color: var(--tc-neutral-300) !important/* Lighten the text color */
+  color: var(--tc-neutral-300) !important;
 }
 
 .custom_heading {
@@ -14532,14 +14529,13 @@ strong {
   font-weight: 700;
 }
 
-/*thumbnail css*/
 .thumbnail-overlay {
   position: absolute;
   top: 2;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay */
+  background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   z-index: 1;
 }
@@ -14548,6 +14544,28 @@ strong {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.play-button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.play-button-container svg {
+  width: 24px; 
+  height: 24px; 
+  fill: #fff; 
 }
 
 @media (max-width: 768px) {

@@ -77,6 +77,27 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "qhwmr38vuf");`,
           }}
         />
+        <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        />
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          strategy="lazyOnload"
+        />
+        <Script id="calendly-badge-init" strategy="lazyOnload">
+          {`
+          window.onload = function() {
+            Calendly.initBadgeWidget({
+              url: 'https://calendly.com/sarmedrizvi/director?hide_event_type_details=1&hide_gdpr_banner=1',
+              text: 'Schedule time with me',
+              color: '#30526A',
+              textColor: '#FFFFFF'
+            });
+          }
+        `}
+        </Script>
+
         <link rel="shortcut icon" href="../static/favicon.ico" />
       </head>
 

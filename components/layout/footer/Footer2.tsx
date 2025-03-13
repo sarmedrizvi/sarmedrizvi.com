@@ -7,8 +7,8 @@ export default function Footer2() {
 					<div className="container position-relative z-1 border-top border-1 pb-2 pt-4">
 						<div className="text-center">
 							<a className="d-flex main-logo align-items-center justify-content-center mb-3">
-							<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="SR logo" style={{ width: "40px", height: "40px" }} />
-							<span className="fs-4 ms-2">Sarmed.dev</span>
+								<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="SR logo" style={{ width: "40px", height: "40px" }} />
+								<span className="fs-4 ms-2">Sarmed.dev</span>
 							</a>
 							<div className="d-flex justify-content-center gap-3">
 
