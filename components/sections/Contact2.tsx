@@ -74,8 +74,8 @@ const Contact2 = () => {
                   <h3 className="gradient-heading mb-3 mt-3"
                     style={{
                       padding: '20px 0 0 0',
-                      fontSize: '2.2rem',
-                      fontWeight: 700,
+                      fontSize: '1.9rem',
+                      fontWeight: 600,
                     }}>Let’s connect</h3>
                   <form onSubmit={handleSubmit}>
                     <div className="row g-3">

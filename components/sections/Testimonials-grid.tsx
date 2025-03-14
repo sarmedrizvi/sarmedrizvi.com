@@ -35,14 +35,14 @@ export default function MasonryPage() {
                   >
                     <circle cx="2.5" cy={3} r="2.5" fill="#69eabb" />
                   </svg>
-                  <span className="gradient-heading d-flex align-items-center">
+                  <span className="text-linear-4 d-flex align-items-center">
                     {" "}
                     Testimonial{" "}
                   </span>
                 </div>
                 <h3 style={{
                   fontSize: '2rem',
-                  fontWeight: 800,
+                  fontWeight: 500,
                   padding: '0 0 1rem 0'
                 }}
                 >What people are saying</h3>

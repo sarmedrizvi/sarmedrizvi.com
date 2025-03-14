@@ -22,12 +22,12 @@ export default function Service2() {
                     </svg>
                     <span className="text-linear-4 d-flex align-items-center">
                       {" "}
-                      Services{" "}
+                      Cooperation{" "}
                     </span>
                   </div>
                   <h3
                     style={{
-                      fontSize: '2.2rem',
+                      fontSize: '2rem',
                       fontWeight: 500
                     }}>
                     Revolutionizing Your Business

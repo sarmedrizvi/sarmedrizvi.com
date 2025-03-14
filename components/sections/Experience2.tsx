@@ -27,8 +27,8 @@ export default function Experience2() {
                 <h3
                   style={{
                     padding: '8px 0 8px 0',
-                    fontSize: '2.2rem',
-                    fontWeight: 600,
+                    fontSize: '2rem',
+                    fontWeight: 500,
                   }}>
                   +8 <span className="text-300"> years of </span>
                   passion{" "}

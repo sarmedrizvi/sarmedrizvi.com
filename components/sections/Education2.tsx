@@ -15,9 +15,10 @@ export default function Education2() {
 										</svg>
 										<h2 className="mb-0 ms-2"
 											style={{
-												fontSize: '2.2rem',
-												fontWeight: 700,
-											}}>
+												fontSize: '2.1rem',
+												fontWeight: 500,
+											}}
+											>
 											Education</h2>
 									</div>
 									<div className="d-flex flex-column h-200 position-relative mt-5">
@@ -68,8 +69,8 @@ export default function Education2() {
 									</svg>
 									<h2 className="mb-0 ms-2"
 										style={{
-											fontSize: '2.2rem',
-											fontWeight: 700,
+											fontSize: '2.1rem',
+											fontWeight: 500,
 										}}>
 										Awards & Certifications</h2>
 								</div>

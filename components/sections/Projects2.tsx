@@ -39,8 +39,8 @@ export default function Projects2() {
 								</div>
 								<h3
 									style={{
-										fontSize: '2.2rem',
-										fontWeight: 700,
+										fontSize: '2rem',
+										fontWeight: 500,
 									}}>My Recent Works</h3>
 								<div className="position-relative">
 									<Swiper {...swiperOptions} className="swiper slider-two pb-3 position-relative">

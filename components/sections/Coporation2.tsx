@@ -15,15 +15,15 @@ export default function Coporation2() {
 											<svg className="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width={5} height={6} viewBox="0 0 5 6" fill="none">
 												<circle cx="2.5" cy={3} r="2.5" fill="#6becdf" />
 											</svg>
-											<span className="gradient-heading d-flex align-items-center"> Cooperation </span>
+											<span className="text-linear-4 d-flex align-items-center"> Cooperation </span>
 										</div>
 										<h3 className="fw-medium pb-120"
 											style={{
-												fontSize: '2.1rem',
-												fontWeight: 900
+												fontSize: '2rem',
+												fontWeight: 500
 											}}>
 											{" "}
-											More than +168 <span className="text-300">companies <br /></span> trusted <span className="text-300">worldwide_</span>
+											More than +162 <span className="text-300">companies <br /></span> trusted <span className="text-300">worldwide_</span>
 										</h3>
 
 										<div className="d-flex flex-column flex-md-row align-items-start  gap-4">
@@ -79,7 +79,7 @@ export default function Coporation2() {
 									<svg className="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width={5} height={6} viewBox="0 0 5 6" fill="none">
 										<circle cx="2.5" cy={3} r="2.5" fill="#6becdf" />
 									</svg>
-									<span className="gradient-heading d-flex align-items-center"> Git Journaling </span>
+									<span className="text-linear-4 d-flex align-items-center"> Git Journaling </span>
 								</div>
 								<div className="h-100 position-relative">
 									<ul className="ps-3 d-flex flex-column justify-content-around h-100 position-relative">
