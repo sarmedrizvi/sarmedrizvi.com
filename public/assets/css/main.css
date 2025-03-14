@@ -2018,9 +2018,10 @@ textarea {
 }
 
 .text-linear-4 {
-  background: var(--tc-linear-4);
+  background: linear-gradient(to right, #69eabb, #2f5277);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .text-linear-5 {
@@ -14353,17 +14354,18 @@ strong {
 
 /*# sourceMappingURL=main.css.map */
 .gradient-heading {
+  /* background: linear-gradient(to right, #69eabb, #2f5277);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; */
+  color: #69eabb;
+}
+/* .gradient-heading:hover {
   background: linear-gradient(to right, #69eabb, #2f5277);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
-.gradient-heading:hover {
-  background: linear-gradient(to right, #69eabb, #2f5277);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
+} */
 
 .experience-logo {
   width: 80px;
@@ -14576,4 +14578,17 @@ strong {
 
 .reach-out-text {
   color: 69eabb !important;
+}
+
+
+/*class for removing swioer navigation icons*/
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: none !important;
+    display: none !important;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: none !important;
+  display: none !important; 
 }

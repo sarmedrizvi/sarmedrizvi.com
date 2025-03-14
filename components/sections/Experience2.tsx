@@ -19,7 +19,7 @@ export default function Experience2() {
                   >
                     <circle cx="2.5" cy={3} r="2.5" fill="#69eabb" />
                   </svg>
-                  <span className="gradient-heading d-flex align-items-center">
+                  <span className="text-linear-4 d-flex align-items-center">
                     {" "}
                     Expericence{" "}
                   </span>

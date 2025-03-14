@@ -20,7 +20,7 @@ export default function Service2() {
                     >
                       <circle cx="2.5" cy={3} r="2.5" fill="#6becdf" />
                     </svg>
-                    <span className="gradient-heading d-flex align-items-center">
+                    <span className="text-linear-4 d-flex align-items-center">
                       {" "}
                       Services{" "}
                     </span>
@@ -33,7 +33,7 @@ export default function Service2() {
                     Revolutionizing Your Business
                     <span className="text-300">
                       <br />
-                      with AI-Driven Solutions_
+                      {" "}with AI-Driven Solutions_
                     </span>
                   </h3>
                 </div>
