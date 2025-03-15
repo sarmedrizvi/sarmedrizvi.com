@@ -2024,6 +2024,13 @@ textarea {
   color: transparent;
 }
 
+.text-linear-4:hover {
+  background: linear-gradient(to right, #69eabb, #295686);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .text-linear-5 {
   background: var(--tc-linear-5);
   -webkit-background-clip: text;

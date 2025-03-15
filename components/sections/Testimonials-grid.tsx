@@ -43,7 +43,7 @@ export default function MasonryPage() {
                 <h3 style={{
                   fontSize: '2rem',
                   fontWeight: 500,
-                  padding: '0 0 1rem 0'
+                  padding: '0 0 0.5rem 0'
                 }}
                 >What people are saying</h3>
 

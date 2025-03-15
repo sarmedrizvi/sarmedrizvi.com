@@ -222,7 +222,7 @@ export default function Service2() {
                         href="https://wa.me/923152964742"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="gradient-heading"
+                        className="text-linear-4"
                       >
                         Reach out!
                       </Link>
