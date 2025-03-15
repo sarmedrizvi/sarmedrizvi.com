@@ -2018,14 +2018,14 @@ textarea {
 }
 
 .text-linear-4 {
-  background: linear-gradient(to right, #69eabb, #295686);
+  background: linear-gradient(to right, #69eabb 70%, #23809f);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .text-linear-4:hover {
-  background: linear-gradient(to right, #69eabb, #295686);
+  background: linear-gradient(to right, #69eabb 70%, #23809f);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
