@@ -3,10 +3,10 @@ import Link from 'next/link'
 import OffCanvas from '../OffCanvas'
 import MobileMenu from '../MobileMenu'
 
-export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCanvas, handleOffCanvas }:any) {
-    return (
-        <>
-            <header>
+export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isOffCanvas, handleOffCanvas }: any) {
+	return (
+		<>
+			<header>
 				<div className="container position-relative">
 					<div className="position-relative">
 						<nav className="navbar navbar-expand-lg navbar-home-2 flex-nowrap z-999 p-0 border border-1 rounded-3">
@@ -19,7 +19,10 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 									<span className="fs-4 ms-2 w-">Sarmed.dev</span>
 								</Link>
 								<div className="d-none d-lg-flex">
-									<div className="collapse navbar-collapse" id="navbarSupportedContent">
+									<div className="collapse navbar-collapse" id="navbarSupportedContent"
+									style={{
+										fontFamily: "var(--dmMono)",
+									}}>
 										<ul className="navbar-nav me-auto mb-2 mb-lg-0">
 											<li className="nav-item">
 												<Link className="nav-link active" href="#about">About me</Link>
@@ -41,11 +44,11 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 								</div>
 								<div className="navbar-social d-flex align-items-center pe-5 pe-lg-0 me-5 me-lg-0">
 									<div className="d-md-flex d-none gap-3">
-									<Link href="https://www.linkedin.com/in/sarmedrizvi/">
-									<i className="ri-linkedin-fill navbar-social fs-18 reach-out social-media-icons"  />
+										<Link href="https://www.linkedin.com/in/sarmedrizvi/">
+											<i className="ri-linkedin-fill navbar-social fs-18 " />
 										</Link>
 										<Link href="https://github.com/sarmedrizvi">
-										<i className="ri-github-fill fs-18 reach-out social-media-icons" />
+											<i className="ri-github-fill fs-18 " />
 										</Link>
 									</div>
 									<div className="burger-icon burger-icon-white border rounded-3" onClick={handleMobileMenu}>
@@ -63,6 +66,6 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu,isOffCa
 					<MobileMenu isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} />
 				</div>
 			</header>
-        </>
-    )
+		</>
+	)
 }

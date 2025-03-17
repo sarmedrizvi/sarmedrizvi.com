@@ -2,7 +2,7 @@
 'use client'
 import { useEffect, useState } from "react"
 import AddClassBody from '../elements/AddClassBody'
-// import BackToTop from '../elements/BackToTop'
+import BackToTop from '../elements/BackToTop'
 import DataBg from '../elements/DataBg'
 import ImageHoverEffects from '../elements/ImageHoverEffects'
 import Breadcrumb from './Breadcrumb'
@@ -84,7 +84,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 			{footerStyle == 2 ? < Footer2 /> : null}
 			{footerStyle == 3 ? < Footer3 /> : null}
 
-			{/* <BackToTop target="#top" /> */}
+			<BackToTop target="#top" />
 		</>
 	)
 }

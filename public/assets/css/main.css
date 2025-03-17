@@ -1455,7 +1455,7 @@ body {
   line-height: var(--tc-body-line-height);
 }
 body.home-page-2 {
-  background: #e8e8e8;
+  background: #e8e8e8 !important;
   font-family: var(--dmMono)
 }
 body.home-page-2 a:hover {
@@ -1522,11 +1522,16 @@ s .fs-1 {
 
 .fs-18 {
   font-size: 18px;
-  color: white;
 }
 
+.fs-18:hover {
+  color: #69eabb !important;
+}
 
-
+Link > i:hover {
+  
+  color: #69eabb !important;
+}
 
 .fs-120 {
   font-size: 120px;
@@ -2018,14 +2023,14 @@ textarea {
 }
 
 .text-linear-4 {
-  background: linear-gradient(to right, #69eabb 70%, #23809f);
+  background: linear-gradient(to right, #69eabb 50%, #318b6a);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .text-linear-4:hover {
-  background: linear-gradient(to right, #69eabb 70%, #23809f);
+  background: linear-gradient(to right, #69eabb 50%, #389e79);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -14442,8 +14447,8 @@ strong {
 
 .whatsapp-logo {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 80px;
   width: 50px;
   height: 50px;
   z-index: 10;
@@ -14598,4 +14603,8 @@ strong {
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
   content: none !important;
   display: none !important; 
+}
+
+p, li {
+  font-family: var(--dmMono);
 }

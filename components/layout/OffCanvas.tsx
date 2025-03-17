@@ -74,10 +74,10 @@ export default function OffCanvas({ isOffCanvas, handleOffCanvas }: any) {
             <p className="text-400 fs-5 mb-2">Social</p>
             <div className="d-md-flex d-none gap-3">
               <Link href="https://www.linkedin.com/in/sarmedrizvi/">
-                <i className="ri-linkedin-fill fs-18 reach-out social-media-icons" />
+                <i className="ri-linkedin-fill fs-18 text-dark reach-out social-media-icons" />
               </Link>
               <Link href="https://github.com/sarmedrizvi">
-                <i className="ri-github-fill fs-18 reach-out social-media-icons" />
+                <i className="ri-github-fill fs-18 text-dark reach-out social-media-icons" />
               </Link>
             </div>
           </div>

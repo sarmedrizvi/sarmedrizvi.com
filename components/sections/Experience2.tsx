@@ -70,7 +70,7 @@ export default function Experience2() {
                       (exp) =>
                         activeCompany === exp.id && (
                           <div key={exp.id} id={exp.id}>
-                            <h6 className="text-linear-4">{exp.title}</h6>
+                            <h4 className="text-linear-4">{exp.title}</h4>
                             <ul className="mt-4">
                               {exp.description.map((desc, index) => (
                                 <li key={index} className="text-dark mb-3">
@@ -79,7 +79,7 @@ export default function Experience2() {
                               ))}
                             </ul>
 
-                            <h6 className="text-linear-4">{exp.title2}</h6>
+                            <h4 className="text-linear-4">{exp.title2}</h4>
                             <ul className="mt-4">
                               {exp.description2.map((desc, index) => (
                                 <li key={index} className="text-dark mb-3">
