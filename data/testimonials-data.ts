@@ -3,23 +3,19 @@ export const testimonialVideos = [
   {
     id: 1,
     name: "Josh",
-    message:
-      "Sarmed efficiently managed our development projects with great communication, flexibility, and structured planning. Highly recommended!",
-    videoUrl:
-      "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/videos/Josh-secondarydao-react-sql-nodejs.mp4",
+    message: "Sarmed played a crucial role in managing our development projects efficiently. His ability to break down complex tasks, communicate clearly, and adapt to changing requirements made the entire process seamless. Highly recommend working with him!",
+    videoUrl: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/videos/Josh-secondarydao-react-sql-nodejs.mp4",
     thumbnailUrl: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/thumbnail-1.png",
     type: "video",
   },
-
   {
     id: 2,
     name: "Kent Costello",
-    message:
-      "Sarmed and his team at Impleko quickly grasped our vision, took initiative, and delivered robust solutions with great communication. A pleasure to work with!",
+    message: "Sarmed and the Impleko team quickly understood our vision and took full ownership of the development process. They worked independently while still collaborating effectively, suggesting improvements along the way. Their technical skill and speed without compromising quality were impressive.",
     videoUrl:
       "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/videos/Kent-Vendorx-NextJS-Algolia-Mongodb.mp4",
-      thumbnailUrl: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/thumbnail-2.png",
-      type: "video",
+    thumbnailUrl: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/thumbnail-2.png",
+    type: "video",
   },
 ];
 
@@ -27,55 +23,44 @@ export const testimonialImages = [
   {
     id: 1,
     name: "Tim Kors",
-    message:
-      "Sarmed and his team at Impleko developed advanced AI chatbots for PracticeFlow and NewMedix using OpenAI and LangChain. Their deep expertise in medical AI solutions ensured seamless automation, improving patient interactions and streamlining workflows. Their responsiveness, technical skill, and ability to deliver high-quality solutions make them a top choice for AI-driven healthcare innovations.",
-    clientImage:
-      "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/tim-practiceflow-react.png",
-    type: "text",
+    message: "Bringing AI chatbots to life for our business required deep expertise, and Sarmed delivered beyond expectations. He built intelligent, OpenAI-powered chatbots for PracticeFlow and NewMedix, automating our workflows and making communication seamless. His team’s ability to execute complex AI-driven solutions with precision made all the difference!",
+    clientImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/tim-practiceflow-react.png",
+    type: "text"
   },
   {
     id: 2,
-    name: "Travis Wothe",
-    message:
-      "Sarmed was a key player in the development of GPT Genie, an all-in-one AI agent application built with ReactJS. His commitment, problem-solving skills, and expertise in AI-driven applications made the project a success. He was consistently positive, proactive, and delivered high-quality work. I highly recommend working with him!",
-    clientImage:
-      "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/travis-wothe-react-AI-Agent.jpeg",
-    type: "text",
+    name: "Can Korfali",
+    message: "Sarmed and his team built AwardsBox.com from the ground up using Vue.js, delivering an elegant, high-performance site. They also automated key workflows with AI-driven solutions through n8n, saving us time and effort. Their technical know-how and problem-solving mindset helped scale our operations significantly.",
+    clientImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/Can-Korfali-AI-Vuejs.jpeg",
+    type: "text"
   },
   {
     id: 3,
-    name: "Matthew Stubbs",
-    message:
-      "Sarmed has been instrumental in maintaining our restaurant ERP system, an all-in-one solution for hotel and in-room dining management. His expertise in Next.js and backend optimizations ensures seamless ordering and a great user experience. With outstanding skills, quality, and communication, we are excited to continue working with him!",
-    clientImage:
-      "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/Matthew-Stubbs-NextJS-RestaurantApplication.jpeg",
-    type: "text",
+    name: "Ashish",
+    message: "We needed an advanced AI-powered student recommendation system for GoodGoblin.ai, and Sarmed made it happen! He used OpenAI and other AI technologies to build a highly personalized experience for students, ensuring accuracy and efficiency. His attention to detail and technical capabilities made this a top-notch EdTech project.",
+    clientImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/Ashish-openai-react-nodejs.jpeg",
+    type: "text"
   },
   {
     id: 4,
-    name: "Can Korfali",
-    message:
-      "Sarmed and his team at Impleko built our website, AwardsBox.com, using Vue.js, delivering a sleek and high-performance platform. They also integrated AI-driven automations with n8n, optimizing workflows and enhancing efficiency. Their expertise in AI and automation has been invaluable in scaling our business.",
-    clientImage:
-      "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/Can-Korfali-AI-Vuejs.jpeg",
-    type: "text",
+    name: "Lachlan Bode",
+    message: "Sarmed helped us build a cutting-edge real-time AI voice agent integrated with Twilio and GHL. His technical expertise, problem-solving ability, and structured approach ensured we had a powerful, scalable solution. Beyond his skills, he was fantastic to work with—responsive, reliable, and proactive in overcoming challenges.",
+    clientImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/lachlan-openai-voice-agent-saas.jpeg",
+    type: "text"
   },
   {
     id: 5,
-    name: "Ashish",
-    message:
-      "Sarmed and his team at Impleko developed a cutting-edge student recommendation system for GoodGoblin.ai using OpenAI, enhancing personalized learning experiences. They also integrated advanced AI features, making it a top-tier EdTech solution. Their professionalism, expertise, and five-star execution made this project a complete success.",
-    clientImage:
-      "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/Ashish-openai-react-nodejs.jpeg",
-    type: "text",
+    name: "Travis Wothe",
+    message: "Sarmed was a key contributor to our GPT Genie project, where users could create custom AI agents using pre-built templates. His ReactJS expertise, combined with his structured problem-solving approach, helped bring the platform to life. He stayed committed, positive, and delivered high-quality work. I’d absolutely work with him again!",
+    clientImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/travis-wothe-react-AI-Agent.jpeg",
+    type: "text"
   },
   {
     id: 6,
-    name: "Lachlan Bode",
-    message:
-      "Working with Sarmed has been a pleasure. He and his team developed an OpenAI-powered real-time voice agent with Twilio integration and GHL automation, delivering a seamless and intelligent solution. His exceptional technical expertise, proactive approach, and outstanding communication made collaboration effortless. Despite challenges, he remained professional and delivered high-quality work. We highly recommend him and look forward to future projects together.",
-    clientImage:
-      "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/lachlan-openai-voice-agent-saas.jpeg",
-    type: "text",
-  },
+    name: "Matthew Stubbs",
+    message: "Maintaining a restaurant ERP is no small feat, but Sarmed handled it exceptionally well. He optimized our Next.js-based platform, ensuring smooth in-room and table ordering for hotels. His ability to debug, improve performance, and add new features with high precision makes him a valuable developer to have on board.",
+    clientImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/Matthew-Stubbs-NextJS-RestaurantApplication.jpeg",
+    type: "text"
+  }
 ];
+
