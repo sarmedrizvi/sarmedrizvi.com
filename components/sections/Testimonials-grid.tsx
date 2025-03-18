@@ -97,7 +97,7 @@ export default function MasonryPage() {
                             ref={index === 0 ? firstVideoRef : videoRef}
                             poster={testimonial.thumbnailUrl}
                             controls={index === 0 ? showControls : isPlaying}
-                            muted={index === 0 && !showControls}
+                            muted={index === 0 && showControls}
                             style={{ width: "100%", height: "300px", objectFit: "cover" }}
                             onClick={() => {
                               if (index === 0) {
@@ -119,15 +119,7 @@ export default function MasonryPage() {
 
                           {!isPlaying && index !== 0 && (
                             <div
-                              className="poster-overlay"
-                              style={{
-                                position: "absolute",
-                                top: 0,
-                                left: 0,
-                                width: "100%",
-                                height: "100%",
-                                cursor: "pointer",
-                              }}
+                              className="poster-overlay poster-overlay-class"
                               onClick={() => {
                                 if (videoRef.current) {
                                   setIsPlaying(true);
@@ -135,19 +127,7 @@ export default function MasonryPage() {
                                 }
                               }}
                             >
-                              <div
-                                style={{
-                                  position: "absolute",
-                                  bottom: "6px",
-                                  right: "0px",
-                                  fontSize: "1.2rem",
-                                  width: "100%",
-                                  background: "rgba(0, 0, 0, 0.25)",
-                                  color: "white",
-                                  padding: "6px 8px",
-                                  textAlign: "right",
-                                }}
-                              >
+                              <div className="autoplay-video-controls" >
                                 <h5>{testimonial.name}</h5>
                               </div>
 

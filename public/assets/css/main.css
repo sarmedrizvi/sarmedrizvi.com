@@ -14614,3 +14614,25 @@ p, li {
 .space-nowrap {
   white-space: nowrap;
 }
+
+
+.poster-overlay-class {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.autoplay-video-controls {
+  position: absolute;
+  bottom: 6px;
+  right: 0px;
+  font-size: 1.2rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  padding: 6px 8px;
+  text-align: right;
+}
