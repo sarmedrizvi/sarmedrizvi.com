@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { experienceData } from "@/data/experience-data";
+import exp from "constants";
 
 export default function Experience2() {
   const [activeCompany, setActiveCompany] = useState("impleko");
@@ -52,12 +53,18 @@ export default function Experience2() {
                           className={`technology border border-1 rounded-3 p-3 ${activeCompany === exp.id ? "active" : ""
                             }`}
                           onClick={() => setActiveCompany(exp.id)}
+                          style={{
+                            background: activeCompany === exp.id ? "linear-gradient(45deg, #268568 60%, #69eabb)" : "transparent",
+                            cursor: "pointer",
+                            padding: "10px",
+                            borderRadius: "5px",
+                          }}
                         >
                           <div className="d-flex align-items-center gap-2 experience-logo">
                             <img src={exp.logo} alt={exp.company} />
                             <div className="d-flex flex-column ms-2">
-                              <h5 className="mb-1">{exp.company}</h5>
-                              <span className="text-300">{exp.years}</span>
+                              <h4 className="mb-1">{exp.company}</h4>
+                              <span className="text-300 text-dark space-nowrap">{exp.years}</span>
                             </div>
                           </div>
                         </div>
@@ -69,72 +76,42 @@ export default function Experience2() {
                     {experienceData.map(
                       (exp) =>
                         activeCompany === exp.id && (
-                          <div key={exp.id} id={exp.id}>
-                            <h4 className="text-linear-4">{exp.title}</h4>
-                            <ul className="mt-4">
-                              {exp.description.map((desc, index) => (
-                                <li key={index} className="text-dark mb-3">
-                                  {desc}
-                                </li>
-                              ))}
-                            </ul>
+                          <>
+                            <div key={exp.id} id={exp.id}>
+                              <h4 className="text-linear-4">{exp.title}</h4>
+                              <ul className="mt-4">
+                                {exp.description.map((desc, index) => (
+                                  <li key={index} className="text-dark mb-3">
+                                    {desc}
+                                  </li>
+                                ))}
+                              </ul>
 
-                            <h4 className="text-linear-4">{exp.title2}</h4>
-                            <ul className="mt-4">
-                              {exp.description2.map((desc, index) => (
-                                <li key={index} className="text-dark mb-3">
-                                  {desc}
-                                </li>
+                              <h4 className="text-linear-4">{exp.title2}</h4>
+                              <ul className="mt-4">
+                                {exp.description2.map((desc, index) => (
+                                  <li key={index} className="text-dark mb-3">
+                                    {desc}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+
+                            <div className="d-flex flex-wrap align-items-center gap-3 mt-7">
+                              {exp.skills?.map((skill, index) => (
+                                <span
+                                  key={index}
+                                  className="text-300 border border-1 px-3 py-1 cursor-pointer"
+                                >
+                                  {skill}
+                                </span>
                               ))}
-                            </ul>
-                          </div>
+                            </div>
+                          </>
                         )
                     )}
 
-                    <div className="d-flex flex-wrap align-items-center gap-3 mt-7">
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        React.js
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        Angular.js
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        Node.js
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        Express.js
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        TailwindCSS
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        MySQL
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        PostgreSQL
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        MongoDB
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        Pinecone{" "}
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        Claude AI
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        Chat GPT
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        Twillo
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        VAPI
-                      </span>
-                      <span className="text-300 border border-1 px-3 py-1 cursor-pointer">
-                        Retell AI
-                      </span>
-                    </div>
+
                   </div>
                 </div>
               </div>

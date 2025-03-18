@@ -10,6 +10,7 @@ export const experienceData = [
         ],
         title2: "",
         description2: [],
+        skills: ["Pinecone", "VAPI", "Claude AI", "Chat GPT", "Twillo", "Retell AI"]
 
     },
     {
@@ -27,6 +28,7 @@ export const experienceData = [
             "Built web applications with React and Node.js, utilizing TypeScript for efficient and scalable codebases.",
             "Skills: Node.js, TypeScript, Web Application Development"
         ],
+        skills: ["Node.js", "Angular.js", "TypeScript", "MySQL", "TailwindCSS"]
 
     },
     {
@@ -42,6 +44,7 @@ export const experienceData = [
         ],
         title2: "",
         description2: [],
+        skills: ["Asana", "Jira", "MySQL", "PostgreSQL"]
 
     },
     {
@@ -58,6 +61,7 @@ export const experienceData = [
         ],
         title2: "",
         description2: [],
+        skills: ["JavaScript", "React.js", "Express.js", "Node.js", "TypeScript", "MongoDB",]
 
     }
 ];
