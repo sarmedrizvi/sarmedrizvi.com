@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { testimonialVideos, testimonialImages } from "@/data/testimonials-data";
 import Masonry from "react-masonry-css";
 
@@ -16,6 +16,37 @@ export default function MasonryPage() {
     1100: 2,
     700: 1,
   };
+
+  const firstVideoRef = useRef<HTMLVideoElement | null>(null);
+  const [firstVideoPlayed, setFirstVideoPlayed] = useState(false);
+  const [showControls, setShowControls] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !firstVideoPlayed && firstVideoRef.current) {
+            firstVideoRef.current.muted = true;
+            firstVideoRef.current.play();
+            setFirstVideoPlayed(true);
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    if (firstVideoRef.current) {
+      observer.observe(firstVideoRef.current);
+    }
+
+    return () => {
+      if (firstVideoRef.current) {
+        observer.unobserve(firstVideoRef.current);
+      }
+    };
+  }, [firstVideoPlayed]);
 
   return (
     <>
@@ -52,7 +83,7 @@ export default function MasonryPage() {
                   className="my-masonry-grid"
                   columnClassName="my-masonry-grid_column"
                 >
-                  {testimonialVideos.map((testimonial) => {
+                  {testimonialVideos.map((testimonial, index) => {
                     const [isPlaying, setIsPlaying] = useState(false);
                     const videoRef = useRef<HTMLVideoElement | null>(null);
 
@@ -63,11 +94,18 @@ export default function MasonryPage() {
                       >
                         <div className="media-container position-relative">
                           <video
-                            ref={videoRef}
+                            ref={index === 0 ? firstVideoRef : videoRef}
                             poster={testimonial.thumbnailUrl}
-                            controls={isPlaying}
+                            controls={index === 0 ? showControls : isPlaying}
+                            muted={index === 0 && !showControls}
                             style={{ width: "100%", height: "300px", objectFit: "cover" }}
                             onClick={() => {
+                              if (index === 0) {
+                                setShowControls(true);
+                                if (firstVideoRef.current) {
+                                  firstVideoRef.current.muted = false;
+                                }
+                              }
                               if (!isPlaying && videoRef.current) {
                                 setIsPlaying(true);
                                 videoRef.current.play();
@@ -79,7 +117,7 @@ export default function MasonryPage() {
                             Your browser does not support the video tag.
                           </video>
 
-                          {!isPlaying && (
+                          {!isPlaying && index !== 0 && (
                             <div
                               className="poster-overlay"
                               style={{
@@ -113,7 +151,6 @@ export default function MasonryPage() {
                                 <h5>{testimonial.name}</h5>
                               </div>
 
-                              {/* Play Button with Opaque Circle */}
                               <div className="play-button-container">
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +173,6 @@ export default function MasonryPage() {
                   })}
                 </Masonry>
 
-                {/* Masonry Grid for Images */}
                 <Masonry
                   breakpointCols={imageBreakpointColumnsObj}
                   className="my-masonry-grid"
