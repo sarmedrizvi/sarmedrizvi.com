@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { experienceData } from "@/data/experience-data";
-import exp from "constants";
+
 
 export default function Experience2() {
   const [activeCompany, setActiveCompany] = useState("impleko");
