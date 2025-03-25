@@ -13,7 +13,6 @@ import Static2 from "@/components/sections/Static2"
 import MasonryPage from "@/components/sections/Testimonials-grid"
 
 export default function HomePage2() {
-
 	return (
 		<>
 			<Layout headerStyle={2} footerStyle={2}>
@@ -26,8 +25,8 @@ export default function HomePage2() {
 				<Education2 />
 				<Projects2 />
 				<Skills2 />
-				{/* <Blog2/> */}
-				{/* <Blog1/> */}
+				{/* <Blog1 /> */}
+				<Blog2 />
 				<Contact2 />
 			</Layout>
 		</>

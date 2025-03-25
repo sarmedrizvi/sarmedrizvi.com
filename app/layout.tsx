@@ -42,7 +42,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-bs-theme="dark" className="zelio">
       <head>
-        <title>Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator </title>
+        <title>
+          Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator{" "}
+        </title>
         <meta
           title="Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator"
           name="description"
@@ -97,6 +99,24 @@ export default function RootLayout({
           }
         `}
         </Script>
+
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-JG40109Y6D"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JG40109Y6D');
+          `,
+          }}
+        />
 
         <link rel="shortcut icon" href="../static/favicon.ico" />
       </head>
