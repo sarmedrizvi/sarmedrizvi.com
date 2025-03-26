@@ -28,7 +28,7 @@ export const blogPosts = [
   },
   {
     id: 2,
-    image: "/assets/imgs/index-2/blog_2.webp",
+    image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*DKFO26SxRoL9mUHlH9pqtg.jpeg",
     category: "RAGate",
     date: "Nov 20, 2024 • 5 min read",
     title:
@@ -39,7 +39,7 @@ export const blogPosts = [
   },
   {
     id: 3,
-    image: "/assets/imgs/index-2/blog_3.webp",
+    image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*iSDGYUTyqchN0xV03ooeJw.jpeg",
     category: "Prompt Engineering",
     date: "Nov 11, 2024 • 4 min read",
     title: "Crafting Perfect Prompts: How to Unlock ChatGPT’s Full Potential",
