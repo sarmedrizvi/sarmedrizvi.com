@@ -134,9 +134,7 @@ export default function BlogDetails() {
                       <div className="">
                         <div className="d-none d-lg-flex flex-column gap-3 pt-3">
                           <Link
-                            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                              window.location.href
-                            )}`}
+                            href="/#"
                             className="text-decoration-none"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -144,9 +142,7 @@ export default function BlogDetails() {
                             <i className="ri-facebook-circle-fill fs-18 text-linear-4" />
                           </Link>
                           <Link
-                            href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-                              window.location.href
-                            )}&text=${encodeURIComponent(post.title)}`}
+                            href="/#"
                             className="text-decoration-none"
                             target="_blank"
                             rel="noopener noreferrer"
