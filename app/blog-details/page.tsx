@@ -22,90 +22,90 @@ interface BlogPost {
 }
 
 export default function BlogDetails() {
-  const router = useRouter();
-  const { id } = router.query;
-  const [post, setPost] = useState<BlogPost | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+//   const router = useRouter();
+//   const { id } = router.query;
+//   const [post, setPost] = useState<BlogPost | null>(null);
+//   const [loading, setLoading] = useState(true);
+//   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    if (!id) return;
+//   useEffect(() => {
+//     if (!id) return;
 
-    const fetchPost = async () => {
-      try {
-        const response = await fetch(`/api/blog/${id}`);
-        const data = await response.json();
+//     const fetchPost = async () => {
+//       try {
+//         const response = await fetch(`/api/blog/${id}`);
+//         const data = await response.json();
 
-        if (data.success) {
-          setPost(data.data);
-        } else {
-          setError(data.message || 'Failed to load post');
-        }
-      } catch (err) {
-        setError('An error occurred while fetching the post');
-        console.error('Error fetching post:', err);
-      } finally {
-        setLoading(false);
-      }
-    };
+//         if (data.success) {
+//           setPost(data.data);
+//         } else {
+//           setError(data.message || 'Failed to load post');
+//         }
+//       } catch (err) {
+//         setError('An error occurred while fetching the post');
+//         console.error('Error fetching post:', err);
+//       } finally {
+//         setLoading(false);
+//       }
+//     };
 
-    fetchPost();
-  }, [id]);
+//     fetchPost();
+//   }, [id]);
 
-  if (loading) {
-    return (
-      <Layout headerStyle={2} footerStyle={2}>
-        <div className="section-details pt-130 pb-100">
-          <div className="container text-center">
-            <p>Loading...</p>
-          </div>
-        </div>
-      </Layout>
-    );
-  }
+//   if (loading) {
+//     return (
+//       <Layout headerStyle={2} footerStyle={2}>
+//         <div className="section-details pt-130 pb-100">
+//           <div className="container text-center">
+//             <p>Loading...</p>
+//           </div>
+//         </div>
+//       </Layout>
+//     );
+//   }
 
-  if (error) {
-    return (
-      <Layout headerStyle={2} footerStyle={2}>
-        <div className="section-details pt-130 pb-100">
-          <div className="container text-center">
-            <p className="text-danger">{error}</p>
-          </div>
-        </div>
-      </Layout>
-    );
-  }
+//   if (error) {
+//     return (
+//       <Layout headerStyle={2} footerStyle={2}>
+//         <div className="section-details pt-130 pb-100">
+//           <div className="container text-center">
+//             <p className="text-danger">{error}</p>
+//           </div>
+//         </div>
+//       </Layout>
+//     );
+//   }
 
-  if (!post) {
-    return (
-      <Layout headerStyle={2} footerStyle={2}>
-        <div className="section-details pt-130 pb-100">
-          <div className="container text-center">
-            <p>Post not found</p>
-          </div>
-        </div>
-      </Layout>
-    );
-  }
+//   if (!post) {
+//     return (
+//       <Layout headerStyle={2} footerStyle={2}>
+//         <div className="section-details pt-130 pb-100">
+//           <div className="container text-center">
+//             <p>Post not found</p>
+//           </div>
+//         </div>
+//       </Layout>
+//     );
+//   }
 
-  // Format date for display
-  const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  });
+//   // Format date for display
+//   const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
+//     year: 'numeric',
+//     month: 'short',
+//     day: 'numeric',
+//   });
 
   return (
     <>
       <Layout headerStyle={2} footerStyle={2}>
-        <Head>
+        {/* <Head>
           <title>{post.title} | Your Site Name</title>
           <meta name="description" content={post.description} />
           <meta property="og:title" content={post.title} />
           <meta property="og:description" content={post.description} />
           <meta property="og:image" content={post.image} />
-        </Head>
-        <div>
+        </Head> */}
+        {/* <div>
           <section className="section-details pt-130 pb-100">
             <div className="container">
               <div className="row">
@@ -176,7 +176,7 @@ export default function BlogDetails() {
           </section>
           <Static2 />
           <Contact2 />
-        </div>
+        </div> */}
       </Layout>
     </>
   );
