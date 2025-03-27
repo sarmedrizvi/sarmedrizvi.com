@@ -14,10 +14,10 @@ export default function Header2({ scroll, isMobileMenu, handleMobileMenu, isOffC
 								<i className="ri-menu-2-line" />
 							</a>
 							<div className="container py-3 px-4">
-								<Link className="navbar-brand d-flex main-logo align-items-center" href="/index-2">
+								<div className="navbar-brand d-flex main-logo align-items-center">
 									<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="SR logo" style={{ width: "40px", height: "40px" }} />
 									<span className="fs-4 ms-2 w-">Sarmed.dev</span>
-								</Link>
+								</div>
 								<div className="d-none d-lg-flex">
 									<div className="collapse navbar-collapse" id="navbarSupportedContent"
 									style={{

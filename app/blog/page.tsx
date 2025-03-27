@@ -1,11 +1,36 @@
+"use client";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
-import { blogPosts } from "@/data/blogs-data";
 import Contact2 from "@/components/sections/Contact2";
 import Static2 from "@/components/sections/Static2";
+import { useEffect, useState } from "react";
+import { fetchAllBlogPosts } from "@/services/blog";
+import { useRouter } from "next/navigation";
 
 export default function BlogList() {
+  const router = useRouter()
+  const [blogPosts, setBlogPosts] = useState<any>();
+  console.log("blogPosts", blogPosts);
   const totalPages = 3;
+
+  useEffect(() => {
+    const loadBlogPosts = async () => {
+      try {
+        const posts = await fetchAllBlogPosts();
+        setBlogPosts(posts);
+      } catch (err) {
+        // setError(err instanceof Error ? err.message : 'Failed to load blog posts');
+      } finally {
+        // setLoading(false);
+      }
+    };
+
+    loadBlogPosts();
+  }, []);
+
+  const handleNavigation = (blogId:string) => {
+    router.push(`/blog/${blogId}`)
+  }
 
   return (
     <>
@@ -33,47 +58,49 @@ export default function BlogList() {
                 </div>
               </div>
               <div className="row mt-8">
-                {blogPosts.map((post) => (
-                  <div key={post.id} className="col-lg-4">
-                    <div className="blog-card rounded-top-2 mb-lg-3 mb-md-5 mb-3">
-                      <div className="blog-card__image position-relative">
-                        <div className="zoom-img rounded-2 overflow-hidden">
-                          <img
-                            className=" object-fit-cover"
-                            src={post.image}
-                            alt="zelio"
-                            style={{ width: "350px", height: "200px" }}
-                          />
-                          <Link
-                            className="position-absolute bottom-0 start-0 m-3 text-white-keep btn btn-gradient fw-medium rounded-3 px-3 py-2"
-                            href={post.link}
-                          >
-                            {post.category}
-                          </Link>
+                {blogPosts?.map((post: any) => (
+                    <div key={post?.id} className="col-lg-4" onClick={() => handleNavigation(post?.id)}>
+                      <div className="blog-card rounded-top-2 mb-lg-3 mb-md-5 mb-3">
+                        <div className="blog-card__image position-relative">
+                          <div className="zoom-img rounded-2 overflow-hidden">
+                            <img
+                              className="object-fit-cover"
+                              src={post?.image}
+                              alt="blog-image "
+                              style={{ width: "350px", height: "200px" }}
+                            />
+                            <Link
+                              className="position-absolute bottom-0 start-0 m-3 text-white-keep btn btn-gradient fw-medium rounded-3 px-3 py-2"
+                              href={post?.link}
+                            >
+                              {post?.category}
+                            </Link>
 
+                            <Link
+                              href={post?.link}
+                              className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle"
+                            >
+                              <i className="ri-arrow-right-up-line" />
+                            </Link>
+                          </div>
+                        </div>
+                        <div className="blog-card__content position-relative text-center mt-4">
+                          <span className="blog-card__date fs-7">
+                            {post?.date} • {post?.read_time}
+                          </span>
+                          <h6 className="blog-card__title mt-2">
+                            {post?.title}
+                          </h6>
+                          <p className="blog-card__description fs-7">
+                            {post?.description}
+                          </p>
                           <Link
-                            href={post.link}
-                            className="blog-card__link position-absolute top-50 start-50 translate-middle icon-md icon-shape rounded-circle"
-                          >
-                            <i className="ri-arrow-right-up-line" />
-                          </Link>
+                            href={post?.link}
+                            className="link-overlay position-absolute top-0 start-0 w-100 h-100"
+                          />
                         </div>
                       </div>
-                      <div className="blog-card__content position-relative text-center mt-4">
-                        <span className="blog-card__date fs-7">
-                          {post.date}
-                        </span>
-                        <h6 className="blog-card__title mt-2">{post.title}</h6>
-                        <p className="blog-card__description fs-7">
-                          {post.description}
-                        </p>
-                        <Link
-                          href={post.link}
-                          className="link-overlay position-absolute top-0 start-0 w-100 h-100"
-                        />
-                      </div>
                     </div>
-                  </div>
                 ))}
               </div>
             </div>

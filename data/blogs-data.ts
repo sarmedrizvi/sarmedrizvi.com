@@ -23,8 +23,8 @@ export const blogPosts = [
     title:
       "Unlock the Power of WhatsApp Automation: Elevate Your Business Communication",
     description:
-      "In today’s fast-paced world, businesses need more than just exceptional products; they need streamlined communication that resonates with customers on a personal level. ",
-    link: "/blog-details",
+      "In today’s fast-paced world, businesses need more than just exceptional products; they need streamlined communication that resonates with customers on a personal level.",
+    link: "/blog/whatsapp-business-automation",
   },
   {
     id: 2,
@@ -34,8 +34,8 @@ export const blogPosts = [
     title:
       "RAGate: Transforming Conversational AI with Adaptive Knowledge Retrieval",
     description:
-      "RAGate’s transformative capabilities stem from its integration of two cutting-edge technologies: Parameter-Efficient Fine-Tuning (PEFT) and Multi-Head Attention (MHA).",
-    link: "/blog-details",
+      "As AI systems become increasingly embedded in our lives, the demand for accurate, reliable, and context-aware conversational AI has surged.",
+    link: "/blog/ragate-conversational-ai",
   },
   {
     id: 3,
@@ -44,8 +44,8 @@ export const blogPosts = [
     date: "Nov 11, 2024 • 4 min read",
     title: "Crafting Perfect Prompts: How to Unlock ChatGPT’s Full Potential",
     description:
-      "In the age of artificial intelligence, guiding AI systems like ChatGPT to produce targeted, high-quality responses is both a skill and an evolving science.",
-    link: "/blog-details",
+      "The Playoff Method: Refining AI Responses Through Iterative Competition",
+    link: "/blog/mastering-chatgpt-prompts",
   },
   {
     id: 4,
@@ -55,8 +55,8 @@ export const blogPosts = [
     date: "Oct 28, 2024 • 5 min read",
     title: "Revolutionizing Digital Experiences: The Future of AI Agents",
     description:
-      "Enter AI agents — intelligent, adaptive systems that interact with users, understand context, and provide real-time solutions.",
-    link: "/blog-details",
+      "In today’s rapidly evolving digital landscape, businesses seek innovative solutions to streamline operations, enhance customer interactions, and scale effectively.",
+    link: "/blog/future-of-ai-agents",
   },
   {
     id: 5,
@@ -66,7 +66,7 @@ export const blogPosts = [
     date: "Oct 16, 2024 • 3S min read",
     title: "How to Transform Your Brainstorming Process with AI",
     description:
-      "AI-powered brainstorming changes that. With the power of artificial intelligence, your team can unlock new perspectives, overcome creative blocks, and generate high-impact ideas quickly.",
-    link: "/blog-details",
+      "Innovation moves fast, but sometimes, the best ideas take too long to surface. AI-powered brainstorming changes that. With the power of artificial intelligence, your team can unlock new perspectives, overcome creative blocks, and generate high-impact ideas quickly.",
+    link: "#",
   },
 ];

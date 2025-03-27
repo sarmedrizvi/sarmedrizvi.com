@@ -14666,3 +14666,10 @@ p, li {
   object-fit: cover;
 }
 
+
+.blog-details-images{
+  padding-right: 5.5rem;
+  padding-left: 5.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}

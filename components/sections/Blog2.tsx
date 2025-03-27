@@ -70,10 +70,9 @@ export default function Blog2() {
                 </div>
               </div>
             ))}
-
             <div className="col-lg-auto mx-auto">
               <Link
-                href="/blog-list"
+                href="/blog"
                 className="btn btn-gradient mt-lg-0 mt-5 ms-lg-auto"
               >
                 View more
