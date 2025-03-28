@@ -25,7 +25,6 @@ export default function HomePage2() {
 				<Education2 />
 				<Projects2 />
 				<Skills2 />
-				{/* <Blog1 /> */}
 				<Blog2 />
 				<Contact2 />
 			</Layout>
