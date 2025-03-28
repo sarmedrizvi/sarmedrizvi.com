@@ -52,27 +52,27 @@ export default function Header2({
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="#resume">
+                        <Link className="nav-link" href="https://sarmedrizvi.com#resume">
                           Resume
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="#services">
+                        <Link className="nav-link" href="https://sarmedrizvi.com#services">
                           Services
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="#portfolio">
+                        <Link className="nav-link" href="https://sarmedrizvi.com#portfolio">
                           Portfolio
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="#blogs">
+                        <Link className="nav-link" href="https://sarmedrizvi.com#blogs">
                           Blogs
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="#contact">
+                        <Link className="nav-link" href="https://sarmedrizvi.com#contact">
                           Contact
                         </Link>
                       </li>

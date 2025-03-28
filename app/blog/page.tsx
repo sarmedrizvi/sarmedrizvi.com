@@ -128,7 +128,7 @@ export default function BlogList() {
                       (pageNumber) => (
                         <li className="page-item" key={pageNumber}>
                           <Link
-                            className="icon-xl fs-5 page-link pagination_item border-0 rounded-circle icon-shape fw-bold bg-600"
+                            className="icon-xl fs-5 page-link pagination_item border-0 rounded-circle icon-shape fw-bold bg-600 py-2"
                             href="/blog"
                           >
                             {pageNumber}
