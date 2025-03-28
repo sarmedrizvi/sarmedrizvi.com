@@ -54,8 +54,8 @@ export default function Blog2() {
 
           <div className="row mt-8">
             {blogPosts?.slice(0, 3).map((post: any) => (
-              <div 
-                key={post?.id} 
+              <div
+                key={post?.id}
                 className="col-lg-4"
                 onClick={() => handleNavigation(post?.id)}
               >
@@ -66,7 +66,6 @@ export default function Blog2() {
                         className=" object-fit-cover"
                         src={post?.image}
                         alt="zelio"
-                        style={{ width: "340px", height: "250px" }}
                       />
                       <Link
                         className="position-absolute bottom-0 start-0 m-3 text-white-keep btn btn-gradient fw-medium rounded-3 px-3 py-2"
@@ -84,7 +83,7 @@ export default function Blog2() {
                     </div>
                   </div>
                   <div className="blog-card__content position-relative text-center mt-4">
-                    <span className="blog-card__date fs-7">{post?.date}</span>
+                    <span className="blog-card__date fs-7">{post?.date} • {post?.read_time}</span>
                     <h6 className="blog-card__title mt-2 line-clamp-2">{post?.title}</h6>
                     <p className="blog-card__description fs-7">
                       {post?.description}

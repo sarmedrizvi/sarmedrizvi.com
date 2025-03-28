@@ -14662,7 +14662,9 @@ p, li {
 }
 
 .object-fit-cover {
-  object-fit: contain !important;
+  object-fit: cover !important;
+  width: 400px;
+  height: 300px;
 }
 
 .blog-details-images{

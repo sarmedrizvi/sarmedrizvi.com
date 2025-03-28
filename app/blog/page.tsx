@@ -19,7 +19,7 @@ export default function BlogList() {
         const posts = await fetchAllBlogPosts();
         setBlogPosts(posts);
       } catch (err) {
-        // setError(err instanceof Error ? err.message : 'Failed to load blog posts');
+        console.log(err);
       } finally {
         // setLoading(false);
       }
@@ -71,7 +71,6 @@ export default function BlogList() {
                             className="object-fit-cover"
                             src={post?.image}
                             alt="blog-image "
-                            style={{ width: "340px", height: "250px" }}
                           />
                           <Link
                             className="position-absolute bottom-0 start-0 m-3 text-white-keep btn btn-gradient fw-medium rounded-3 px-3 py-2"

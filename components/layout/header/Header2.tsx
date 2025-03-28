@@ -47,7 +47,7 @@ export default function Header2({
                   >
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                       <li className="nav-item">
-                        <Link className="nav-link active" href="#about">
+                        <Link className="nav-link" href="https://sarmedrizvi.com#about">
                           About me
                         </Link>
                       </li>
