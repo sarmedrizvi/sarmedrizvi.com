@@ -1,5 +1,5 @@
 ---
-title: "How to Transform Your Brainstorming Process with AI"
+title: "How AI Chatbots Are Reshaping Patient Care in the Medical Industry"
 author: "Sarmed"
 date: "Oct 16, 2024"
 read_time: "3 min read"
