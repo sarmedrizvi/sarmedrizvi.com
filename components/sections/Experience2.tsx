@@ -22,7 +22,7 @@ export default function Experience2() {
                     viewBox="0 0 5 6"
                     fill="none"
                   >
-                    <circle cx="2.5" cy={3} r="2.5" fill="#69eabb" />
+                    <circle cx="2.5" cy={3} r="2.5" fill="#9c0c4d" />
                   </svg>
                   <span className="text-linear-4 d-flex align-items-center">
                     {" "}
@@ -54,7 +54,7 @@ export default function Experience2() {
                             }`}
                           onClick={() => setActiveCompany(exp.id)}
                           style={{
-                            background: activeCompany === exp.id ? "linear-gradient(45deg, #268568 60%, #69eabb)" : "transparent",
+                            background: activeCompany === exp.id ? "linear-gradient(90deg, #3b1228 30%, #9c0c4d 100%)" : "transparent",
                             cursor: "pointer",
                             padding: "10px",
                             borderRadius: "5px",

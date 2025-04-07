@@ -335,7 +335,7 @@ export default function ExperienceBackup() {
                             <img
                                 className="position-absolute top-0 start-0 z-0"
                                 src="assets/imgs/home-page-2/services/bg.png"
-                                alt="zelio"
+                                alt="bg-image"
                             />
                         </div>
                     </div>

@@ -65,7 +65,7 @@ export default function Blog2() {
                       <img
                         className=" object-fit-cover"
                         src={post?.image}
-                        alt="zelio"
+                        alt="posts-banner"
                       />
                       <Link
                         className="position-absolute bottom-0 start-0 m-3 text-white-keep btn btn-gradient fw-medium rounded-3 px-3 py-2"

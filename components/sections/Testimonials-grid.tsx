@@ -64,7 +64,7 @@ export default function MasonryPage() {
                     viewBox="0 0 5 6"
                     fill="none"
                   >
-                    <circle cx="2.5" cy={3} r="2.5" fill="#69eabb" />
+                    <circle cx="2.5" cy={3} r="2.5" fill="#9c0c4d" />
                   </svg>
                   <span className="text-linear-4 d-flex align-items-center">
                     {" "}

@@ -13,9 +13,9 @@ export default function Home2() {
 							<div className="row align-items-end py-60">
 								<div className="col-lg-5 ps-lg-5 text-lg-start text-center">
 									<div className="position-relative mb-lg-0 mb-5">
-										<img src="assets/imgs/home-page-2/hero-1/profile-pic-removebg.png" alt="zelio" />
+										<img src="assets/imgs/home-page-2/hero-1/profile-pic-removebg.png" alt="profile picture" />
 										<div className="position-absolute end-0 top-100 translate-middle-y icon-decorate">
-											<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="zelio" style={{ width: "80px", height: "80px" }} />
+											<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="SR logo" style={{ width: "80px", height: "80px" }} />
 										</div>
 									</div>
 								</div>
@@ -106,8 +106,8 @@ export default function Home2() {
 					</div>
 				</div>
 				<div className="background position-absolute top-0 start-0 w-100 h-100">
-					<img className="bg-w" src="assets/imgs/home-page-2/hero-1/bg.png" alt="zelio" />
-					<img className="bg-d" src="assets/imgs/home-page-2/hero-1/bg-dark.png" alt="zelio" />
+					<img className="bg-w" src="assets/imgs/home-page-2/hero-1/bg.png" alt="background-image" />
+					<img className="bg-d" src="assets/imgs/home-page-2/hero-1/bg-dark.png" alt="bg-image" />
 				</div>
 			</section>
 

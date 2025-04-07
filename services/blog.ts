@@ -1,27 +1,45 @@
 interface BlogPost {
-    id: string;
-    title: string;
-    date: string;
-    category: string;
-    description: string;
-    image: string;
-    link: string;
-    content: string;
+  id: string;
+  title: string;
+  date: string;
+  category: string;
+  description: string;
+  image: string;
+  link: string;
+  content: string;
+}
+
+interface ApiResponse<T> {
+  success: boolean;
+  message?: string;
+  data?: T;
+  error?: string;
+}
+
+// Helper function to get the base URL
+function getBaseUrl(): string {
+  if (typeof window !== 'undefined') {
+    // Client-side - use relative path
+    return '/api';
   }
   
-interface ApiResponse<T> {
-    success: boolean;
-    message?: string;
-    data?: T;
-    error?: string;
-  }
-
-
-const API_BASE_URL = '/api';
+  // Server-side - use absolute URL
+  return process.env.NODE_ENV === 'production'
+    ? 'https://your-production-url.com/api'
+    : 'http://localhost:3000/api';
+}
 
 export async function fetchAllBlogPosts(): Promise<BlogPost[]> {
   try {
-    const response = await fetch(`${API_BASE_URL}/blog-post`);
+    const baseUrl = getBaseUrl();
+    const response = await fetch(`${baseUrl}/blog-post`, {
+      next: { tags: ['blog-posts'] } // Optional: for Next.js caching
+    });
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
     const result: ApiResponse<BlogPost[]> = await response.json();
     
     if (!result.success || !result.data) {
@@ -37,7 +55,15 @@ export async function fetchAllBlogPosts(): Promise<BlogPost[]> {
 
 export async function fetchBlogPostById(id: string): Promise<BlogPost> {
   try {
-    const response = await fetch(`${API_BASE_URL}/blog-post-by-id?blog=${id}`);
+    const baseUrl = getBaseUrl();
+    const response = await fetch(`${baseUrl}/blog-post-by-id?blog=${id}`, {
+      next: { tags: ['blog-post', id] } // Optional: for Next.js caching
+    });
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
     const result: ApiResponse<BlogPost> = await response.json();
     
     if (!result.success || !result.data) {
