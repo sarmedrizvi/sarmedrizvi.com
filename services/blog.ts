@@ -19,22 +19,17 @@ interface ApiResponse<T> {
 // Helper function to get the base URL
 function getBaseUrl(): string {
   if (typeof window !== 'undefined') {
-    // Client-side - use relative path
     return '/api';
   }
-  
-  // Server-side - use absolute URL
-  return process.env.NODE_ENV === 'production'
-    ? 'https://your-production-url.com/api'
-    : 'http://localhost:3000/api';
+
+  return process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 }
+
 
 export async function fetchAllBlogPosts(): Promise<BlogPost[]> {
   try {
     const baseUrl = getBaseUrl();
-    const response = await fetch(`${baseUrl}/blog-post`, {
-      next: { tags: ['blog-posts'] } // Optional: for Next.js caching
-    });
+    const response = await fetch(`${baseUrl}/api/blog-post`);
     
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
