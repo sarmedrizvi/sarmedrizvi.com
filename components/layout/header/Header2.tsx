@@ -29,7 +29,7 @@ export default function Header2({
                   <Link href="https://sarmedrizvi.com" passHref legacyBehavior>
                     <a className="d-flex align-items-center text-decoration-none">
                       <img
-                        src="/assets/imgs/home-page-2/template/dark-theme-logo.svg"
+                        src="https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/dark-theme-logo.svg"
                         alt="SR logo"
                         style={{ width: "40px", height: "40px" }}
                       />
