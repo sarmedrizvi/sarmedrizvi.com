@@ -33,7 +33,7 @@ export default function Coporation2() {
 														<div className="position-absolute top-50 start-50 translate-middle z-2">
 															<img className="w-100 h-100 rounded-circle" src="assets/imgs/home-page-2/hero-1/profile-pic-removebg.png" alt="profile picture" />
 															<svg className="text-primary-2 position-absolute bottom-0 end-0" xmlns="http://www.w3.org/2000/svg" width={9} height={9} viewBox="0 0 5 6" fill="none">
-																<circle cx="2.5" cy={3} r="2.5" fill="#6becdf" />
+																<circle cx="2.5" cy={3} r="2.5" fill="#9c0c4d" />
 															</svg>
 														</div>
 													</div>
