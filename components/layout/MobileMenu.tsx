@@ -10,8 +10,8 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
 				<div className="mobile-header-wrapper-inner">
 					<div className="mobile-header-logo">
 						<Link className="d-flex main-logo align-items-center d-inline-flex" href="/">
-						<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="logo" style={{ width: "40px", height: "40px" }} />
-						<span className="fs-4 ms-2 text-dark">Sarmed.dev</span>
+							<img src="https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/dark-theme-logo.svg" alt="SR logo" style={{ width: "40px", height: "40px" }} />
+							<span className="fs-4 ms-2 text-dark">Sarmed.dev</span>
 						</Link>
 						<div className={`burger-icon burger-icon-white border rounded-3 ${isMobileMenu ? 'burger-close' : ''}`} onClick={handleMobileMenu}>
 							<span className="burger-icon-top" />
@@ -25,22 +25,22 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
 								<nav>
 									<ul className="mobile-menu font-heading ps-0">
 										<li className="nav-item">
-										<Link className="nav-link active" href="#about">About me</Link>
+											<Link className="nav-link active" href="#about">About me</Link>
 										</li>
 										<li className="nav-item">
-										<Link className="nav-link" href="#resume">Resume</Link>
+											<Link className="nav-link" href="#resume">Resume</Link>
 										</li>
 										<li className="nav-item">
-										<Link className="nav-link" href="#services">Services</Link>
+											<Link className="nav-link" href="#services">Services</Link>
 										</li>
 										<li className="nav-item">
-										<Link className="nav-link" href="#portfolio">Portfolio</Link>
+											<Link className="nav-link" href="#portfolio">Portfolio</Link>
 										</li>
 										<li className="nav-item">
-										<Link className="nav-link" href="#blogs">Blogs</Link>
+											<Link className="nav-link" href="#blogs">Blogs</Link>
 										</li>
 										<li className="nav-item">
-										<Link className="nav-link" href="#contact">Contact</Link>
+											<Link className="nav-link" href="#contact">Contact</Link>
 										</li>
 									</ul>
 								</nav>
