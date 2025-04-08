@@ -3,18 +3,77 @@ import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import Contact2 from "@/components/sections/Contact2";
 import Static2 from "@/components/sections/Static2";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
 
 export default function BlogList({ posts }: any) {
     const router = useRouter();
-    const blogPosts = posts
-    console.log("blogPosts", blogPosts);
-    const totalPages = 3;
+    const searchParams = useSearchParams() ?? new URLSearchParams(); // Fallback if null
+    const currentPage = Number(searchParams.get('page')) || 1;
+    
+    // Constants for pagination
+    const BLOGS_PER_PAGE = 9;
+    const totalBlogs = posts?.length || 0;
+    const totalPages = Math.ceil(totalBlogs / BLOGS_PER_PAGE);
+
+    // Calculate current blogs to display
+    const startIndex = (currentPage - 1) * BLOGS_PER_PAGE;
+    const endIndex = startIndex + BLOGS_PER_PAGE;
+    const currentBlogs = posts?.slice(startIndex, endIndex) || [];
 
     const handleNavigation = (blogId: string) => {
         router.push(`/blog/${blogId}`);
     };
 
+    // Create pagination URL with updated page number
+    const createPageURL = useCallback(
+        (pageNumber: number | string) => {
+            const params = new URLSearchParams(searchParams.toString());
+            params.set('page', pageNumber.toString());
+            return `/blog?${params.toString()}`;
+        },
+        [searchParams]
+    );
+
+    // Generate page numbers with ellipsis for large numbers of pages
+    const getPageNumbers = () => {
+        if (totalPages <= 0) return [];
+        
+        const pageNumbers = [];
+        const maxVisiblePages = 5; // Maximum pages to show before using ellipsis
+
+        if (totalPages <= maxVisiblePages) {
+            // Show all pages if total pages is less than max visible
+            for (let i = 1; i <= totalPages; i++) {
+                pageNumbers.push(i);
+            }
+        } else {
+            // Show some pages with ellipsis
+            const leftBound = Math.max(1, currentPage - 1);
+            const rightBound = Math.min(totalPages, currentPage + 1);
+
+            if (leftBound > 1) {
+                pageNumbers.push(1);
+                if (leftBound > 2) {
+                    pageNumbers.push('...');
+                }
+            }
+
+            for (let i = leftBound; i <= rightBound; i++) {
+                pageNumbers.push(i);
+            }
+
+            if (rightBound < totalPages) {
+                if (rightBound < totalPages - 1) {
+                    pageNumbers.push('...');
+                }
+                pageNumbers.push(totalPages);
+            }
+        }
+
+        return pageNumbers;
+    };
+    
     return (
         <>
             <Layout headerStyle={2} footerStyle={2}>
@@ -41,7 +100,7 @@ export default function BlogList({ posts }: any) {
                                 </div>
                             </div>
                             <div className="row mt-8">
-                                {blogPosts?.map((post: any) => (
+                                {currentBlogs?.map((post: any) => (
                                     <div
                                         key={post?.id}
                                         className="col-lg-4"
@@ -99,32 +158,44 @@ export default function BlogList({ posts }: any) {
                                     <ul className="pagination gap-2">
                                         <li className="page-item">
                                             <Link
-                                                className="icon-xl fs-5 page-link pagination_item border-0 rounded-circle icon-shape fw-bold bg-600"
-                                                href="/blog"
+                                                className={`icon-xl fs-5 page-link pagination_item border-0 rounded-circle icon-shape fw-bold ${currentPage === 1 ? 'bg-600' : 'bg-dark'}`}
+                                                href={createPageURL(currentPage - 1)}
                                                 aria-label="Previous"
+                                                scroll={false}
+                                                prefetch={false}
+                                                onClick={(e) => currentPage === 1 && e.preventDefault()}
                                             >
                                                 <i className="ri-arrow-left-line" />
                                             </Link>
                                         </li>
 
-                                        {Array.from({ length: totalPages }, (_, i) => i + 1).map(
-                                            (pageNumber) => (
-                                                <li className="page-item" key={pageNumber}>
+                                        {getPageNumbers().map((pageNumber, index) => (
+                                            <li className="page-item" key={index}>
+                                                {pageNumber === '...' ? (
+                                                    <span className="icon-xl fs-5 page-link pagination_item border-0 rounded-circle icon-shape fw-bold bg-600 py-2">
+                                                        ...
+                                                    </span>
+                                                ) : (
                                                     <Link
-                                                        className="icon-xl fs-5 page-link pagination_item border-0 rounded-circle icon-shape fw-bold bg-600 py-2"
-                                                        href="/blog"
+                                                        className={`icon-xl fs-5 page-link pagination_item border-0 rounded-circle icon-shape fw-bold py-2 ${currentPage === pageNumber ? 'bg-dark' : 'bg-600'}`}
+                                                        href={createPageURL(pageNumber)}
+                                                        scroll={false}
+                                                        prefetch={false}
                                                     >
                                                         {pageNumber}
                                                     </Link>
-                                                </li>
-                                            )
-                                        )}
+                                                )}
+                                            </li>
+                                        ))}
 
                                         <li className="page-item">
                                             <Link
-                                                className="icon-xl fs-5 page-link pagination_item border-0 rounded-circle icon-shape fw-bold bg-600"
-                                                href="/blog"
+                                                className={`icon-xl fs-5 page-link pagination_item border-0 rounded-circle icon-shape fw-bold ${currentPage === totalPages ? 'bg-600' : 'bg-dark'}`}
+                                                href={createPageURL(currentPage + 1)}
                                                 aria-label="Next"
+                                                scroll={false}
+                                                prefetch={false}
+                                                onClick={(e) => currentPage === totalPages && e.preventDefault()}
                                             >
                                                 <i className="ri-arrow-right-line" />
                                             </Link>
