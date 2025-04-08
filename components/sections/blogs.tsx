@@ -212,7 +212,7 @@ function BlogListContent({ posts }: { posts: any }) {
 
 export default function BlogList({ posts }: { posts: any }) {
     return (
-        <Layout headerStyle={2} footerStyle={2}>
+        <Layout >
             <Suspense fallback={<div>Loading...</div>}>
                 <BlogListContent posts={posts} />
             </Suspense>
