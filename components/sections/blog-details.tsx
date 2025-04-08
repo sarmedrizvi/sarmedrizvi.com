@@ -9,16 +9,16 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import { fetchBlogPostById } from "@/services/blog";
 
-export default function BlogDetails({post}:any) {
+export default function BlogDetails({ post }: any) {
   const params = useParams();
   const id = params?.id as string;
 
   const formattedDate = post
     ? new Date(post.date).toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-      })
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    })
     : "";
 
   return (
@@ -33,7 +33,7 @@ export default function BlogDetails({post}:any) {
 
       <section className="section-details pt-130 pb-100">
         <div className="container">
-          { post ? (
+          {post ? (
             <div className="row blog-details-images">
               <img src={post.image} alt={post.title} className="d-flex w-100" />
 
@@ -43,7 +43,8 @@ export default function BlogDetails({post}:any) {
                 <div className="col-lg-10 mx-lg-auto my-6">
                   <div className="d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
                     <Link
-                      href={`/blog/category/${post.category}`}
+                      // href={`/blog/category/${post.category}`}
+                      href="#"
                       className="btn btn-gradient text-uppercase align-self-lg-start mb-2 mb-lg-0"
                     >
                       {post.category}
