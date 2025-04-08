@@ -15,7 +15,7 @@ export default function Home2() {
 									<div className="position-relative mb-lg-0 mb-5">
 										<img src="assets/imgs/home-page-2/hero-1/profile-pic-removebg.png" alt="profile picture" />
 										<div className="position-absolute end-0 top-100 translate-middle-y icon-decorate">
-											<img src="assets/imgs/home-page-2/template/logo-png-1.png" alt="SR logo" style={{ width: "80px", height: "80px" }} />
+											<img src="https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/dark-theme-logo.svg" alt="SR logo" style={{ width: "80px", height: "80px" }} />
 										</div>
 									</div>
 								</div>
