@@ -4,13 +4,13 @@ import Link from "next/link";
 import Contact2 from "@/components/sections/Contact2";
 import Static2 from "@/components/sections/Static2";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useCallback } from "react";
+import { useCallback, Suspense } from "react";
 
-export default function BlogList({ posts }: any) {
+function BlogListContent({ posts }: { posts: any }) {
     const router = useRouter();
-    const searchParams = useSearchParams() ?? new URLSearchParams(); // Fallback if null
-    const currentPage = Number(searchParams.get('page')) || 1;
-    
+    const searchParams = useSearchParams();
+    const currentPage = Number(searchParams?.get('page')) || 1;
+
     // Constants for pagination
     const BLOGS_PER_PAGE = 9;
     const totalBlogs = posts?.length || 0;
@@ -28,7 +28,7 @@ export default function BlogList({ posts }: any) {
     // Create pagination URL with updated page number
     const createPageURL = useCallback(
         (pageNumber: number | string) => {
-            const params = new URLSearchParams(searchParams.toString());
+            const params = new URLSearchParams(searchParams?.toString());
             params.set('page', pageNumber.toString());
             return `/blog?${params.toString()}`;
         },
@@ -37,18 +37,14 @@ export default function BlogList({ posts }: any) {
 
     // Generate page numbers with ellipsis for large numbers of pages
     const getPageNumbers = () => {
-        if (totalPages <= 0) return [];
-        
         const pageNumbers = [];
-        const maxVisiblePages = 5; // Maximum pages to show before using ellipsis
+        const maxVisiblePages = 5;
 
         if (totalPages <= maxVisiblePages) {
-            // Show all pages if total pages is less than max visible
             for (let i = 1; i <= totalPages; i++) {
                 pageNumbers.push(i);
             }
         } else {
-            // Show some pages with ellipsis
             const leftBound = Math.max(1, currentPage - 1);
             const rightBound = Math.min(totalPages, currentPage + 1);
 
@@ -73,7 +69,7 @@ export default function BlogList({ posts }: any) {
 
         return pageNumbers;
     };
-    
+
     return (
         <>
             <Layout headerStyle={2} footerStyle={2}>
@@ -211,5 +207,15 @@ export default function BlogList({ posts }: any) {
                 </div>
             </Layout>
         </>
+    );
+}
+
+export default function BlogList({ posts }: { posts: any }) {
+    return (
+        <Layout headerStyle={2} footerStyle={2}>
+            <Suspense fallback={<div>Loading...</div>}>
+                <BlogListContent posts={posts} />
+            </Suspense>
+        </Layout>
     );
 }
