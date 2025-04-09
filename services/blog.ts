@@ -22,11 +22,9 @@ function getBaseUrl(): string {
     // Client-side - use relative path
     return '/api';
   }
-  
+
   // Server-side - use environment variable with fallback
-  return process.env.NEXT_PUBLIC_SITE_URL 
-    ? `${process.env.NEXT_PUBLIC_SITE_URL}/api`
-    : 'http://localhost:3000/api';
+  return 'https://sarmedrizvi.com/api';
 }
 export async function fetchAllBlogPosts(): Promise<BlogPost[]> {
   try {
@@ -34,17 +32,17 @@ export async function fetchAllBlogPosts(): Promise<BlogPost[]> {
     const response = await fetch(`${baseUrl}/blog-post`, {
       next: { tags: ['blog-posts'] } // Optional: for Next.js caching
     });
-    
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    
+
     const result: ApiResponse<BlogPost[]> = await response.json();
-    
+
     if (!result.success || !result.data) {
       throw new Error(result.message || 'Failed to fetch blog posts');
     }
-    
+
     return result.data;
   } catch (error) {
     console.error('Error fetching blog posts:', error);
@@ -58,17 +56,17 @@ export async function fetchBlogPostById(id: string): Promise<BlogPost> {
     const response = await fetch(`${baseUrl}/blog-post-by-id?blog=${id}`, {
       next: { tags: ['blog-post', id] } // Optional: for Next.js caching
     });
-    
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    
+
     const result: ApiResponse<BlogPost> = await response.json();
-    
+
     if (!result.success || !result.data) {
       throw new Error(result.message || 'Blog post not found');
     }
-    
+
     return result.data;
   } catch (error) {
     console.error(`Error fetching blog post ${id}:`, error);
