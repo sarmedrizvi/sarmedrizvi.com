@@ -1,5 +1,4 @@
 // next-sitemap.config.js
-const { fetchAllBlogPosts } = "@/services/blog";
 
 module.exports = {
   siteUrl: "https://sarmedrizvi.com",
@@ -11,7 +10,21 @@ module.exports = {
 
   // Provide paths manually since App Router doesn't expose them automatically
   additionalPaths: async (config) => {
-    const posts = await fetchAllBlogPosts();
+    const response = await fetch(`https://sarmedrizvi.com/api/blog-post`, {
+      next: { tags: ["blog-posts"] }, // Optional: for Next.js caching
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const result = await response.json();
+
+    if (!result.success || !result.data) {
+      throw new Error(result.message || "Failed to fetch blog posts");
+    }
+
+    const posts = result.data;
     const blogs = posts.map((item) => item.id);
     const paths = ["/", "/blog", ...blogs];
 

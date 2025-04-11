@@ -1,12 +1,15 @@
 import BlogDetails from "@/components/sections/blog-details";
 import { fetchBlogPostById } from "@/services/blog";
+import { Metadata } from "next";
 
 interface PageProps {
   params: {
     id: string;
   };
 }
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const post = await fetchBlogPostById(params.id);
 
   return {
