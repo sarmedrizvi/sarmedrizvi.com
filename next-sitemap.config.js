@@ -26,8 +26,8 @@ module.exports = {
 
     const posts = result.data;
     const blogs = posts.map((item) => item.id);
-    const paths = ["/", "/blog", ...blogs];
-
+    let paths = ["/", "/blog", ...blogs];
+    paths = [...new Set(paths)];
     return Promise.all(paths.map((path) => config.transform(config, path)));
   },
 };
