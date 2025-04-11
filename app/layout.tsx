@@ -31,7 +31,31 @@ const dmMono = DM_Mono({
 
 export const metadata: Metadata = {
   title: "Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator",
-  description: "Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation.",
+  description:
+    "Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation.",
+  keywords: [
+    "AI agents",
+    "AI solutions",
+    "AI chatbots",
+    "automation",
+    "business innovation",
+    "AI-driven growth",
+  ],
+  metadataBase: new URL("https://sarmedrizvi.com"),
+  openGraph: {
+    title: "Unlock AI Power: Expert AI Agent Solutions for Business",
+    description:
+      "Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation.",
+    url: "https://sarmedrizvi.com",
+    siteName: "Sarmed Rizvi",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Unlock AI Power: Expert AI Agent Solutions for Business",
+    description:
+      "Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation.",
+  },
 };
 
 export default function RootLayout({
@@ -42,32 +66,6 @@ export default function RootLayout({
   return (
     <html lang="en" data-bs-theme="dark" className="zelio">
       <head>
-        <title>
-          Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator{" "}
-        </title>
-        <meta
-          title="Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator"
-          name="title"
-          content="Discover Sarmed Rizvi's expertise in AI-driven solutions, including intelligent chatbots, custom automation, and real-time API integrations. With 8+ years of experience, 162+ completed projects, and 440+ satisfied clients, Sarmed specializes in revolutionizing businesses through cutting-edge AI technologies like OpenAI, LangChain, and TensorFlow."
-        />
-        <meta
-          name="description"
-          content="Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation."
-        />
-        <meta
-          name="keywords"
-          content="AI agents, AI solutions, AI chatbots, automation, business innovation, AI-driven growth"
-        />
-        <meta
-          property="og:title"
-          content="Unlock AI Power: Expert AI Agent Solutions for Business"
-        />
-        <meta
-          property="og:description"
-          content="Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation."
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-
         <Script
           id="clarity-script"
           strategy="afterInteractive"

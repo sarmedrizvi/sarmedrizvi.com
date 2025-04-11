@@ -15,22 +15,14 @@ export default function BlogDetails({ post }: any) {
 
   const formattedDate = post
     ? new Date(post.date).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    })
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      })
     : "";
 
   return (
     <Layout headerStyle={2} footerStyle={2}>
-      <Head>
-        <title>{post?.title || "Blog Post"} | Your Site Name</title>
-        <meta name="description" content={post?.description || ""} />
-        <meta property="og:title" content={post?.title || ""} />
-        <meta property="og:description" content={post?.description || ""} />
-        <meta property="og:image" content={post?.image || ""} />
-      </Head>
-
       <section className="section-details pt-130 pb-100">
         <div className="container">
           {post ? (
@@ -103,9 +95,7 @@ export default function BlogDetails({ post }: any) {
                   </div>
                   <div className="col-lg-10">
                     <h2>{post.title}</h2>
-                    <div
-                      dangerouslySetInnerHTML={{ __html: post.content }}
-                    />
+                    <div dangerouslySetInnerHTML={{ __html: post.content }} />
                   </div>
                 </div>
               </div>
