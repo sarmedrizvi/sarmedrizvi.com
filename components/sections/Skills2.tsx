@@ -13,7 +13,7 @@ export default function Skills2() {
 								<div className="text-center">
 									<div className="d-flex align-items-center justify-content-center">
 										<svg className="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width={5} height={6} viewBox="0 0 5 6" fill="none">
-											<circle cx="2.5" cy={3} r="2.5" fill="#9c0c4d" />
+											<circle cx="2.5" cy={3} r="2.5" fill="#fa5b5b" />
 										</svg>
 										<span className="text-linear-4 d-flex align-items-center">Projects</span>
 									</div>
@@ -226,17 +226,18 @@ export default function Skills2() {
 								</div>
 							</div>
 						</div>
+						
 						<div className="position-absolute d-none d-md-block decorate">
 							<div className="rotateme">
 								<div className="circle-1-1" />
 								<div className="circle-1-2 position-absolute top-50 start-50 translate-middle">
 									<svg className="mb-5 position-absolute bottom-0 start-0" xmlns="http://www.w3.org/2000/svg" width={9} height={9} viewBox="0 0 9 9" fill="none">
-										<circle cx="4.5" cy="4.5" r="4.5" fill="#636366" />
+										<circle cx="4.5" cy="4.5" r="4.5" fill="#ff7676" />
 									</svg>
 								</div>
 								<div className="circle-1-3 position-absolute top-50 start-50 translate-middle ">
 									<svg className="mb-3 position-absolute bottom-0 end-0" xmlns="http://www.w3.org/2000/svg" width={9} height={9} viewBox="0 0 9 9" fill="none">
-										<circle cx="4.5" cy="4.5" r="4.5" fill="#636366" />
+										<circle cx="4.5" cy="4.5" r="4.5" fill="#ff7676" />
 									</svg>
 								</div>
 							</div>

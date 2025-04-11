@@ -22,7 +22,7 @@ export default function Experience2() {
                     viewBox="0 0 5 6"
                     fill="none"
                   >
-                    <circle cx="2.5" cy={3} r="2.5" fill="#9c0c4d" />
+                    <circle cx="2.5" cy={3} r="2.5" fill="#fa5b5b" />
                   </svg>
                   <span className="text-linear-4 d-flex align-items-center">
                     {" "}
@@ -50,15 +50,10 @@ export default function Experience2() {
                       {experienceData.map((exp) => (
                         <div
                           key={exp.id}
-                          className={`technology border border-1 rounded-3 p-3 ${activeCompany === exp.id ? "active" : ""
+                          className={`experience-item technology border border-1 rounded-3 p-3 ${activeCompany === exp.id ? "active" : ""
                             }`}
                           onClick={() => setActiveCompany(exp.id)}
-                          style={{
-                            background: activeCompany === exp.id ? "linear-gradient(90deg, #3b1228 30%, #9c0c4d 100%)" : "transparent",
-                            cursor: "pointer",
-                            padding: "10px",
-                            borderRadius: "5px",
-                          }}
+
                         >
                           <div className="d-flex align-items-center gap-2 experience-logo">
                             <img src={exp.logo} alt={exp.company} />

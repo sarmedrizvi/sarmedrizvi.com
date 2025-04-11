@@ -30,8 +30,8 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Zelio - Personal Portfolio Template",
-  description: "Zelio - Personal Portfolio Template",
+  title: "Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator",
+  description: "Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation.",
 };
 
 export default function RootLayout({
@@ -47,7 +47,7 @@ export default function RootLayout({
         </title>
         <meta
           title="Sarmed Rizvi | Expert AI Agent Developer & Digital Innovator"
-          name="description"
+          name="title"
           content="Discover Sarmed Rizvi's expertise in AI-driven solutions, including intelligent chatbots, custom automation, and real-time API integrations. With 8+ years of experience, 162+ completed projects, and 440+ satisfied clients, Sarmed specializes in revolutionizing businesses through cutting-edge AI technologies like OpenAI, LangChain, and TensorFlow."
         />
         <meta

@@ -33,7 +33,7 @@ export default function Projects2() {
 							<div className="p-lg-8 p-md-6 position-relative z-1">
 								<div className="d-flex align-items-center">
 									<svg className="text-primary-2 me-2" xmlns="http://www.w3.org/2000/svg" width={5} height={6} viewBox="0 0 5 6" fill="none">
-										<circle cx="2.5" cy={3} r="2.5" fill="#9c0c4d" />
+										<circle cx="2.5" cy={3} r="2.5" fill="#fa5b5b" />
 									</svg>
 									<span className="text-linear-4 d-flex align-items-center"> Projects </span>
 								</div>
@@ -53,13 +53,8 @@ export default function Projects2() {
 																<img src={project.image} alt={project.title} className="project-images w-100" />
 															</div>
 															<div className="col-lg-7 ps-lg-5 mt-5 mt-lg-0">
-																<h4 className="gradient-heading"
-																	style={{
-																		background: "linear-gradient(to right, #9c0c4d, #3b1228)",
-																		WebkitBackgroundClip: "text",
-																		backgroundClip: "text",
-																		color: "transparent",
-																	}}
+																<h4 className="gradient-heading exp project-gradient-text"
+															
 																>
 																	{project.title}<br />
 																</h4>
