@@ -56,6 +56,7 @@ export const metadata: Metadata = {
     description:
       "Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation.",
   },
+  robots: "index, follow",
 };
 
 export default function RootLayout({

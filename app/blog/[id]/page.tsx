@@ -1,5 +1,5 @@
 import BlogDetails from "@/components/sections/blog-details";
-import { fetchBlogPostById } from "@/services/blog";
+import { fetchAllBlogPosts, fetchBlogPostById } from "@/services/blog";
 import { Metadata } from "next";
 
 interface PageProps {
@@ -7,6 +7,11 @@ interface PageProps {
     id: string;
   };
 }
+export async function generateStaticParams() {
+  const posts = await fetchAllBlogPosts();
+  return posts.map((post) => ({ id: post.id }));
+}
+
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
@@ -27,8 +32,10 @@ export async function generateMetadata({
         },
       ],
     },
+    robots: "index, follow",
   };
 }
+
 export default async function BlogDetailPage({ params }: PageProps) {
   const post = await fetchBlogPostById(params.id);
 

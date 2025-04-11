@@ -64,7 +64,8 @@ export default function BlogDetails({ post }: any) {
                     <div className="d-none d-lg-flex flex-column gap-3 pt-3">
                       <Link
                         href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                          window.location.href
+                          typeof window !== "undefined" &&
+                            window?.location?.href
                         )}`}
                         className="text-decoration-none"
                         target="_blank"
@@ -74,7 +75,8 @@ export default function BlogDetails({ post }: any) {
                       </Link>
                       <Link
                         href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-                          window.location.href
+                          typeof window !== "undefined" &&
+                            window?.location?.href
                         )}&text=${encodeURIComponent(post.title)}`}
                         className="text-decoration-none"
                         target="_blank"
