@@ -3638,7 +3638,7 @@ Preloader
   width: 9px;
   height: 9px;
   opacity: 0.3;
-  background: #6e4ef2;
+  background: #aa2c2c;
   border-radius: 50%;
 }
 
@@ -3651,7 +3651,7 @@ Preloader
   color: #000;
   opacity: 1;
   color: #fff;
-  background: #6e4ef2;
+  background: #aa2c2c;
 }
 
 .pagination_item {
@@ -3665,7 +3665,7 @@ Preloader
   box-shadow: none;
   background-color: #f84848 !important;
   border-color: #f84848;
-  color: #9b51e0 !important;
+  color: #aa2c2c !important;
   transition: 0.3s ease-in-out;
 }
 
@@ -3685,7 +3685,7 @@ Preloader
 }
 .hover-effect:after {
   content: "🠚";
-  color: #6e4ef2;
+  color: #aa2c2c;
   position: absolute;
   opacity: 0;
   left: -20px;
@@ -3712,7 +3712,7 @@ Preloader
   transition: all 0.2s ease-in-out;
 }
 .masonry-active .filter-item .project-item .project-card-content:hover h3 {
-  color: #6e4ef2;
+  color: #aa2c2c;
 }
 .masonry-active .filter-item .project-item .project-card-icon {
   transition: all 0.2s ease-in-out;
@@ -3733,7 +3733,7 @@ Preloader
   color: #ffffff;
   border: none;
   transform: rotate(45deg);
-  background: linear-gradient(90deg, #6d4df2 0%, #8c71ff 100%);
+  background: linear-gradient(90deg, #aa2c2c 0%, #aa2c2c 100%);
 }
 
 .grid-sizer,
@@ -3773,7 +3773,7 @@ Preloader
   transition: all 0.2s ease-in-out;
 }
 .section-blog-1 .blog-card .blog-card__content:hover .blog-card__title {
-  color: #6e4ef2;
+  color: #aa2c2c;
 }
 .section-blog-1 .blog-card:hover {
   background: linear-gradient(var(--tc-bg-1), var(--tc-bg-1)) padding-box, var(--tc-linear-2) border-box;
@@ -3799,7 +3799,7 @@ textarea.form-control {
   transition: all 0.2s ease-in-out;
 }
 .section-blog-list .blog-card .blog-card__content:hover .blog-card__title {
-  color: #6e4ef2;
+  color: #aa2c2c;
 }
 .section-blog-list .blog-card:hover {
   background: linear-gradient(var(--tc-neutral-1000), var(--tc-neutral-1000)) padding-box, var(--tc-linear-2) border-box;
@@ -3883,7 +3883,7 @@ textarea.form-control {
 .section-service-1 .single-service-card-3 .service-card-title span {
   font-size: 29px;
   font-weight: 700;
-  -webkit-text-fill-color: #6e4ef2;
+  -webkit-text-fill-color: #aa2c2c;
   -webkit-text-stroke: transparent;
   transition: 0.4s;
 }
@@ -3906,7 +3906,7 @@ textarea.form-control {
   transition: 0.4s;
 }
 .section-service-1 .single-service-card-1:hover {
-  background-color: #6e4ef2;
+  background-color: #aa2c2c;
   transition: 0.4s;
 }
 .section-service-1 .single-service-card-1:hover .service-card-details .service-card-title a {
@@ -3915,7 +3915,7 @@ textarea.form-control {
 .section-service-1 .single-service-card-1:hover .service-card-details .service-card-title a span {
   -webkit-text-fill-color: #ffffff;
   -webkit-text-stroke: 1px transparent;
-  color: #6e4ef2;
+  color: #aa2c2c;
 }
 .section-service-1 .single-service-card-1:hover .service-card-details .service-card-text {
   color: #ffffff;
