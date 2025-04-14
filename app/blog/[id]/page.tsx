@@ -8,14 +8,14 @@ interface PageProps {
   };
 }
 export async function generateStaticParams() {
-  const posts = await getAllPosts();
+  const posts = getAllPosts();
   return posts.map((post) => ({ id: post.id }));
 }
 
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const post: any = await getPostById(params.id);
+  const post: any = getPostById(params.id);
 
   return {
     title: post.title,
@@ -37,7 +37,7 @@ export async function generateMetadata({
 }
 
 export default async function BlogDetailPage({ params }: PageProps) {
-  const post = await getPostById(params.id);
+  const post = getPostById(params.id);
 
   return (
     <>

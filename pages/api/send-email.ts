@@ -1,7 +1,5 @@
 import transporter from '@/util/transporter';
 import type { NextApiRequest, NextApiResponse } from 'next';
-import nodemailer from 'nodemailer';
-import type SMTPTransport from 'nodemailer/lib/smtp-transport';
 
 type ResponseData = {
   message: string;
@@ -15,36 +13,23 @@ type Payload = {
   message: string;
 };
 
-// Create a Nodemailer transporter
-// const transporter:any = nodemailer.createTransport({
-//   host: process.env.SMTP_HOST,
-//   port: process.env.SMTP_PORT,
-//   auth: {
-//     user: process.env.SMTP_USER,
-//     pass: process.env.SMTP_PASS,
-//   },
-// });
-
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<ResponseData>
 ) {
   if (req.method === 'POST') {
     try {
-      // Extract the payload from the request body
       const { name, contact, email, subject, message }: Payload = req.body;
 
-      // Validate the payload
       if (!name || !email || !contact || !subject || !message) {
         return res.status(400).json({ message: 'Missing required fields' });
       }
 
-      // Email to you (e.g., tayyabaaly1997@gmail.com)
       const mailOptionsToYou = {
-        from: process.env.SMTP_USER, // Sender address
-        to: 'sarmed@impleko.com', // Your email address
-        subject: `New Message from ${name}: ${subject}`, // Email subject
-        text: `Name: ${name}\nEmail: ${email}\nContact: ${contact}\nSubject: ${subject}\nMessage: ${message}`, // Plain text body
+        from: process.env.SMTP_USER,
+        to: 'sarmed@impleko.com',
+        subject: `New Message from ${name}: ${subject}`,
+        text: `Name: ${name}\nEmail: ${email}\nContact: ${contact}\nSubject: ${subject}\nMessage: ${message}`,
         html: `
           <h1>New Message</h1>
           <p><strong>Name:</strong> ${name}</p>
@@ -52,14 +37,13 @@ export default async function handler(
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Subject:</strong> ${subject}</p>
           <p><strong>Message:</strong> ${message}</p>
-        `, // HTML body
+        `,
       };
 
-      // Email to the user (confirmation email)
       const mailOptionsToUser = {
-        from: process.env.SMTP_USER, // Sender address
-        to: email, // User's email from the payload
-        subject: 'Thanks for Reaching Out!', // Email subject
+        from: process.env.SMTP_USER,
+        to: email,
+        subject: 'Thanks for Reaching Out!',
         text: `
           Hi ${name},
           Thank you for getting in touch! I’ve received your message and will get back to you as soon as possible.
@@ -75,7 +59,7 @@ export default async function handler(
           Looking forward to connecting with you soon!
           Best,
           Sarmed Rizvi
-        `, // Plain text body
+        `,
         html: `
           <h1>Thanks for Reaching Out!</h1>
           <p>Hi ${name},</p>
@@ -96,22 +80,19 @@ export default async function handler(
           <p>Looking forward to connecting with you soon!</p>
           <p>Best,</p>
           <p>Sarmed Rizvi</p>
-        `, // HTML body
+        `,
       };
       console.log(transporter);
-      
-      // Send both emails
+
       await transporter.sendMail(mailOptionsToYou);
       await transporter.sendMail(mailOptionsToUser);
 
-      // Respond with success message
       res.status(200).json({ message: 'Emails sent successfully!' });
     } catch (error) {
       console.error('Error sending email:', error);
       res.status(500).json({ message: 'Failed to send email' });
     }
   } else {
-    // Handle non-POST requests
     res.setHeader('Allow', ['POST']);
     res.status(405).json({ message: `Method ${req.method} not allowed` });
   }

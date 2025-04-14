@@ -1,8 +1,8 @@
 import React from "react";
 import { getAllPosts } from "@/util/getAllBlogs";
-import BlogList from "@/components/sections/blogs";
+import BlogList from "@/components/sections/Blog";
 
-const Blogspage = async () => {
+const BlogsPage = async () => {
   const posts = getAllPosts();
 
   return (
@@ -12,4 +12,4 @@ const Blogspage = async () => {
   );
 };
 
-export default Blogspage;
+export default BlogsPage;

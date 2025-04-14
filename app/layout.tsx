@@ -99,7 +99,6 @@ export default function RootLayout({
         `}
         </Script>
 
-        {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-JG40109Y6D"

@@ -12,7 +12,7 @@ import Static from "@/components/sections/Static"
 import Testimonial from "@/components/sections/Testimonials"
 import { getAllPosts } from "@/util/getAllBlogs"
 
-export default async function HomePage2() {
+export default async function HomePage() {
 	const posts = getAllPosts();
 	return (
 		<>

@@ -11,12 +11,10 @@ function BlogListContent({ posts }: { posts: any }) {
     const searchParams = useSearchParams();
     const currentPage = Number(searchParams?.get('page')) || 1;
 
-    // Constants for pagination
     const BLOGS_PER_PAGE = 9;
     const totalBlogs = posts?.length || 0;
     const totalPages = Math.ceil(totalBlogs / BLOGS_PER_PAGE);
 
-    // Calculate current blogs to display
     const startIndex = (currentPage - 1) * BLOGS_PER_PAGE;
     const endIndex = startIndex + BLOGS_PER_PAGE;
     const currentBlogs = posts?.slice(startIndex, endIndex) || [];
@@ -25,7 +23,6 @@ function BlogListContent({ posts }: { posts: any }) {
         router.push(`/blog/${blogId}`);
     };
 
-    // Create pagination URL with updated page number
     const createPageURL = useCallback(
         (pageNumber: number | string) => {
             const params = new URLSearchParams(searchParams?.toString());
@@ -35,7 +32,6 @@ function BlogListContent({ posts }: { posts: any }) {
         [searchParams]
     );
 
-    // Generate page numbers with ellipsis for large numbers of pages
     const getPageNumbers = () => {
         const pageNumbers = [];
         const maxVisiblePages = 5;

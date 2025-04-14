@@ -29,7 +29,7 @@ export default function Header2({
                   <Link href="https://sarmedrizvi.com" passHref legacyBehavior>
                     <a className="d-flex align-items-center text-decoration-none">
                       <img
-                        src="https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/dark-theme-logo.svg"
+                        src="https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/SR+Logo.svg"
                         alt="SR logo"
                         style={{ width: "40px", height: "40px" }}
                       />
@@ -47,32 +47,32 @@ export default function Header2({
                   >
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                       <li className="nav-item">
-                        <Link className="nav-link" href="https://sarmedrizvi.com#about">
+                        <Link className="nav-link" href="/#about">
                           About me
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="https://sarmedrizvi.com#resume">
+                        <Link className="nav-link" href="/#resume">
                           Resume
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="https://sarmedrizvi.com#services">
+                        <Link className="nav-link" href="/#services">
                           Services
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="https://sarmedrizvi.com#portfolio">
+                        <Link className="nav-link" href="/#portfolio">
                           Portfolio
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="https://sarmedrizvi.com#blogs">
+                        <Link className="nav-link" href="/#blogs">
                           Blogs
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link className="nav-link" href="https://sarmedrizvi.com#contact">
+                        <Link className="nav-link" href="/#contact">
                           Contact
                         </Link>
                       </li>
@@ -101,7 +101,7 @@ export default function Header2({
               <ThemeSwitch />
             </nav>
           </div>
-          {/* offCanvas-menu */}
+
           <OffCanvas
             isOffCanvas={isOffCanvas}
             handleOffCanvas={handleOffCanvas}
