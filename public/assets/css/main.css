@@ -3658,12 +3658,12 @@ Preloader
   color: #f84848 !important;
 }
 .pagination_item:hover {
-  color: #f84848 !important;
+  color: #ffa052 !important;
   transition: 0.3s ease-in-out;
 }
 .pagination_item:focus {
   box-shadow: none;
-  background-color: #f84848 !important;
+  background-color: #ffa052 !important;
   border-color: #f84848;
   color: #aa2c2c !important;
   transition: 0.3s ease-in-out;
@@ -14663,15 +14663,22 @@ p, li {
 }
 
 .object-fit-cover {
-  object-fit: cover !important;
-  width: 400px;
-  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 340px;
 }
 
-.blog-details-images{
-  padding-top: 2.5rem;
+/* .blog-card__image {
+  height: 250px ; 
+} */
+
+/* .blog-details-images{
+  /* padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
+  padding-right: 1rem;
+  padding-left: 1rem; 
+} */
 
 .line-clamp-2 {
   font-size: 16px !important;

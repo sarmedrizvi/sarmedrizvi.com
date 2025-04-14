@@ -52,10 +52,9 @@ export function getAllPosts(): BlogPost[] {
             description: data.description || '',
             image: data.image || '/default-blog-image.jpg',
             link: data.link || `/blog/${id}`,
-            read_time: data.read_time || '5 min', // Default read time
+            read_time: data.read_time || '5 min',
             content: htmlContent,
             rawContent: content,
-            // Spread any additional frontmatter fields
             ...data
         };
     });

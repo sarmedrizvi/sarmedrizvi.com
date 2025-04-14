@@ -3,7 +3,7 @@ title: "How AI Chatbots Are Reshaping Patient Care in the Medical Industry"
 author: "Sarmed"
 date: "Mar 29, 2025"
 read_time: "3 min read"
-category: "Medical Automation"
+category: "Medical Chatbot"
 description: "Discover how healthcare professionals are using AI agents to eliminate administrative burdens and get back to patient care. Real examples, practical implementation steps, and a jargon-free approach to medical automation."
 image: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/ai-innovation-blog.png"
 ---

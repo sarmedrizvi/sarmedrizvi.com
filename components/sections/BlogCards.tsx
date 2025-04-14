@@ -1,11 +1,8 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { fetchAllBlogPosts } from "@/services/blog";
 import { useRouter } from "next/navigation";
-import { getAllPosts } from "@/util/getAllBlogs";
 
-export default function Blog2({ blogPosts }: any) {
+export default function Blog({ blogPosts }: any) {
   const router = useRouter();
 
 

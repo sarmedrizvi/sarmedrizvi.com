@@ -1,8 +1,8 @@
 "use client";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
-import Contact2 from "@/components/sections/Contact2";
-import Static2 from "@/components/sections/Static2";
+import Contact2 from "@/components/sections/Contact";
+import Static2 from "@/components/sections/Static";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, Suspense } from "react";
 

@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { testimonialVideos, testimonialImages } from "@/data/testimonials-data";
 import Masonry from "react-masonry-css";
 
-export default function MasonryPage() {
+export default function Testimonial() {
   const videoBreakpointColumnsObj = {
     default: 2,
     1100: 2,

@@ -1,15 +1,15 @@
 import Layout from "@/components/layout/Layout"
-import Blog2 from "@/components/sections/Blog2"
-import Contact2 from '@/components/sections/Contact2'
-import Coporation2 from "@/components/sections/Coporation2"
-import Education2 from "@/components/sections/Education2"
-import Experience2 from "@/components/sections/Experience2"
-import Home2 from "@/components/sections/Home2"
-import Projects2 from "@/components/sections/Projects2"
-import Service2 from "@/components/sections/Service2"
-import Skills2 from "@/components/sections/Skills2"
-import Static2 from "@/components/sections/Static2"
-import MasonryPage from "@/components/sections/Testimonials-grid"
+import Blog from "@/components/sections/BlogCards"
+import Contact from '@/components/sections/Contact'
+import Coporation from "@/components/sections/Coporation"
+import Education from "@/components/sections/Education"
+import Experience from "@/components/sections/Experience"
+import Home from "@/components/sections/Home"
+import Projects from "@/components/sections/Projects"
+import Service from "@/components/sections/Service"
+import Skills from "@/components/sections/Skills"
+import Static from "@/components/sections/Static"
+import Testimonial from "@/components/sections/Testimonials"
 import { getAllPosts } from "@/util/getAllBlogs"
 
 export default async function HomePage2() {
@@ -17,17 +17,17 @@ export default async function HomePage2() {
 	return (
 		<>
 			<Layout headerStyle={2} footerStyle={2}>
-				<Home2 />
-				<Static2 />
-				<MasonryPage />
-				<Coporation2 />
-				<Service2 />
-				<Experience2 />
-				<Education2 />
-				<Projects2 />
-				<Skills2 />
-				<Blog2 blogPosts={posts} />
-				<Contact2 />
+				<Home />
+				<Static />
+				<Testimonial />
+				<Coporation />
+				<Service />
+				<Experience />
+				<Education />
+				<Projects />
+				<Skills />
+				<Blog blogPosts={posts} />
+				<Contact />
 			</Layout>
 		</>
 	)
