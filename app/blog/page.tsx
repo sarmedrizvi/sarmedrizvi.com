@@ -1,6 +1,6 @@
 import React from "react";
-import BlogList from "../../components/sections/Blogs";
 import { getAllPosts } from "@/util/getAllBlogs";
+import BlogList from "@/components/sections/blogs";
 
 const Blogspage = async () => {
   const posts = getAllPosts();
