@@ -1,13 +1,15 @@
-import BlogList from '@/components/sections/blogs'
-import { fetchAllBlogPosts } from '@/services/blog';
-import React from 'react'
+import React from "react";
+import BlogList from "@/components/sections/blogs";
+import { getAllPosts } from "@/util/getAllBlogs";
 
 const Blogspage = async () => {
-  const posts = await fetchAllBlogPosts();
+  const posts = getAllPosts();
 
   return (
-    <div><BlogList posts={posts} /></div>
-  )
-}
+    <>
+      <BlogList posts={posts} />
+    </>
+  );
+};
 
-export default Blogspage
+export default Blogspage;

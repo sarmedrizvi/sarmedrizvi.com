@@ -3,23 +3,11 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { fetchAllBlogPosts } from "@/services/blog";
 import { useRouter } from "next/navigation";
+import { getAllPosts } from "@/util/getAllBlogs";
 
-export default function Blog2() {
+export default function Blog2({ blogPosts }: any) {
   const router = useRouter();
-  const [blogPosts, setBlogPosts] = useState<any>();
 
-  useEffect(() => {
-    const loadBlogPosts = async () => {
-      try {
-        const posts = await fetchAllBlogPosts();
-        setBlogPosts(posts);
-      } catch (err) {
-        // Handle error
-      }
-    };
-
-    loadBlogPosts();
-  }, []);
 
   const handleNavigation = (blogId: string) => {
     router.push(`/blog/${blogId}`);

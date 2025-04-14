@@ -1073,7 +1073,7 @@ img {
 
 .btn-primary-2 {
   --bs-btn-color: #ffffff;
-  --bs-btn-bg: #f84848;
+  --bs-btn-bg: linear-gradient(90deg, #f84848  0%, #912626 100%);;
   --bs-btn-border-color: none;
   --bs-btn-hover-color: #ffffff;
   --bs-btn-hover-bg: #f84848;
@@ -14691,7 +14691,8 @@ p, li {
 }
 
 .experience-item.active {
-  background: linear-gradient(90deg, #f84848 0%, #3b1228 100%) !important;
+  background: linear-gradient(90deg, #912626   0%, #f86248 100%) !important;
+
 }
 
 .project-gradient-text {
@@ -14701,4 +14702,4 @@ p, li {
   color: transparent;
 }
 
-
+/* linear-gradient(90deg, #f84848  0%, #912626 100%) */

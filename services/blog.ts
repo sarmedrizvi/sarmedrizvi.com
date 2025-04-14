@@ -54,7 +54,7 @@ export async function fetchBlogPostById(id: string): Promise<BlogPost> {
   try {
     const baseUrl = getBaseUrl();
     const response = await fetch(`${baseUrl}/blog-post-by-id?blog=${id}`, {
-      next: { tags: ['blog-post', id] } // Optional: for Next.js caching
+      next: { tags: ['blog-post', id] }
     });
 
     if (!response.ok) {

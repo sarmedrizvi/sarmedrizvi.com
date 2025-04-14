@@ -3,7 +3,6 @@ import { usePathname } from "next/navigation" // usePathname is more suited for 
 
 export default function Menu() {
 	const pathname = usePathname()
-
 	return (
 		<>
 			<ul className="navbar-nav me-auto mb-2 mb-lg-0">

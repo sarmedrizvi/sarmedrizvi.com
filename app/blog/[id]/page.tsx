@@ -1,5 +1,5 @@
-import BlogDetails from '@/components/sections/blog-details';
-import { fetchBlogPostById } from '@/services/blog';
+import BlogDetails from "@/components/sections/blog-details";
+import { getPostById } from "@/util/getAllBlogs";
 
 interface PageProps {
   params: {
@@ -8,9 +8,7 @@ interface PageProps {
 }
 
 export default async function BlogDetailPage({ params }: PageProps) {
-  const post = await fetchBlogPostById(params.id);
-  console.log("Blog details", post);
-
+  const post = await getPostById(params.id);
 
   return (
     <>

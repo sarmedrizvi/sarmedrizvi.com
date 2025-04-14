@@ -7,6 +7,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, Suspense } from "react";
 
 function BlogListContent({ posts }: { posts: any }) {
+    console.log('posts', posts)
     const router = useRouter();
     const searchParams = useSearchParams();
     const currentPage = Number(searchParams?.get('page')) || 1;

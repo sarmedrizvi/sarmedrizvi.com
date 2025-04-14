@@ -14,7 +14,6 @@ const Contact2 = () => {
     message: "",
   });
 
-  // Handle form input changes
   const handleInputChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({
@@ -23,9 +22,8 @@ const Contact2 = () => {
     });
   };
 
-  // Handle form submission
   const handleSubmit = async (e: any) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
 
     setIsSubmitting(true);
     setSubmitStatus("");

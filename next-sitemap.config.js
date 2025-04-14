@@ -13,7 +13,7 @@ module.exports = {
         const paths = [
             '/',
             '/blog',
-            '/blog/my-first-post', 
+            '/blog/my-first-post',
         ];
 
         return Promise.all(

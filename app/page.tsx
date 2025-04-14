@@ -1,5 +1,4 @@
 import Layout from "@/components/layout/Layout"
-import Blog1 from "@/components/sections/Blog1"
 import Blog2 from "@/components/sections/Blog2"
 import Contact2 from '@/components/sections/Contact2'
 import Coporation2 from "@/components/sections/Coporation2"
@@ -11,8 +10,10 @@ import Service2 from "@/components/sections/Service2"
 import Skills2 from "@/components/sections/Skills2"
 import Static2 from "@/components/sections/Static2"
 import MasonryPage from "@/components/sections/Testimonials-grid"
+import { getAllPosts } from "@/util/getAllBlogs"
 
-export default function HomePage2() {
+export default async function HomePage2() {
+	const posts = getAllPosts();
 	return (
 		<>
 			<Layout headerStyle={2} footerStyle={2}>
@@ -25,7 +26,7 @@ export default function HomePage2() {
 				<Education2 />
 				<Projects2 />
 				<Skills2 />
-				<Blog2 />
+				<Blog2 blogPosts={posts} />
 				<Contact2 />
 			</Layout>
 		</>
