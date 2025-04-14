@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout"
-import Blog from "@/components/sections/BlogCards"
+import Blog from "@/components/sections/BlogSection"
 import Contact from '@/components/sections/Contact'
 import Coporation from "@/components/sections/Coporation"
 import Education from "@/components/sections/Education"

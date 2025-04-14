@@ -1,4 +1,4 @@
-import BlogDetails from "@/components/sections/BlogDetails";
+import BlogDetails from "../../../components/sections/BlogDetails";
 import { getAllPosts, getPostById } from "@/util/getAllBlogs";
 import { Metadata } from "next";
 
