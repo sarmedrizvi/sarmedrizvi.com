@@ -58,7 +58,7 @@ export default function Projects() {
 																>
 																	{project.title}<br />
 																</h4>
-																<p>{project.description}</p>
+																<p className='text-300'>{project.description}</p>
 																<ul className="mt-4 list-unstyled">
 																	<li className="text-secondary-2 mb-3 border-bottom pb-3">Project Info</li>
 																	<li className="text-dark mb-3 border-bottom pb-3">

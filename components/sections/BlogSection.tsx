@@ -70,7 +70,7 @@ export default function Blog({ blogPosts }: any) {
                   <div className="blog-card__content position-relative text-center mt-4">
                     <span className="blog-card__date fs-7">{post?.date} • {post?.read_time}</span>
                     <h6 className="blog-card__title mt-2 line-clamp-2">{post?.title}</h6>
-                    <p className="blog-card__description fs-7">
+                    <p className="blog-card__description text-300 fs-7">
                       {post?.description}
                     </p>
                     <Link

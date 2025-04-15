@@ -26,7 +26,7 @@ export default function Header({
             </a>
             <div className="container py-3 px-4">
               <div className="navbar-brand d-flex main-logo align-items-center">
-                <Link href="https://sarmedrizvi.com" passHref legacyBehavior>
+                <Link href="/" passHref legacyBehavior>
                   <a className="d-flex align-items-center text-decoration-none">
                     <img
                       src="https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/SR+Logo.svg"

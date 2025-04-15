@@ -128,7 +128,7 @@ function BlogListContent({ posts }: { posts: any }) {
                                                 <h6 className="blog-card__title mt-2 line-clamp-2">
                                                     {post?.title}
                                                 </h6>
-                                                <p className="blog-card__description fs-7">
+                                                <p className="blog-card__description text-300 fs-7">
                                                     {post?.description}
                                                 </p>
                                                 <Link

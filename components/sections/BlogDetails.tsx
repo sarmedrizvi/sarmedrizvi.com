@@ -18,6 +18,11 @@ export default function BlogDetails({ post }: any) {
     })
     : "";
 
+  function addClassToParagraphs(html: string) {
+    return html.replace(/<p(.*?)>/g, '<p$1 class="text-300">');
+  }
+
+
   return (
     <Layout headerStyle={2} footerStyle={2}>
       <section className="section-details pt-130 pb-100">
@@ -93,8 +98,13 @@ export default function BlogDetails({ post }: any) {
                     </div>
                     <div className="col-lg-10">
                       <h2>{post.title}</h2>
-                      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+
+                      <div
+                        dangerouslySetInnerHTML={{ __html: addClassToParagraphs(post.content) }}
+                      />
+
                     </div>
+
                   </div>
                 </div>
               </div>
