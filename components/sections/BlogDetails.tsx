@@ -79,14 +79,15 @@ export default function BlogDetails({ post }: any) {
                         >
                           <i className="ri-twitter-x-fill fs-18 text-linear-4" />
                         </Link>
-                        <Link href="/#" className="text-decoration-none">
-                          <i className="ri-instagram-fill fs-5 text-linear-4" />
-                        </Link>
-                        <Link href="/#" className="text-decoration-none">
-                          <i className="ri-pinterest-fill fs-5 text-linear-4" />
-                        </Link>
-                        <Link href="/#" className="text-decoration-none">
-                          <i className="ri-google-fill fs-5 text-linear-4" />
+                        <Link
+                          href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+                            typeof window !== "undefined" && window?.location?.href
+                          )}`}
+                          className="text-decoration-none"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <i className="ri-linkedin-box-fill fs-18 text-linear-4" />
                         </Link>
                       </div>
                     </div>
