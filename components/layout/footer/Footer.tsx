@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-export default function Footer2() {
+export default function Footer() {
 	return (
 		<>
 			<footer>

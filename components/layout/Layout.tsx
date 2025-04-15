@@ -6,8 +6,8 @@ import ImageHoverEffects from "../elements/ImageHoverEffects";
 import Breadcrumb from "./Breadcrumb";
 import MobileMenu from "./MobileMenu";
 
-import Footer2 from "./footer/Footer";
-import Header2 from "./header/Header";
+import Footer from "./footer/Footer";
+import Header from "./header/Header";
 
 interface LayoutProps {
   headerStyle?: Number;
@@ -69,7 +69,7 @@ export default function Layout({
       <DataBg />
       <ImageHoverEffects />
 
-      <Header2
+      <Header
         scroll={scroll}
         isMobileMenu={isMobileMenu}
         handleMobileMenu={handleMobileMenu}
@@ -84,7 +84,7 @@ export default function Layout({
         {children}
       </main>
 
-      <Footer2 />
+      <Footer />
 
 
     </>

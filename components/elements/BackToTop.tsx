@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 
 interface BackToTopProps {
-	target: string // should be a valid CSS selector
+	target: string 
 }
 
 export default function BackToTop({ target }: BackToTopProps) {

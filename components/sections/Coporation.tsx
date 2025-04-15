@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Marquee from "react-fast-marquee";
 
 export default function Coporation() {
 	return (

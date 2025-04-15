@@ -1835,7 +1835,7 @@ p {
   font-size: var(--tc-body-font-size);
   line-height: var(--tc-body-line-height);
   font-weight: 500;
-  color: #565662;
+  color: #a5a5a5da;
   margin-bottom: 15px;
 }
 
