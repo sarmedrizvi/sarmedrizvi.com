@@ -24,7 +24,6 @@ export default function Footer() {
 									fontFamily: "var(--dmMono)",
 								}}>
 								<a href="#about" className="fs-6"> About me </a>
-								<a href="#resume" className="fs-6"> Resume </a>
 								<a href="#services" className="fs-6"> Services </a>
 								<a href="#portfolio" className="fs-6"> Portfolio </a>
 								<a href="#blogs" className="fs-6"> Blogs </a>
