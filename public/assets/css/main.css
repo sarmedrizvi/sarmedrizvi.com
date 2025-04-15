@@ -14709,4 +14709,6 @@ p, li {
   color: transparent;
 }
 
-/* linear-gradient(90deg, #f84848  0%, #912626 100%) */
+.mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li a {
+  font-weight: 500;
+}
