@@ -5,7 +5,7 @@ date: "Apr 16, 2025"
 read_time: "3 min read"
 category: "AI Agents Automation"
 description: "Discover how AI automation agents and AI agents automation anywhere are transforming revenue cycle management. Learn the benefits of artificial intelligence and automation in healthcare workflows."
-image: ""
+image: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/revenue-cycle-management-with-ai-agents.webp"
 meta_title: "AI Automation Agents & AI Agents Automation Anywhere for Revenue Cycle Workflows"
 meta_description: "Discover how AI automation agents and AI agents automation anywhere are transforming revenue cycle management. Learn the benefits of artificial intelligence and automation in healthcare workflows."
 ---
