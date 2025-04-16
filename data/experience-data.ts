@@ -6,12 +6,34 @@ export const experienceData = [
         years: "2024 - Present",
         title: "Co-Founder (2024 - Present)",
         description: [
-            "Co-founding and driving innovation as a leader in digital transformation and AI-driven solutions.",
+            "I help healthcare providers, clinics, and medtech companies unlock efficiency and scale by developing customized AI agents and automation systems.",
+            "We specialize in creating HIPAA-compliant workflows, appointment schedulers, virtual medical assistants, intake bots, and document summarizers powered by OpenAI, LangChain, and custom LLM pipelines.",
+            "From patient onboarding to prescription automation and medical CRM integrations, we transform repetitive tasks into intelligent flows – reducing human error and boosting operational speed.",
+            "Backed by a dedicated team of 15 talented professionals, we deliver scalable, production-ready solutions with speed and precision.",
         ],
         title2: "",
         description2: [],
-        skills: ["Pinecone", "VAPI", "Claude AI", "Chat GPT", "Twillo", "Retell AI"]
+        skills: ["Start-up Leadership", "Co-creation", "AI Agents", "AI Automation"],
+    },
 
+    {
+        id: "serverpoint",
+        company: "ServerPoint",
+        logo: "assets/imgs/home-page-2/experience/server-point-logo.jpeg",
+        years: "2019 - 2023",
+        title: "Project Manager (May 2021 - Dec 2023)",
+        description: [
+            "Managed multiple web development projects using hybrid Agile and Waterfall methodologies.",
+            "Utilized Asana and Jira for project tracking, ensuring timely delivery within budget.",
+            "Skills: Product Development, Project Management, Asana, Jira, Software Development",
+        ],
+        title2: "Javascript Developer (Mar 2019 - May 2021)",
+        description2: [
+            "While working closely with the development team, I led web development projects catering to diverse client requirements. My hands-on experience in coding and debugging ensured smooth project execution.",
+            "Leveraging my deep understanding of both agile and waterfall methodologies, I tailored the development approach to match the unique needs of each project. This ensured not only swift deliveries but also the creation of maintainable and scalable code.",
+            "I have a proven track record of delivering projects on time and within budget. This has been possible due to my proficiency in using state-of-the-art project tracking tools, coupled with proactive risk management strategies.",
+        ],
+        skills: ["React.js", "Cloudflare", "Formik", "Asana", "Jira", "MySQL", "PostgreSQL"],
     },
     {
         id: "ink",
@@ -21,47 +43,65 @@ export const experienceData = [
         title: "Development Team Lead (Feb 2023 - Oct 2023)",
         description: [
             "Directed development teams and ensured efficient delivery of projects.",
-            "Skills:  Development Design, IT Leadership, Team Management"
+            "Skills:  Development Design, IT Leadership, Team Management",
         ],
         title2: "React Developer (Oct 2022 - Feb 2023)",
         description2: [
             "Built web applications with React and Node.js, utilizing TypeScript for efficient and scalable codebases.",
-            "Skills: Node.js, TypeScript, Web Application Development"
+            "Skills: Node.js, TypeScript, Web Application Development",
         ],
-        skills: ["Node.js", "Angular.js", "TypeScript", "MySQL", "TailwindCSS"]
-
-    },
-    {
-        id: "serverpoint",
-        company: "ServerPoint",
-        logo: "assets/imgs/home-page-2/experience/server-point-logo.jpeg",
-        years: "2021 - 2022",
-        title: "Project Manager (May 2021 - Dec 2023)",
-        description: [
-            "Managed multiple web development projects using hybrid Agile and Waterfall methodologies.",
-            "Utilized Asana and Jira for project tracking, ensuring timely delivery within budget.",
-            "Skills: Product Development, Project Management, Asana, Jira, Software Development"
-        ],
-        title2: "",
-        description2: [],
-        skills: ["Asana", "Jira", "MySQL", "PostgreSQL"]
-
+        skills: ["Node.js", "Angular.js", "TypeScript", "MySQL", "TailwindCSS"],
     },
     {
         id: "innovative-insignt",
         company: "Innovation Insight",
         logo: "assets/imgs/home-page-2/experience/innovation-insight.jpeg",
-        years: "2021 - 2022",
-        title: "MERN Stack Lead",
+        years: "2020 - 2022",
+        title: "React.js Lead",
         description: [
+            "At Innovation Insight, I worked as a MERN Stack Lead, where I was in charge of leading a team of developers in the design and development of web applications using the MERN stack.",
             "Led a team of developers to design and build web applications using React, Node.js, MongoDB and Express.js.",
-            "Documented code, APIs, and technical specifications to ensure seamless knowledge transfer.",
-            "Delivered high-quality, scalable applications leveraging the MERN stack.",
-            "Skills: Express.js, Object-Oriented Programming (OOP)",
+            "Code, APIs, and technical specifications were documented to ensure knowledge transfer to other developers and stakeholders.",
         ],
         title2: "",
         description2: [],
-        skills: ["JavaScript", "React.js", "Express.js", "Node.js", "TypeScript", "MongoDB",]
-
-    }
+        skills: ["JavaScript", "React.js", "TypeScript", "bject-Oriented Programming (OOP)"],
+    },
+    {
+        id: "bizzworld",
+        company: "Bizz World Communications",
+        logo: "assets/imgs/home-page-2/experience/bizzworldcommunications_logo.jpeg",
+        years: "2018 - 2020",
+        title: "Full-stack Developer | React | Node.js",
+        description: [
+            "At Bizz World Communications, I worked as a Fullstack Developer, where I was in charge of developing and maintaining web applications using a variety of front-end and back-end technologies.",
+            "To create web applications, I used a variety of programming languages and frameworks, including React, Node.js, AngularJS, MongoDB, and MySQL.",
+            "Implemented automated testing frameworks such as Jest, Cypress, and Selenium to ensure application quality and performance.",
+        ],
+        title2: "",
+        description2: [],
+        skills: ["React.js", "Node.js", "React Native", "Vue.js", "Express.js"],
+    },
+    {
+        id: "hbl",
+        company: "HBL",
+        logo: "assets/imgs/home-page-2/experience/hbl.jpeg",
+        years: "2018",
+        title: "Intern",
+        description: [
+            "At HBL, I worked as a full-stack intern, where I gained hands-on experience developing web applications using various front-end and back-end technologies.",
+            "Assisting senior developers with web application design and development, including UI/UX design, front-end development, and database management.",
+        ],
+        title2: "",
+        description2: [],
+        skills: [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "Mongodb",
+            "TypeScript",
+            "Front-End Development",
+            "Full-Stack Development",
+        ],
+    },
 ];
