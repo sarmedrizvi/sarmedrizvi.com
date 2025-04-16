@@ -46,17 +46,6 @@ export default function OffCanvas({ isOffCanvas, handleOffCanvas }: any) {
             </div>
 
             <div className="mb-3">
-              <span className="text-400 fs-5">Skype</span>
-              <p className="mb-0">
-                <a
-                  href="skype:saiyidsarmed_1?chat"
-                  className="text-decoration-none text-dark"
-                >
-                  saiyidsarmed_1
-                </a>
-              </p>
-            </div>
-            <div className="mb-3">
               <span className="text-400 fs-5">Address</span>
               <p className="mb-0">
                 <a
