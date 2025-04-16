@@ -28,7 +28,6 @@ out/
 .vercel/
 .cache/
 coverage/
-public/
 
 # IDE files
 .vscode/
