@@ -3,9 +3,10 @@ title: "Revolutionizing Revenue Cycle Management with AI and Automation Agents"
 author: "Sarmed"
 date: "Apr 16, 2025"
 read_time: "3 min read"
-category: "AI Agents Automation"
+category: "AI Automations"
 description: "Discover how AI automation agents and AI agents automation anywhere are transforming revenue cycle management. Learn the benefits of artificial intelligence and automation in healthcare workflows."
 image: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/revenue-cycle-management-with-ai-agents.webp"
+blogPageImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/revenue-cycle-management-with-ai-agents.png"
 meta_title: "AI Automation Agents & AI Agents Automation Anywhere for Revenue Cycle Workflows"
 meta_description: "Discover how AI automation agents and AI agents automation anywhere are transforming revenue cycle management. Learn the benefits of artificial intelligence and automation in healthcare workflows."
 ---
@@ -33,6 +34,11 @@ Unlike automation agents, _AI agents_ bring reasoning, adaptability, and action 
 AI agents can also integrate seamlessly into existing systems like EMRs and billing platforms. For instance, document capture AI agents extract patient details from scanned documents and update EMR systems automatically. This reduces administrative burdens while improving accuracy.
 
 #### Agentic Workflows: Combining AI and Automation
+&nbsp;
+
+![Agentic Workflows](https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/agentic-workflow.png)
+
+&nbsp;
 
 The synergy between _AI automation agents_ and _AI agents_ creates what’s known as _agentic workflows_. These workflows dynamically allocate tasks based on complexity:
 
@@ -65,3 +71,5 @@ The best outcomes come from integrating both technologies within a unified syste
 As healthcare providers continue to face operational challenges, the intelligent application of _artificial intelligence and automation_ will redefine revenue cycle management. From agentic workflows to generative AI tools, these technologies empower organizations to achieve more with fewer resources while maintaining financial stability.
 
 Are you ready to transform your revenue cycle? Explore how _AI automation agents_ can streamline operations, improve accuracy, and enhance patient satisfaction. The future of healthcare workflows is here—embrace it today!
+
+![Agentic Blog Ending](https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/blog-the-end.png)

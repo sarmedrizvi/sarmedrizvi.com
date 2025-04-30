@@ -1,0 +1,7 @@
+.blog img {
+    border-radius: 10px; /* Adjust the value to control the roundness */
+}
+
+.blog-details-images img {
+    border-radius: 30px; /* Adjust the value to control the roundness */
+}
