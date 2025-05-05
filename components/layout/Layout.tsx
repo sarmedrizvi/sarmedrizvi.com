@@ -10,83 +10,84 @@ import Footer from "./footer/Footer";
 import Header from "./header/Header";
 
 interface LayoutProps {
-  headerStyle?: Number;
-  footerStyle?: Number;
-  children?: React.ReactNode;
-  breadcrumbTitle?: string;
+    headerStyle?: Number;
+    footerStyle?: Number;
+    children?: React.ReactNode;
+    breadcrumbTitle?: string;
+    isNavLinks?: boolean;
 }
 
 export default function Layout({
-  headerStyle,
-  footerStyle,
-  breadcrumbTitle,
-  children,
+    headerStyle,
+    footerStyle,
+    breadcrumbTitle,
+    children,
+    isNavLinks = true,
 }: LayoutProps) {
-  const [scroll, setScroll] = useState<boolean>(false);
-  // Mobile Menu
-  const [isMobileMenu, setMobileMenu] = useState<boolean>(false);
-  const handleMobileMenu = (): void => {
-    setMobileMenu(!isMobileMenu);
-    !isMobileMenu
-      ? document.body.classList.add("mobile-menu-active")
-      : document.body.classList.remove("mobile-menu-active");
-  };
-
-  // Search
-  const [isSearch, setSearch] = useState<boolean>(false);
-  const handleSearch = (): void => setSearch(!isSearch);
-
-  // OffCanvas
-  const [isOffCanvas, setOffCanvas] = useState<boolean>(false);
-  const handleOffCanvas = (): void => setOffCanvas(!isOffCanvas);
-
-  useEffect(() => {
-    const WOW: any = require("wowjs");
-    (window as any).wow = new WOW.WOW({
-      live: false,
-    });
-
-    // Initialize WOW.js
-    (window as any).wow.init();
-
-    const handleScroll = (): void => {
-      const scrollCheck: boolean = window.scrollY > 100;
-      if (scrollCheck !== scroll) {
-        setScroll(scrollCheck);
-      }
+    const [scroll, setScroll] = useState<boolean>(false);
+    // Mobile Menu
+    const [isMobileMenu, setMobileMenu] = useState<boolean>(false);
+    const handleMobileMenu = (): void => {
+        setMobileMenu(!isMobileMenu);
+        !isMobileMenu
+            ? document.body.classList.add("mobile-menu-active")
+            : document.body.classList.remove("mobile-menu-active");
     };
 
-    document.addEventListener("scroll", handleScroll);
+    // Search
+    const [isSearch, setSearch] = useState<boolean>(false);
+    const handleSearch = (): void => setSearch(!isSearch);
 
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, [scroll]);
-  return (
-    <>
-      <div id="top" />
-      <AddClassBody />
-      <DataBg />
-      <ImageHoverEffects />
+    // OffCanvas
+    const [isOffCanvas, setOffCanvas] = useState<boolean>(false);
+    const handleOffCanvas = (): void => setOffCanvas(!isOffCanvas);
 
-      <Header
-        scroll={scroll}
-        isMobileMenu={isMobileMenu}
-        handleMobileMenu={handleMobileMenu}
-        isOffCanvas={isOffCanvas}
-        handleOffCanvas={handleOffCanvas}
-      />
+    useEffect(() => {
+        const WOW: any = require("wowjs");
+        (window as any).wow = new WOW.WOW({
+            live: false,
+        });
 
-      <MobileMenu />
+        // Initialize WOW.js
+        (window as any).wow.init();
 
-      <main className="main">
-        {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
-        {children}
-      </main>
+        const handleScroll = (): void => {
+            const scrollCheck: boolean = window.scrollY > 100;
+            if (scrollCheck !== scroll) {
+                setScroll(scrollCheck);
+            }
+        };
 
-      <Footer />
+        document.addEventListener("scroll", handleScroll);
 
+        return () => {
+            document.removeEventListener("scroll", handleScroll);
+        };
+    }, [scroll]);
+    return (
+        <>
+            <div id="top" />
+            <AddClassBody />
+            <DataBg />
+            <ImageHoverEffects />
 
-    </>
-  );
+            <Header
+                scroll={scroll}
+                isMobileMenu={isMobileMenu}
+                handleMobileMenu={handleMobileMenu}
+                isOffCanvas={isOffCanvas}
+                handleOffCanvas={handleOffCanvas}
+                isNavLinks={isNavLinks}
+            />
+
+            <MobileMenu />
+
+            <main className="main">
+                {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
+                {children}
+            </main>
+
+            <Footer isNavLinks={isNavLinks} />
+        </>
+    );
 }

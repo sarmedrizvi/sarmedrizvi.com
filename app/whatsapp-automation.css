@@ -1,0 +1,49 @@
+/* Wrapper */
+.react-tel-input .form-control {
+    background-color: #1e1e1e; /* your dark bg */
+    color: #fff;
+    border-color: #444;
+}
+
+/* Country dropdown */
+.react-tel-input .flag-dropdown {
+    background-color: #1e1e1e;
+    border-color: #444;
+}
+
+/* Dropdown list */
+.react-tel-input .country-list {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+/* List item hover */
+.react-tel-input .country-list .country:hover {
+    background-color: #3a3a3a;
+}
+
+/* Active selection */
+.react-tel-input .country.highlight {
+    background-color: #3a3a3a !important;
+    color: #fff;
+}
+
+/* Country name */
+.react-tel-input .country-name {
+    color: black;
+}
+
+.react-tel-input .form-control {
+    width: 100% !important;
+}
+
+.form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.form-inner {
+    max-width: 700px;
+}

@@ -1,16 +1,16 @@
 .skills-icon {
- height: 10px !important;
- width: 10px !important;
- background-color: red !important;
+    height: 10px !important;
+    width: 10px !important;
+    background-color: red !important;
 }
 
 .icon_60 {
-    height: 40px !important; 
+    height: 40px !important;
     width: 40px !important;
     line-height: 60px !important;
 }
 
-img, .img {
-    max-width:50% !important;
+img,
+.img {
+    max-width: 50% !important;
 }
-
