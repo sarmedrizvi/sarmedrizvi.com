@@ -33,7 +33,7 @@ const WhatsappAutomationLandingPageForm = () => {
 
         try {
             const response = await fetch(
-                "https://primary-production-4a3c.up.railway.app/webhook/223dba25-8252-4efb-9dab-b7c43a1e4cd4",
+                "https://automations.impleko.ai/webhook/3c254395-9700-4190-8e34-8aca88dac6f5",
                 {
                     method: "POST",
                     headers: {
