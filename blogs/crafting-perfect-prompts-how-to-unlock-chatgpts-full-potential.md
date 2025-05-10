@@ -6,6 +6,7 @@ read_time: "4 min read"
 category: "Prompt Engineering"
 description: "The Playoff Method: Refining AI Responses Through Iterative Competition"
 image: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/prompt+engineering.webp"
+blogPageImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/prompt+engineering.webp"
 ---
 
 #### The Playoff Method: Refining AI Responses Through Iterative Competition

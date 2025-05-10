@@ -6,6 +6,7 @@ read_time: "3 min read"
 category: "Medical Chatbot"
 description: "Discover how healthcare professionals are using AI agents to eliminate administrative burdens and get back to patient care. Real examples, practical implementation steps, and a jargon-free approach to medical automation."
 image: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/ai-innovation-blog.png"
+blogPageImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/ai-innovation-blog.png"
 ---
 
 Hey there! I've been working with healthcare professionals who are drowning in paperwork and admin tasks, and I wanted to share how AI can actually help you get back to what matters—caring for patients.

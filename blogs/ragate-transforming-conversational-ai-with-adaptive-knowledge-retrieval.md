@@ -6,6 +6,7 @@ read_time: "5 min read"
 category: "RAGate"
 description: "As AI systems become increasingly embedded in our lives, the demand for accurate, reliable, and context-aware conversational AI has surged."
 image: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/RaGate.webp"
+blogPageImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/RaGate.webp"
 ---
 
 As AI systems become increasingly embedded in our lives, the demand for accurate, reliable, and context-aware conversational AI has surged. However, these systems face significant challenges in delivering truthful and up-to-date information. The problem of “hallucinations,” where AI generates fabricated or irrelevant responses, has been a persistent issue in this field.

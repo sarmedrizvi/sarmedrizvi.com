@@ -6,6 +6,7 @@ read_time: "5 min read"
 category: "AI Agents"
 description: "In today’s rapidly evolving digital landscape, businesses seek innovative solutions to streamline operations, enhance customer interactions, and scale effectively."
 image: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/future-of-ai-agents.webp"
+blogPageImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/future-of-ai-agents.webp"
 ---
 
 #### Revolutionizing Digital Experiences: The Future of AI Agents

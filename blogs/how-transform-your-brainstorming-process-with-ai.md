@@ -6,6 +6,7 @@ read_time: "3 min read"
 category: "Brainstorming"
 description: "Innovation moves fast, but sometimes, the best ideas take too long to surface. AI-powered brainstorming changes that. With the power of artificial intelligence, your team can unlock new perspectives, overcome creative blocks, and generate high-impact ideas quickly."
 image: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/brainstorming-process.webp"
+blogPageImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/brainstorming-process.webp"
 ---
 
 Innovation moves fast, but sometimes, the best ideas take too long to surface. AI-powered brainstorming changes that. With the power of artificial intelligence, your team can unlock new perspectives, overcome creative blocks, and generate high-impact ideas quickly.

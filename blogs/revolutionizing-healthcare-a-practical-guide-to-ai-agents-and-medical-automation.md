@@ -6,6 +6,7 @@ read_time: "3 min read"
 category: "Healthcare Innovation"
 description: "Discover how AI chatbots in the medical industry are transforming healthcare by helping practitioners streamline workflows, enhance patient care, and deliver 24/7 support. Explore practical use cases of chatbots for practitioners."
 image: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/ai-chatbot-blog.png"
+blogPageImage: "https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/ai-chatbot-blog.png"
 ---
 
 In an era where digital innovation meets patient care, AI chatbots are quietly revolutionizing how medical professionals connect with and treat their patients. These intelligent digital assistants are not just answering questions—they're becoming valuable team members in clinics and hospitals worldwide, enhancing both the practitioner experience and patient outcomes.
