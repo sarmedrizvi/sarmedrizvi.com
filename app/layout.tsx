@@ -34,6 +34,14 @@ export const metadata: Metadata = {
   description:
     "Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation.",
   keywords: [
+    "eCommerce chatbot",
+    "WhatsApp bot for eCommerce",
+    "Instagram DM automation",
+    "AI chatbot for online store",
+    "Unified customer support",
+    "Omnichannel chatbot",
+    "Messenger automation",
+    "AI customer service",
     "AI agents",
     "AI solutions",
     "AI chatbots",
