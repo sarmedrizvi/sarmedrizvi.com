@@ -216,7 +216,7 @@ It’s efficient. Scalable. Maintainable. Future-proof.
 
 &nbsp;
 
-![Use Case](https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/ecommerce-real-use-case.jpeg)
+![Use Case](https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/ecommerce-real-use-case.jpg)
 
 &nbsp;
 
@@ -273,6 +273,8 @@ The tech is here. The demand is here.
 Ready to Meet Customers Wherever They Are?  
 With one unified AI chatbot, you can be present on every channel — instantly, intelligently, and 24/7. Whether it’s Instagram, WhatsApp, Messenger, or your own site, your shoppers get fast, helpful answers and a seamless buying journey.  
 👉 Let your support work smarter, not harder. [Talk to us today](#contact).
+
 &nbsp;
+
 ![E-commerce Support Blog Ending](https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/blog-the-end.png)
 &nbsp;
