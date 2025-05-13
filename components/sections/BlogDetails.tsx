@@ -6,20 +6,31 @@ import Contact2 from "@/components/sections/Contact";
 import Static2 from "@/components/sections/Static";
 import { useParams } from "next/navigation";
 
-export default function BlogDetails({ post }: any) {
-    const params = useParams();
-    const id = params?.id as string;
+export default function BlogDetails({ post, id }: any) {
 
     const formattedDate = post
         ? new Date(post.date).toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "short",
-              day: "numeric",
-          })
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+        })
         : "";
 
+    const htmlContent = post.content
+        .replace(
+            /\[Talk to us today\]\(#contact\)/g,
+            `<a href="/blog/${id}/#contact">Talk to us today</a>`
+        );
+
     function addClassToParagraphs(html: string) {
-        return html.replace(/<p(.*?)>/g, '<p$1 class="text-300">');
+        // Add classes to paragraphs
+        const withParagraphClasses = html.replace(/<p(.*?)>/g, '<p$1 class="text-300">');
+        console.log("withParagraphClasses", withParagraphClasses)
+        // Ensure contact links have proper href
+        return withParagraphClasses.replace(
+            /<a href="#contact">(.*?)<\/a>/g,
+            `<a href="/blog/${id}/#contact">$1</a>`
+        );
     }
 
     return (
@@ -70,7 +81,7 @@ export default function BlogDetails({ post }: any) {
                                                 <Link
                                                     href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
                                                         typeof window !== "undefined" &&
-                                                            window?.location?.href
+                                                        window?.location?.href
                                                     )}`}
                                                     className="text-decoration-none"
                                                     target="_blank"
@@ -81,7 +92,7 @@ export default function BlogDetails({ post }: any) {
                                                 <Link
                                                     href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
                                                         typeof window !== "undefined" &&
-                                                            window?.location?.href
+                                                        window?.location?.href
                                                     )}&text=${encodeURIComponent(post.title)}`}
                                                     className="text-decoration-none"
                                                     target="_blank"
@@ -92,7 +103,7 @@ export default function BlogDetails({ post }: any) {
                                                 <Link
                                                     href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
                                                         typeof window !== "undefined" &&
-                                                            window?.location?.href
+                                                        window?.location?.href
                                                     )}`}
                                                     className="text-decoration-none"
                                                     target="_blank"
@@ -106,7 +117,7 @@ export default function BlogDetails({ post }: any) {
                                             <h2>{post.title}</h2>
                                             <div
                                                 dangerouslySetInnerHTML={{
-                                                    __html: addClassToParagraphs(post.content),
+                                                    __html: addClassToParagraphs(htmlContent),
                                                 }}
                                             />
                                         </div>
