@@ -65,7 +65,7 @@ So how do you keep up?
 
 &nbsp;
 
-![New Era of Customer Expectations](https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/new-era-of-customer-expectations.png)
+![New Era of Customer Expectations](https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/new-era-of-customer-service.jpg)
 
 &nbsp;
 
@@ -216,7 +216,7 @@ It’s efficient. Scalable. Maintainable. Future-proof.
 
 &nbsp;
 
-![Use Case](https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/e-commerce-support-use-case.png)
+![Use Case](https://s3.us-east-1.amazonaws.com/sarmedrizvi.com/ecommerce-real-use-case.jpeg)
 
 &nbsp;
 
