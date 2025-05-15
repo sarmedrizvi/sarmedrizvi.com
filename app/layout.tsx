@@ -50,20 +50,20 @@ export const metadata: Metadata = {
     "AI-driven growth",
   ],
   metadataBase: new URL("https://sarmedrizvi.com"),
-  openGraph: {
-    title: "Unlock AI Power: Expert AI Agent Solutions for Business",
-    description:
-      "Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation.",
-    url: "https://sarmedrizvi.com",
-    siteName: "Sarmed Rizvi",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Unlock AI Power: Expert AI Agent Solutions for Business",
-    description:
-      "Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation.",
-  },
+  // openGraph: {
+  //   title: "Unlock AI Power: Expert AI Agent Solutions for Business",
+  //   description:
+  //     "Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation.",
+  //   url: "https://sarmedrizvi.com",
+  //   siteName: "Sarmed Rizvi",
+  //   type: "website",
+  // },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Unlock AI Power: Expert AI Agent Solutions for Business",
+  //   description:
+  //     "Discover how AI agents can revolutionize your business with intelligent solutions. From chatbots to automation, enhance your operations with AI-driven innovation.",
+  // },
   robots: "index, follow",
 };
 
