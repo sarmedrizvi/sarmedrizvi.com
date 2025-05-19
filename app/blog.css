@@ -1,7 +1,53 @@
 .blog img {
-    border-radius: 10px; /* Adjust the value to control the roundness */
+    border-radius: 10px;
 }
 
 .blog-details-images img {
-    border-radius: 30px; /* Adjust the value to control the roundness */
+    border-radius: 30px;
+}
+
+.text-300 {
+    color: rgb(206, 206, 206) !important;
+}
+
+a {
+    color: #f84848;
+}
+
+.h2,
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.h5,
+h5 {
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+}
+
+.h4,
+h4 {
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+}
+
+@media (min-width: 1200px) {
+    .h2,
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .h5,
+    h5 {
+        margin-bottom: 1.5rem !important;
+        margin-top: 1.5rem !important;
+    }
+
+    .h4,
+    h4 {
+        margin-bottom: 1.5rem !important;
+        margin-top: 1.5rem !important;
+    }
 }

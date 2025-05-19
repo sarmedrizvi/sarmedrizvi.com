@@ -60,7 +60,7 @@ export default function BlogDetails({ post, id }: any) {
                                                 <div className="d-flex align-items-center">
                                                     <i className="ri-time-line fs-6" />
                                                     <span className="ms-2 fs-6">
-                                                        {post.read_time || "3 mins"} read
+                                                        {post.read_time || "3 mins"}
                                                     </span>
                                                 </div>
                                                 <div className="d-flex align-items-center">

@@ -18132,6 +18132,7 @@ li {
 
 .blog-card__description {
     text-align: left !important;
+    color: rgb(153, 153, 153) !important;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
