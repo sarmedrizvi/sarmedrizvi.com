@@ -114,7 +114,7 @@ export default function BlogDetails({ post, id }: any) {
                                             </div>
                                         </div>
                                         <div className="col-lg-10 blog">
-                                            <h2>{post.title}</h2>
+                                            <h1>{post.title}</h1>
                                             <div
                                                 dangerouslySetInnerHTML={{
                                                     __html: addClassToParagraphs(htmlContent),
