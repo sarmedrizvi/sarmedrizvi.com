@@ -18,7 +18,6 @@ You’re browsing Instagram at night and see a beautiful jacket from a new fashi
 Hours pass. No reply.
 
 Next day, you land on their website. You click the chat icon, hoping for a quick answer.
-
 Nothing.
 
 You check WhatsApp later to ask about shipping. Silence again.

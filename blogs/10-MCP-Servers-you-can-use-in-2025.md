@@ -41,61 +41,61 @@ Uptime is very critical. Choose MCP servers backed by strong vendor support, det
 
 ## III. Top 10 MCP Servers for 2025
 
-### File System MCP Server
+### A. File System MCP Server
 
 - **Overview**: Grants LLM access to the local file system to read, write, and manage directories.
 - **Use Cases**: Local automation, document generation, and file-based agents.
 - **Pricing**: Free; runs locally or on your server.
 
-### GitHub MCP Server
+### B. GitHub MCP Server
 
 - **Overview**: Connects LLMs to GitHub repositories for real-time file and code access.
 - **Use Cases**: Code reviews, documentation generation, and auto-pull requests.
 - **Pricing**: Free; GitHub API limits may apply.
 
-### Slack MCP Server
+### C. Slack MCP Server
 
 - **Overview**: Enables LLMs to interact with Slack via the Slack API.
 - **Use Cases**: Team chatbots, meeting summarizers, and notification agents.
 - **Pricing**: Free; subject to Slack app permissions and rate limits.
 
-### Google Map MCP Server
+### D. Google Map MCP Server
 
 - **Overview**: Allows LLMs to access Google Maps data and location services.
 - **Use Cases**: Route planning, geolocation, and store locator bots.
 - **Pricing**: Pay-as-you-go via Google Maps API.
 
-### Perplexity MCP Server
+### E. Perplexity MCP Server
 
 - **Overview**: Connects to Perplexity’s Sonar API for real-time web search.
 - **Use Cases**: Live research, summarization, and fact-checking agents.
 - **Pricing**: API-based pricing from Perplexity.
 
-### Brave MCP Server
+### F. Brave MCP Server
 
 - **Overview**: Uses Brave Search API for privacy-first search results.
 - **Use Cases**: Anonymous browsing agents, content research, and QA bots.
 - **Pricing**: Free tier available; usage-based pricing applies.
 
-### PostgreSQL MCP Server
+### G. PostgreSQL MCP Server
 
 - **Overview**: Lets LLMs query database schemas and perform read-only queries.
 - **Use Cases**: Analytics bots, report generation, and data exploration.
 - **Pricing**: Free; depends on your database hosting.
 
-### Google Drive MCP Server
+### H. Google Drive MCP Server
 
 - **Overview**: Integrates Google Drive with LLMs for file search and access.
 - **Use Cases**: Document lookup, contract review, and medical record parsing.
 - **Pricing**: Free; API quota limits apply.
 
-### Notion MCP Server
+### I. Notion MCP Server
 
 - **Overview**: Interfaces with the Notion API to retrieve content and databases.
 - **Use Cases**: Knowledge assistants, project trackers, and internal wikis.
 - **Pricing**: Free for personal Notion use; business plans may vary.
 
-### Stripe MCP Server
+### J. Stripe MCP Server
 
 - **Overview**: Connects LLMs to Stripe for payment, billing, and transaction data.
 - **Use Cases**: Finance dashboards, invoicing agents, and SaaS reporting.
