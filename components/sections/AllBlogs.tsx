@@ -91,11 +91,12 @@ function BlogListContent({ posts }: { posts: any }) {
                                     </div>
                                 </div>
                             </div>
+
                             <div className="row mt-8">
                                 {currentBlogs?.map((post: any) => (
                                     <div
                                         key={post?.id}
-                                        className="col-lg-4"
+                                        className="col-12 col-lg-4 col-md-6"
                                         onClick={() => handleNavigation(post?.id)}
                                     >
                                         <div className="blog-card rounded-top-2 mb-lg-3 mb-md-5 mb-3">
@@ -140,6 +141,7 @@ function BlogListContent({ posts }: { posts: any }) {
                                     </div>
                                 ))}
                             </div>
+
                         </div>
                     </section>
 
