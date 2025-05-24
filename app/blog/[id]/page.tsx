@@ -1,7 +1,7 @@
 import BlogDetails from "../../../components/sections/BlogDetails";
 import { getAllPosts, getPostById } from "@/util/getAllBlogs";
 import { Metadata } from "next";
-import "../../blog.css";
+// import "../../blog.css";
 interface PageProps {
     params: {
         id: string;

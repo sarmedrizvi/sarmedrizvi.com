@@ -4,6 +4,7 @@ import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import Contact2 from "@/components/sections/Contact";
 import Static2 from "@/components/sections/Static";
+import "../../app/blog.css";
 import { useParams } from "next/navigation";
 
 export default function BlogDetails({ post, id }: any) {
@@ -50,12 +51,12 @@ export default function BlogDetails({ post, id }: any) {
                                     <div className="col-lg-2"></div>
                                     <div className="col-lg-10 mx-lg-auto my-6">
                                         <div className="d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
-                                            <Link
-                                                href="#"
+                                            <button
+                                                
                                                 className="btn btn-gradient text-uppercase align-self-lg-start mb-2 mb-lg-0"
                                             >
                                                 {post.category}
-                                            </Link>
+                                            </button>
                                             <div className="d-flex flex-column flex-lg-row gap-2 gap-lg-4">
                                                 <div className="d-flex align-items-center">
                                                     <i className="ri-time-line fs-6" />
