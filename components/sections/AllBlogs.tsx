@@ -4,19 +4,33 @@ import Link from "next/link";
 import Contact2 from "@/components/sections/Contact";
 import Static2 from "@/components/sections/Static";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useCallback, Suspense } from "react";
+import { useCallback, Suspense, useEffect, useState } from "react";
 
 function BlogListContent({ posts }: { posts: any }) {
     const router = useRouter();
     const searchParams = useSearchParams();
     const currentPage = Number(searchParams?.get('page')) || 1;
+    const [blogsPerPage, setBlogsPerPage] = useState(9);
 
-    const BLOGS_PER_PAGE = 9;
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.matchMedia("(max-width: 991.98px)").matches) {
+                setBlogsPerPage(10);
+            } else {
+                setBlogsPerPage(9);
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     const totalBlogs = posts?.length || 0;
-    const totalPages = Math.ceil(totalBlogs / BLOGS_PER_PAGE);
+    const totalPages = Math.ceil(totalBlogs / blogsPerPage);
 
-    const startIndex = (currentPage - 1) * BLOGS_PER_PAGE;
-    const endIndex = startIndex + BLOGS_PER_PAGE;
+    const startIndex = (currentPage - 1) * blogsPerPage;
+    const endIndex = startIndex + blogsPerPage;
     const currentBlogs = posts?.slice(startIndex, endIndex) || [];
 
     const handleNavigation = (blogId: string) => {
@@ -141,7 +155,6 @@ function BlogListContent({ posts }: { posts: any }) {
                                     </div>
                                 ))}
                             </div>
-
                         </div>
                     </section>
 
@@ -210,7 +223,7 @@ function BlogListContent({ posts }: { posts: any }) {
 
 export default function BlogList({ posts }: { posts: any }) {
     return (
-        < >
+        <>
             <Suspense fallback={<div>Loading...</div>}>
                 <BlogListContent posts={posts} />
             </Suspense>
