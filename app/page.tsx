@@ -1,5 +1,6 @@
 import Layout from "@/components/layout/Layout"
 import Blog from "@/components/sections/BlogSection"
+import CaseStudiesSlider from "@/components/sections/CaseStudiesSlider"
 import Contact from '@/components/sections/Contact'
 import Coporation from "@/components/sections/Coporation"
 import Education from "@/components/sections/Education"
@@ -26,6 +27,7 @@ export default async function HomePage() {
 				<Education />
 				<Projects />
 				<Skills />
+				<CaseStudiesSlider />
 				<Blog blogPosts={posts} />
 				<Contact />
 			</Layout>

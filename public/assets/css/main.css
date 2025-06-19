@@ -35,7 +35,8 @@ Table of contents
     --urbanist: "Urbanist", sans-serif;
     --playpair: "Playfair Display", serif;
     --dmMono: "DM Mono", monospace;
-    --tc-body-font-size: 16px;
+    --thicccboi: "sans-serif"
+        --tc-body-font-size: 16px;
     --tc-fs-1: 40px;
     --tc-fs-2: 33px;
     --tc-fs-3: 28px;
@@ -1104,7 +1105,7 @@ img {
 .zelio .btn {
     --bs-btn-padding-x: 24px;
     --bs-btn-padding-y: 17px;
-    --bs-btn-font-family: var(--urbanist) --bs-btn-font-family: var(--dmMono) --bs-btn-font-size: 14px;
+    --bs-btn-font-family: var(--urbanist) --bs-btn-font-family: var(--thicccboi) --bs-btn-font-size: 14px;
     --bs-btn-font-weight: 700;
     --bs-btn-line-height: 14px;
     --bs-btn-color: var(--bs-body-color);
@@ -1591,7 +1592,7 @@ img {
 ===============================*/
 body {
     /* font-family: var(--urbanist); */
-    font-family: var(--dmMono);
+    font-family: var(--thicccboi);
     font-size: var(--tc-body-font-size);
     font-weight: 400;
     color: #565662;
@@ -1600,7 +1601,7 @@ body {
 
 body.home-page-2 {
     background: #e8e8e8 !important;
-    font-family: var(--dmMono);
+    font-family: var(--thicccboi);
 }
 
 body.home-page-2 a:hover {
@@ -1901,12 +1902,12 @@ body.home-page-2 h3,
 body.home-page-2 h4,
 body.home-page-2 h5,
 body.home-page-2 h6 {
-    font-family: var(--dmMono);
+    font-family: var(--thicccboi);
     font-weight: 500;
 }
 
 body.home-page-2 p {
-    font-family: var(--dmMono);
+    font-family: var(--thicccboi);
     font-weight: 400;
 }
 
@@ -1931,7 +1932,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--dmMono);
+    font-family: var(--thicccboi);
     color: var(--tc-neutral-0);
     margin-top: 0px;
     margin-bottom: 16px;
@@ -3346,7 +3347,7 @@ textarea {
 }
 
 .navbar.navbar-home-2 .navbar-brand span {
-    font-family: var(--dmMono);
+    font-family: var(--thicccboi);
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -17062,7 +17063,7 @@ strong {
 }
 
 .section-footer-2 .main-logo span {
-    font-family: var(--dmMono);
+    font-family: var(--thicccboi);
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -17764,7 +17765,7 @@ strong {
 
 p,
 li {
-    font-family: var(--dmMono);
+    font-family: var(--thicccboi);
 }
 
 /* 
@@ -17875,4 +17876,43 @@ li {
 
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li a {
     font-weight: 500;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.case-study-border-radius {
+    border-radius: 80px !important;
+}
+
+
+.white-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  background-color: white !important;
+  color: #f43f5e; /* Tailwind's red-500 */
+  border-radius: 20px; /* full pill */
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.white-btn:hover {
+  background-color: white !important;
+  cursor: pointer;
 }

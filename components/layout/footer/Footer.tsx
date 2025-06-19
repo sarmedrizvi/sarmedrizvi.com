@@ -29,10 +29,10 @@ export default function Footer({ isNavLinks = true }) {
                                         fontFamily: "var(--dmMono)",
                                     }}
                                 >
-                                    <a href="#about" className="fs-6">
+                                    {/* <a href="#about" className="fs-6">
                                         {" "}
                                         About me{" "}
-                                    </a>
+                                    </a> */}
                                     <a href="#services" className="fs-6">
                                         {" "}
                                         Services{" "}
@@ -44,6 +44,10 @@ export default function Footer({ isNavLinks = true }) {
                                     <a href="#blogs" className="fs-6">
                                         {" "}
                                         Blogs{" "}
+                                    </a>
+                                    <a href="#case-study" className="fs-6">
+                                        {" "}
+                                        Case Study{" "}
                                     </a>
                                     <a href="#contact" className="fs-6">
                                         {" "}
